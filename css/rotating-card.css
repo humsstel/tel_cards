@@ -106,7 +106,7 @@ body {
 /* Card styles */
 
 .parentcard {
-    height: 1000px;
+    height: 900px;
 }
 
 .card-container, .front, .back {
@@ -126,6 +126,33 @@ body {
     margin: 20px 20px 0px 20px;
 }
 
+h3 {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+p {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+}
+
+a {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+}
+
+.tool-link {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
 .card .name {
     font-size: 22px;
     line-height: 28px;
@@ -136,14 +163,46 @@ body {
 .card .subtitle{
     color: #999999;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.blooms-pills {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+/* Tag Styles */
+
+.remember {
+    background-color: #AA7FB8;
+}
+
+.understand {
+    background-color: #6C94C4;
+}
+
+.apply {
+    background-color: #78D1F0;
+}
+
+.analyse {
+    background-color: #89B83F;
+}
+
+.evaluate {
+    background-color: #FDC20E;
+}
+
+.create {
+    background-color: #F68C1E;
 }
 
 /* Attributes */
 
 .card .statsfront{
-	display: block;
 	float: left;
+    display: block;
 	width: 33.333333%;
 	text-align: center;
     padding-top: 10px;
@@ -151,15 +210,21 @@ body {
 }
 
 .card .statsfrontleft{
-    background-color: #F62459;
+    background-color: #373F51;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 300;
 }
 
 .card .statsfrontmiddle{
-    background-color: #8E44AD;
+    background-color: #3A506B;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 300;
 }
 
 .card .statsfrontright{
-    background-color: #1E8BC3;
+    background-color: #58A4B0;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 300;
 }
 
 .card .statsback{
@@ -183,6 +248,18 @@ body {
     background-color: #1E8BC3;
 }
 
+/* Tooltips */
+
+.hotspot-info {
+    display: none
+}
+
+.hotspot-info {
+    data-location
+}
+
+/* <div class="hotspot" style="top: 8.75%; left: 93.5%; width: 6.4%; height: 29%; background: transparent; border: 1px solid transparent; border-radius: 0px; opacity: 0.8" id="hotspot_1475858355222" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="92.57602862254025" data-hotspot-y="7.114624505928854" data-hotspot-blink="false" data-hotspot-bgcolor="transparent" data-hotspot-bordercolor="transparent" data-hotspot-borderradius="0"> */
+
 /* Footers */
 
 .footerfront {
@@ -190,9 +267,7 @@ body {
 }
 
 .footerback {
-    color: #999999;
     margin: ;
-    padding: 20px 0 20px 0;
     text-align: center;
 }
 
@@ -200,6 +275,7 @@ body {
     opacity: .8;
     color: #666666;
     background-color: transparent;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -219,6 +295,7 @@ body {
 .social-links{
     font-size: 18px;
     text-align: center;
+    position: relative;
 }
 .social-links a{
     margin: 0 7px;
