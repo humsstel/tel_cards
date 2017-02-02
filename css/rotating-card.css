@@ -69,6 +69,8 @@ body {
 	z-index: 2;
     margin-top: 15px;
     min-height: inherit;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 /* Back, initially hidden pane */
@@ -80,6 +82,8 @@ body {
     z-index: 3;
     margin-top: 15px;
     min-height: 80%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 /* Embedded video */
@@ -106,7 +110,7 @@ body {
 /* Card styles */
 
 .parentcard {
-    height: 900px;
+    height: 820px;
 }
 
 .card-container, .front, .back {
@@ -167,9 +171,13 @@ a {
     font-size: 1.2em;
 }
 
-.blooms-pills {
-    margin-top: 15px;
-    margin-bottom: 25px;
+.blooms-pills-main {
+    margin-top: 20px
+}
+
+.blooms-pills-sub {
+    margin-top: px;
+    margin-bottom: 10px;
 }
 
 /* Tag Styles */
@@ -200,7 +208,7 @@ a {
 
 /* Attributes */
 
-.card .statsfront{
+.card .framework {
 	float: left;
     display: block;
 	width: 33.333333%;
@@ -209,43 +217,44 @@ a {
     color: #ffffff;
 }
 
-.card .statsfrontleft{
+.card .enhance {
     background-color: #373F51;
     font-family: 'Catamaran', sans-serif;
     font-weight: 300;
 }
 
-.card .statsfrontmiddle{
+.card .empower {
     background-color: #3A506B;
     font-family: 'Catamaran', sans-serif;
     font-weight: 300;
 }
 
-.card .statsfrontright{
+.card .extend {
     background-color: #58A4B0;
     font-family: 'Catamaran', sans-serif;
     font-weight: 300;
 }
 
-.card .statsback{
-	display: block;
-	float: left;
-	width: 33.333333%;
-	text-align: center;
-    padding-top: 10px;
-    color: #ffffff;
+.usestext {
+    float: right;
+    width: 80%;
+    font-weight: 500;
+    height: 100px;
+    text-align: left;
+    color: lightslategrey;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
 }
 
-.card .statsbackleft{
-    background-color: #F62459;
-}
-
-.card .statsbackmiddle{
-    background-color: #8E44AD;
-}
-
-.card .statsbackright{
-    background-color: #1E8BC3;
+.thermometer {
+    float: left;
+    text-align: center;
+    padding-top: 5px;
+    height: 100px;
+    width: 20%;
+    margin-top: 20px;
+    color: lightslategrey;
 }
 
 /* Tooltips */
@@ -260,20 +269,11 @@ a {
 
 /* <div class="hotspot" style="top: 8.75%; left: 93.5%; width: 6.4%; height: 29%; background: transparent; border: 1px solid transparent; border-radius: 0px; opacity: 0.8" id="hotspot_1475858355222" data-location="top" data-template="" data-templatename="" data-opacity="0.8" data-backcolor="#000000" data-textcolor="#ffffff" data-textalign="center" data-margin="5" data-padding="10" data-width="0" data-delay="0" data-trigger="hover" data-issticky="true" data-hotspot-x="92.57602862254025" data-hotspot-y="7.114624505928854" data-hotspot-blink="false" data-hotspot-bgcolor="transparent" data-hotspot-bordercolor="transparent" data-hotspot-borderradius="0"> */
 
-/* Footers */
 
-.footerfront {
-    text-align: center;
-}
-
-.footerback {
-    margin: ;
-    text-align: center;
-}
 
 .btn-simple{
     opacity: .8;
-    color: #666666;
+    color: #FFFFFF;
     background-color: transparent;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -299,6 +299,56 @@ a {
 }
 .social-links a{
     margin: 0 7px;
+}
+
+/* Submitter */
+
+.submitterinfo {
+    float: left;
+    width: 80%;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 0.75em;
+}
+
+.submitterschool {
+    color: #999999;
+}
+
+.submitterimg {
+    float: left;
+    height: 30px;
+    font-size: 0.75em;
+}
+
+/* Ratings */
+
+.ratings {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+/* Footers */
+
+.footerfront {
+    text-align: center;
+    background-color: #2C3E50;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    float: left;
+    width: 100%;
+}
+
+.footerback {
+    text-align: center;
+    background-color: #2C3E50;
+    float: left;
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 /*       Fix bug for IE      */
