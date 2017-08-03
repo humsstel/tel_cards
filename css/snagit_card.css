@@ -20,7 +20,7 @@ body {
 .titlebarfront {
     height: 80px;
     background-color: #343A40;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 15px;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
@@ -28,14 +28,14 @@ body {
 
 .smalllogo {
     float: left;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-left: 20px;
     background: transparent;
-    -moz-border-radius: 60px;
-    -webkit-border-radius: 60px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
     background-image: url(../img/snagit.jpg);
-    background-size: 55px;
+    background-size: 40px;
     background-position: 50% 20%;
     background-repeat: no-repeat;
     border: solid 3px #fff;
@@ -45,7 +45,7 @@ body {
     display: inline-block;
     color: #fff;
     margin-left: 10px;
-    padding-top: 10px;
+    padding-top: 5px;
     font-family: 'Catamaran', sans-serif;
     font-weight: 400;
     font-size: 1.5em;
@@ -60,11 +60,18 @@ body {
 }
 
 .details {
-    height: 175px;
+    height: 190px;
     background-color: #343A40;
     color: #fff;
     -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+}
+
+hr {
+    width: 90%;
+    background-color: #fff;
+    margin-top: 25px;
+    margin-bottom: 0px;
 }
 
 /* EMBEDDED VIDEO */
@@ -121,11 +128,11 @@ a {
 }
 
 .blooms-pills-main {
-    padding: 30px 25px 0px 20px;
+    padding: 30px 25px 0px 5%;
 }
 
 .blooms-pills-sub {
-    padding: 0 20px;
+    padding: 0 5%;
 }
 
 .remember {
@@ -185,7 +192,7 @@ a {
 }
 
 .submitterimg {
-    margin: 20px 40px 0 20px;
+    margin: 20px 40px 0 5%;
     margin-right: 15px;
     font-size: 1.75em;
     float: left;
