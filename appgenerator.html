@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/scripts/snippet-javascript-console.min.js?v=1"></script>
+    </head>
+    <body>
+        <iframe class="frame" src="" style="width:100%; height: 1020px" frameBorder="0"></iframe>
+        <script type="text/javascript">
+            var cards = [
+                "https://danieladamharding.github.io/tel_cards/padlet_card.html",
+                "https://danieladamharding.github.io/tel_cards/snagit_card.html",
+            ];
+
+            var myFrame = document.getElementsByClassName("frame")[0];
+
+            function getRandomUrl(myFrame) {
+                var index = Math.floor(Math.random() * cards.length);
+                var url = cards[index];
+                myFrame.src = url;
+            }
+
+            function codeAddress() {
+            getRandomUrl(myFrame);
+            }
+
+            codeAddress();
+        </script>
+    </body>
+</html>

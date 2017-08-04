@@ -17,24 +17,6 @@ body {
 	background-color: #ffffff;
 }
 
-.bs-callout {
-  margin: 10px 0px 10px 0px;
-  padding: 15px 30px 15px 15px;
-  border-left: 5px solid #eee;
-}
-
-.bs-callout-warning {
-  background-color: #fefbed;
-  border-color: #f1e7bc;
-}
-
-.bs-callout .icon {
-    float: left;
-    margin-right: 20px;
-    padding-bottom: 110px;
-    font-size: 1.5em
-}
-
 .mainCard {
     height: 700px;
 }
@@ -42,6 +24,19 @@ body {
 .btn-block {
     background-color: #343A40;
     color: #fff;
+    margin: 20px 0px;
+}
+
+.btn-block:hover {
+    background-color: aqua;
+}
+
+.btn-block:focus {
+    background-color: antiquewhite;
+}
+
+.btn-block:visited {
+    background-color: aquamarine;
 }
 
 /* TEXT STYLES */

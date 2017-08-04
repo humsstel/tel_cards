@@ -2,14 +2,10 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-        <link href='css/rotating-card.css' rel='stylesheet' />
+        <link href='css/catalogue.css' rel='stylesheet' />
         <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/fontawesome-stars.css">
         <link href="https://fonts.googleapis.com/css?family=Catamaran:300,500,700,800" rel="stylesheet">
-        
-        <script defer src="/js/light.js"></script>
-        <script defer src="/js/regular.js"></script>
-        <script defer src="/js/fontawesome.js"></script>
     </head>
     
     <body>
@@ -18,7 +14,7 @@
                 <div class="card-header">
                     <ul class="nav nav-tabs card-header-tabs float-xs-left">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Featured app</a>
+                            <a class="nav-link" href="appgenerator.html">Featured app</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="catalogue.html">Catalogue</a>
@@ -33,52 +29,36 @@
                 </div>
                 <div class="card-container manual-flip">
                     <div class="col-md-12">
-                        <div class="card noborder">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> I want an app to...</button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Make lectures more interactive</a>
-                                    <a class="dropdown-item" href="#">Help students collaborate</a>
-                                    <a class="dropdown-item" href="#">Foster discussion online</a>
-                                </div>
-</div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> I want an app to...</button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Make lectures more interactive</a>
+                                <a class="dropdown-item" href="#">Help students collaborate</a>
+                                <a class="dropdown-item" href="#">Foster discussion online</a>
+                            </div>
+                        </div>
+                        <div class="card noborder">                      
                             <div class="front">
-                                <div class="list-group">
-                                    <a href="padlet.html" class="list-group-item list-group-item-action flex-column align-items-start">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/padlet-slider.png"> Padlet</h5>
-                                        <small>Submitted  by Dr Joe Bloggs | School of Humanities</small>
-                                    </div>
-                                    <p class="mb-1">A Padlet is a digital canvas that's easy to share and collaborate on.</p>
+                                <ul class="list-group list-group-flush">
+                                    <a href="padlet_card.html" class="list-group-item list-group-item-action ">
+                                        <div class="d-flex align-items-center">
+                                            <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/padlet-slider.png"> Padlet</h5>
+                                            <p class="mb-1"><small>Submitted  by Dr Joe Bloggs | School of Humanities</small><br>A Padlet is a digital canvas that's easy to share and collaborate on.</p>
+                                        </div>
                                     </a>
-                                    <a href="snagit_card.html" class="list-group-item list-group-item-action flex-column align-items-start">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/snagit.jpg"> Snagit</h5>
-                                      <small class="text-muted">Submitted by Prof. Ann Other | Keele Management School</small>
-                                    </div>
-                                    <p class="mb-1">Capture screenshots or record video to visually explain anything on your screen.</p>
+                                    <a href="snagit_card.html" class="list-group-item list-group-item-action">
+                                        <div class="d-flex align-items-center">
+                                            <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/snagit.jpg"> Snagit</h5>
+                                            <p class="mb-1"><small>Submitted  by Dr Joe Bloggs | School of Humanities</small><br>Capture screenshots or record video to visually explain anything on your screen.</p>
+                                        </div>
                                     </a>
-                                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/trello.png">Trello</h5>
-                                      <small class="text-muted">Submitted by Dan Harding | Faculty of HumSS</small>
-                                    </div>
-                                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                                    </a>
-</div>
-                                    <div class="card-footer">
-                                        <nav aria-label="Page navigation example">
-                                            <ul class="pagination pagination-lg">
-                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                                <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
-                                                <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>                
-                                </div><!-- end front panel -->
-                            </div> <!-- end card-container -->
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                            </div>                
                         </div>
                     </div>
+                </div>
             </div>
         </div>
         
