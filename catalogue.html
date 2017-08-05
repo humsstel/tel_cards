@@ -30,38 +30,66 @@
                 <div class="card-container manual-flip">
                     <div class="col-md-12">
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> I want an app to...</button>
+                            <button class="btn btn-secondary dropdown-toggle btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-search" aria-hidden="true"></i> I want an app to...</button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Make lectures more interactive</a>
-                                <a class="dropdown-item" href="#">Help students collaborate</a>
-                                <a class="dropdown-item" href="#">Foster discussion online</a>
+                                <a class="dropdown-item" href="#">...make lectures more interactive</a>
+                                <a class="dropdown-item" href="#">...help students collaborate</a>
+                                <a class="dropdown-item" href="#">...foster discussion online</a>
+                                <a class="dropdown-item" href="#">...create learning objects</a>
+                                <a class="dropdown-item" href="#">...increase formative assessment</a>
                             </div>
                         </div>
-                        <div class="card noborder">                      
+                        <div class="card cataloguepane" data-spy="scroll">                
                             <div class="front">
                                 <ul class="list-group list-group-flush">
-                                    <a href="padlet_card.html" class="list-group-item list-group-item-action ">
+                                    <a href="padlet_card.html" class="list-group-item list-group-item-action">
                                         <div class="d-flex align-items-center">
                                             <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/padlet-slider.png"> Padlet</h5>
-                                            <p class="mb-1"><small>Submitted  by Dr Joe Bloggs | School of Humanities</small><br>A Padlet is a digital canvas that's easy to share and collaborate on.</p>
+                                            <p class="mb-1"><small>Submitted  by Dr Joe Bloggs | School of Humanities</small><br>A Padlet is a digital canvas that's easy to share and collaborate with.</p>
                                         </div>
                                     </a>
                                     <a href="snagit_card.html" class="list-group-item list-group-item-action">
                                         <div class="d-flex align-items-center">
                                             <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/snagit.jpg"> Snagit</h5>
-                                            <p class="mb-1"><small>Submitted  by Dr Joe Bloggs | School of Humanities</small><br>Capture screenshots or record video to visually explain anything on your screen.</p>
+                                            <p class="mb-1"><small>Submitted  by Ella Tennant | Language Centre</small><br>Capture screenshots or record video to visually explain anything on your screen.</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action disabled">
+                                        <div class="d-flex align-items-center">
+                                            <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/mentimeter_logo.jpg"> Mentimeter</h5>
+                                            <p class="mb-1"><small>Submitted by Dr Chris Little | Student Services</small><br>A real-time polling tool that engages audiences using their smartphone or other internet connected device.</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action disabled">
+                                        <div class="d-flex align-items-center">
+                                            <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/pocket.png"> Pocket</h5>
+                                            <p class="mb-1"><small>Submitted  by Dr Emma Head | School of Social Science and Public Policy</small><br>A social bookmarking tool that saves web content across all of your devices.</p>
                                         </div>
                                     </a>
                                 </ul>
                             </div>
-                            <div class="card-footer">
-                            </div>                
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+        <script>
+            function myFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+            } else {
+            li[i].style.display = "none";
+            }
+            }
+}
+</script>
         <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
         <script src="js/tether.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>

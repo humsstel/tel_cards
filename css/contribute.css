@@ -18,14 +18,15 @@ body {
 }
 
 .bs-callout {
-  margin: 10px 0px 10px 0px;
-  padding: 15px 30px 15px 15px;
-  border-left: 5px solid #eee;
-}
+    margin: 10px 0px 10px 0px;
+    padding: 15px 30px 15px 15px;
+    border-left: 5px solid #eee;
+}   
 
 .bs-callout-warning {
-  background-color: #fefbed;
-  border-color: #f1e7bc;
+    background-color: #343A40;
+    border-color: #78D1F0;
+    color: #fff;
 }
 
 .bs-callout .icon {
@@ -54,6 +55,10 @@ p {
 a {
     font-family: 'Catamaran', sans-serif;
     font-weight: 700;
+}
+
+.instruction {
+    color: #999
 }
 
 /* FORM */

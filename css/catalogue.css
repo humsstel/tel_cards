@@ -18,25 +18,34 @@ body {
 }
 
 .mainCard {
-    height: 700px;
+    height: 100%;
 }
 
 .btn-block {
     background-color: #343A40;
     color: #fff;
     margin: 20px 0px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
 }
 
 .btn-block:hover {
-    background-color: aqua;
+    background-color: #343A40;
+    color: #fff;
 }
 
 .btn-block:focus {
-    background-color: antiquewhite;
+    background-color: #343A40;
 }
 
-.btn-block:visited {
-    background-color: aquamarine;
+.dropdown-menu {
+    width: 100%;
+}
+
+.cataloguepane {
+    height: 450px;
+    overflow-y: scroll;
+    border-top-style: none;
 }
 
 /* TEXT STYLES */
