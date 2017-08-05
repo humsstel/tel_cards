@@ -1,29 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="/scripts/snippet-javascript-console.min.js?v=1"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+        <link href='css/snagit_card.css' rel='stylesheet' />
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/fontawesome-stars.css">
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:300,500,700,800" rel="stylesheet">
     </head>
+    
     <body>
-        <iframe class="frame" src="" style="width:100%; height: 1020px" frameBorder="0"></iframe>
-        <script type="text/javascript">
+        <div class="col-md-12">
+            <div class="card mainCard">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs float-xs-left">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="appgenerator.html">Featured app</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalogue.html" base target="_parent">Catalogue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contribute.html" base target="_parent">Contribute</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <iframe src='' id="myFrame" width="100%" height="1000px" marginwidth="0" marginheight="0" frameborder="0" align="middle" scrolling="auto"></iframe>
+            </div> <!-- End of parent card -->
+        </div> <!-- End of parent columm -->
+        
+        <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+        <script src="js/tether.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script>
             var cards = [
                 "https://danieladamharding.github.io/tel_cards/padlet_card.html",
                 "https://danieladamharding.github.io/tel_cards/snagit_card.html",
             ];
 
-            var myFrame = document.getElementsByClassName("frame")[0];
+            var randomise = Math.floor(Math.random()*cards.length);
 
-            function getRandomUrl(myFrame) {
-                var index = Math.floor(Math.random() * cards.length);
-                var url = cards[index];
-                myFrame.src = url;
-            }
-
-            function codeAddress() {
-            getRandomUrl(myFrame);
-            }
-
-            codeAddress();
+            function loadPages() {
+            document.getElementById("myFrame").setAttribute('src', cards[randomise]);
+            };
+            
+            loadPages();
         </script>
     </body>
 </html>
+    
