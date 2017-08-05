@@ -25,7 +25,7 @@ body {
 
 .bs-callout-warning {
     background-color: #343A40;
-    border-color: #78D1F0;
+    border-color: #AA7FB8;
     color: #fff;
 }
 
@@ -63,9 +63,6 @@ a {
 
 /* FORM */
 
-.form-entry {
-    padding: 10px;
-}
 
 .form-group label {
     font-family: 'Catamaran', sans-serif;

@@ -17,56 +17,32 @@ body {
 	background-color: #ffffff;
 }
 
-.mainCard {
-    height: 100%;
-}
-
 .bs-callout {
     margin: 10px 0px 10px 0px;
-    padding: 15px 30px 5px 15px;
+    padding: 15px 30px 15px 15px;
     border-left: 5px solid #eee;
 }   
 
 .bs-callout-warning {
     background-color: #343A40;
-    border-color: #FDC20E;
+    border-color: #78D1F0;
     color: #fff;
 }
 
 .bs-callout .icon {
     float: left;
     margin-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 210px;
     font-size: 1.5em
+}
+
+.mainCard {
+    height: 700px;
 }
 
 .btn-block {
     background-color: #343A40;
     color: #fff;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 500;
-}
-
-.btn-block:hover {
-    background-color: #343A40;
-    color: #fff;
-}
-
-.btn-block:focus {
-    background-color: #343A40;
-    color: #fff;
-}
-
-.dropdown-menu {
-    width: 100%;
-}
-
-.cataloguepane {
-    height: 450px;
-    overflow-y: scroll;
-    border-top-style: none;
 }
 
 /* TEXT STYLES */
@@ -80,3 +56,20 @@ a {
     font-family: 'Catamaran', sans-serif;
     font-weight: 700;
 }
+
+.instruction {
+    color: #999
+}
+
+/* FORM */
+
+.form-entry {
+    padding: 10px;
+}
+
+.form-group label {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+}
+
+
