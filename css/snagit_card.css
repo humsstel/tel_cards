@@ -227,8 +227,16 @@ a {
     text-align: center;
     background-color: #2C72B7;
     color: #fff;
-
     margin-top: -1px;
+}
+
+.flipback {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }
 
 /* CONTRIBUTE */

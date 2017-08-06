@@ -15,6 +15,10 @@
                     <div class="col-md-12">
                         <div class="card noborder">
                             <div class="front">
+                                <div class="cardflipper" role="button" onclick="rotateCard(this)">
+                                    <i class="fa fa-repeat" aria-hidden="true"></i> Flip card
+                                </div> 
+                                
                                 <div class="titlebarfront">
                                     <div class="smalllogo">
                                     </div>
@@ -22,6 +26,7 @@
                                         Padlet
                                     </div>
                                 </div>
+                                
                                 <img class="img-fluid mainlogo" src="img/padlet_logo.png">
                                 <div class="card-block">
                                     <h6 class="card-subtitle mb-1 text-muted">A Padlet is a digital canvas that's easy to share and collaborate on.</h6>
@@ -43,12 +48,14 @@
                                         <p class="small"><b>Submitted by</b><br>J Bloggs<span class="submitterschool"> | School of Humanities</span></p>
                                     </div>
                                 </div>
-                                <div class="card-footer" role="button" onclick="rotateCard(this)">
-                                    <i class="fa fa-repeat" aria-hidden="true"></i> Flip the card
+                            <div class="card-footer">
                                 </div>
                             </div><!-- End front panel -->
 
                             <div class="back">
+                                <div class="cardflipper" role="button" onclick="rotateCard(this)">
+                                    <i class="fa fa-repeat" aria-hidden="true"></i> Flip back
+                                </div> 
                                 <div class='embed-container'>
                                     <iframe src='https://www.youtube.com/embed/4yoZlho3fxc' frameborder='0' allowfullscreen></iframe>
                                 </div>
@@ -86,9 +93,8 @@
                                     </select>
                                     <button type="button" class="btn btn-secondary">Submit rating</button>
                                 </div>
-                                <div class="card-footer" role="button" onclick="rotateCard(this)">
-                                    <i class="fa fa-repeat" aria-hidden="true"></i> Flip back
-                                </div> 
+                                <div class="card-footer">
+                                </div>
                             </div> <!-- End back panel -->
                         </div> <!-- End of card -->
                     </div> <!-- End of column -->
