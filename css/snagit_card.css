@@ -19,9 +19,8 @@ body {
 
 .titlebarfront {
     height: 80px;
+    padding-top: 15px;
     background-color: #343A40;
-    padding-top: 20px;
-    padding-bottom: 15px;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
@@ -49,10 +48,25 @@ body {
     font-family: 'Catamaran', sans-serif;
     font-weight: 400;
     font-size: 1.5em;
+    width: 60%;
+}
+
+.cardflipper {
+    height: 50px;
+    text-align: center;
+    background-color: #2C72B7;
+    color: #fff;
+    padding-top: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cardflipper:hover .fa-repeat {
+    animation: fa-spin 2s infinite linear;
 }
 
 .mainlogo {
-    margin-top: -25px; 
+    margin-top: -15px; 
 }
 
 .mainCard {
@@ -224,42 +238,8 @@ a {
 /* FOOTER */
 
 .card-footer {
-    text-align: center;
     background-color: #2C72B7;
     color: #fff;
-    margin-top: -1px;
-}
-
-.flipback {
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-}
-
-/* CONTRIBUTE */
-
-.form-entry {
-    padding: 10px;
-}
-
-.form-group label {
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 500;
-}
-
-/* CATALOGUE */
-
-.w-100 {
-   padding-top: 5px; 
-}
-
-.page-link {
-    color: #fff;
-    background-color: transparent !important;
-    border: none;
 }
 
 /* FLIP */
@@ -318,6 +298,10 @@ a {
     -webkit-box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.5);
     -moz-box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.5);
     box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.5);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 /* Front pane, placed above back */

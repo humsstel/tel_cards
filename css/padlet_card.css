@@ -59,23 +59,18 @@ body {
     padding-top: 15px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    
 }
 
 .cardflipper:hover .fa-repeat {
     animation: fa-spin 2s infinite linear;
 }
 
-.mainCard {
-    height: 1000px;
+.mainlogo {
+    margin-top: -15px; 
 }
 
-.card-title {
-    color: #fff;
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 400;
-    padding: 20px 0 20px 0;
-    text-align: center
+.mainCard {
+    height: 1000px;
 }
 
 .details {
@@ -256,18 +251,6 @@ a {
 .form-group label {
     font-family: 'Catamaran', sans-serif;
     font-weight: 500;
-}
-
-/* CATALOGUE */
-
-.w-100 {
-   padding-top: 5px; 
-}
-
-.page-link {
-    color: #fff;
-    background-color: transparent !important;
-    border: none;
 }
 
 /* FLIP */
