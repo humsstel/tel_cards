@@ -18,7 +18,7 @@ body {
 }
 
 .mainCard {
-    height: 700px;;
+    height: 98vh;
 }
 
 .bs-callout {
@@ -67,7 +67,7 @@ body {
 }
 
 .cataloguepane {
-    height: 450px;
+    height: 70vh;
     overflow-y: scroll;
     border-top-style: none;
 }

@@ -69,10 +69,6 @@ body {
     margin-top: -15px; 
 }
 
-.mainCard {
-    height: 850px;
-}
-
 .details {
     height: 190px;
     background-color: #343A40;
@@ -294,7 +290,7 @@ a {
 	position: relative;
 }
 
-.card .noborder {
+.noborder {
     border: none;
 }
 

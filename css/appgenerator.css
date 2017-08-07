@@ -1,0 +1,26 @@
+/* NAVIGATION */
+
+.card-header {
+    background-color: #F5F5F6;
+}
+
+.card-header a {
+    font-size: 0.9em;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+}
+
+/* MAIN BODY */
+
+body {
+	margin-top: 10px;
+	font-size: 14px;
+	font-family: "Helvetica Nueue", Arial, Verdana, sans-serif;
+	background-color: #ffffff;
+}
+
+.card {
+    height: 98vh;   
+}
+
+
