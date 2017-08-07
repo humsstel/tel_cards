@@ -20,7 +20,12 @@ body {
 }
 
 .card {
-    height: 98vh;   
+    height: 95vh;   
+}
+
+iframe {
+    height: 90vh;
+    width: 100%;
 }
 
 
