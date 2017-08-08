@@ -2,17 +2,16 @@
 
 .card-header {
     background-color: #fff;
-        border-bottom-style: dashed;
+    border-bottom-style: dashed;
 }
 
 .card-header a {
-    font-size: 0.9em;
+    font-size: 0.85em;
 }
 
 /* MAIN BODY */
 
 body {
-	margin-top: 10px;
 	font-size: 14px;
 	font-family: "Helvetica Nueue", Arial, Verdana, sans-serif;
 	background-color: #ffffff;
