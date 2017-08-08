@@ -32,7 +32,7 @@ body {
 .bs-callout .icon {
     float: left;
     font-size: 1.5em;
-        margin-top: -2px;s
+    margin-top: -4px;
 }
 
 .bs-callout p {
@@ -49,7 +49,7 @@ body {
 }
 
 .mainCard {
-    height: 750px;
+    height: 800px;
 }
 
 .btn-block {
@@ -58,6 +58,13 @@ body {
 }
 
 /* TEXT STYLES */
+
+h4 {
+    margin-left: 25px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
 p {
     font-family: 'Catamaran', sans-serif;
