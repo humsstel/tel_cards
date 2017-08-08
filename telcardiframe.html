@@ -3,10 +3,13 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='css/telcardiframe.css' rel='stylesheet' />
+        <script>
+            function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+            }
+        </script>
     </head>
-    
     <body>
-
-        <iframe marginwidth="0" marginheight="0" frameborder="0" align="middle" src="https://danieladamharding.github.io/tel_cards/appgenerator.html"></iframe>
+        <iframe src="https://danieladamharding.github.io/tel_cards/appgenerator.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>  
     </body>
 </html>

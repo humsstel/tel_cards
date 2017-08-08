@@ -65,8 +65,15 @@ body {
     animation: fa-spin 2s infinite linear;
 }
 
+.mainlogocontainer {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .mainlogo {
-    margin-top: -15px; 
+    margin-top: -15px;
+    max-width: 100%;
 }
 
 .details {
@@ -86,20 +93,11 @@ hr {
 
 /* EMBEDDED VIDEO */
 
-.embed-container { 
-    position: relative;
-    padding-bottom: 56.25%; 
-    height: 0; 
-    overflow: hidden; 
-    max-width: 100%; 
-} 
-   
-.embed-container iframe, .embed-container object, .embed-container embed {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
+.videocontainer {
+    max-width: 560px !important; 
+    max-height: 315px !important;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* TEXT STYLES */

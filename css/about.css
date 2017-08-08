@@ -1,7 +1,8 @@
 /* NAVIGATION */
 
 .card-header {
-    background-color: #F5F5F6;
+    background-color: #fff;
+    border-bottom-style: dashed;
 }
 
 .card-header a {
@@ -18,8 +19,8 @@ body {
 }
 
 .bs-callout {
-    margin: 10px 0px 10px 0px;
-    padding: 15px 30px 5px 20px;
+    margin: 15px 0px 10px 0px;
+    padding: 20px 30px 5px 20px;
     border-left: 5px solid #eee;
 }   
 

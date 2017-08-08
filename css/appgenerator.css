@@ -1,7 +1,8 @@
 /* NAVIGATION */
 
 .card-header {
-    background-color: #F5F5F6;
+    background-color: #fff;
+    border-bottom-style: dashed;
 }
 
 .card-header a {
@@ -13,18 +14,13 @@
 /* MAIN BODY */
 
 body {
-	margin-top: 10px;
 	font-size: 14px;
 	font-family: "Helvetica Nueue", Arial, Verdana, sans-serif;
 	background-color: #ffffff;
 }
 
-.card {
-    height: 95vh;   
-}
-
 iframe {
-    height: 90vh;
+    height: 110vh;
     width: 100%;
 }
 
