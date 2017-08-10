@@ -9,10 +9,8 @@ body {
 
 .titlebarfront {
     height: 80px;
-    padding-top: 15px;
+    padding-top: 20px;
     background-color: #343A40;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
 .smalllogo {
@@ -59,20 +57,17 @@ body {
     max-width: 650px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -15px
 }
 
 .mainlogo {
-    margin-top: -15px;
     max-width: 100%;
+    margin-top: 2px;
 }
 
 .details {
     height: 190px;
     background-color: #343A40;
     color: #fff;
-    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
 }
 
 hr {
@@ -213,8 +208,6 @@ a {
     background-color: #343A40;
     color: #fff;
     margin-top: -10px;
-    -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .ratings .btn {
