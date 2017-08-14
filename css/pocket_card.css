@@ -9,7 +9,7 @@ body {
 
 .titlebarfront {
     height: 250px;
-    padding-top: 145px;
+    padding-top: 125px;
     background-color: #343A40;
 
 
@@ -259,14 +259,16 @@ a {
 /* SUBMITTER */
 
 .submitterinfo {
-    width: 80%;
+    width: 90%;
     height: 30px;
-    margin: 20px 20px 0 20px;
+    margin-top: 20px;
+    margin-left: 10px;
     color: #fff;
 }
 
 .submitterimg {
-    margin: 20px 40px 0 5%;
+    margin-top: 20px; 
+    margin-left: 5%;
     margin-right: 15px;
     font-size: 1.75em;
     float: left;
