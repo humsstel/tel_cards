@@ -8,10 +8,23 @@ body {
 }
 
 .titlebarfront {
-    height: 80px;
-    padding-top: 20px;
+    height: 250px;
+    padding-top: 145px;
     background-color: #343A40;
-}
+
+
+background: 
+    /* Top, transparent gradient */ 
+    linear-gradient(
+        rgba(52, 58, 64, 0.9) 0%, 
+        rgba(52, 58, 64, 0.9) 95%
+    ),
+    /* Bottom, image */
+    url(../img/padlet_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
 
 .smalllogo {
     float: left;
@@ -102,6 +115,10 @@ h4 {
     font-family: 'Catamaran', sans-serif;
     font-weight: 500;
     margin-top: 5px;
+    color: #fff !important;
+    margin-left: 70px;
+    padding-right: 40px;
+    line-height: 1.2em;
 }
 
 p {
@@ -116,8 +133,15 @@ a {
 
 .tool-link {
     font-family: 'Catamaran', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.card-text {
+    line-height: 1.7em;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* PILLS */
@@ -164,9 +188,10 @@ a {
     float: right;
     width: 80%;
     font-weight: 500;
-    height: 100px;
+    height: 110px;
+    line-height: 1.7em;
     text-align: left;
-    color: lightslategrey;
+    color: #343A40;
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 20px;
@@ -175,10 +200,15 @@ a {
 .thermometer {
     float: left;
     text-align: center;
+    color: #343A40;
     padding-top: 5px;
-    height: 100px;
+    height: 110px;
     width: 20%;
     margin-bottom: 20px
+}
+
+.usestext .tag {
+    margin-top: 10px;
 }
 
 /* SUBMITTER */

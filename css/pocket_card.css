@@ -9,7 +9,7 @@ body {
 
 .titlebarfront {
     height: 250px;
-    padding-top: 125px;
+    padding-top: 145px;
     background-color: #343A40;
 
 
@@ -20,8 +20,8 @@ background:
         rgba(52, 58, 64, 0.9) 95%
     ),
     /* Bottom, image */
-    url(../img/snagit_logo.jpg);
-    background-size: cover;
+    url(../img/pocket_logo.png);
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     }
@@ -34,9 +34,9 @@ background:
     background: transparent;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
-    background-image: url(../img/snagit.jpg);
+    background-image: url(../img/pocket.png);
     background-size: 40px;
-    background-position: 50% 20%;
+    background-position: 50% 30%;
     background-repeat: no-repeat;
     border: solid 3px #fff;
 }
@@ -55,7 +55,7 @@ background:
 .cardflipper {
     height: 50px;
     text-align: center;
-    background-color: #2C72B7;
+    background-color: #EF3E56;
     color: #fff;
     padding-top: 15px;
     border-top-left-radius: 10px;
@@ -290,7 +290,7 @@ a {
 /* FOOTER */
 
 .card-footer {
-    background-color: #2C72B7;
+    background-color: #EF3E56;
     color: #fff;
 }
 
