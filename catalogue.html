@@ -40,11 +40,13 @@
                         <div class="dropdown">
                             <select id="filterText" class="btn btn-secondary dropdown-toggle btn-block" onchange='filterText()'>
                                 <option selected value="all"><i class="fa fa-search" aria-hidden="true"></i> Find an app to...</option>
-                                <option value="interactive">...make lectures more interactive</a>
-                                <option value="collaborate">...help students collaborate</a>
-                                <option value="discussion">...foster discussion online</a>
-                                <option value="objects">...produce learning objects</a>
-                                <option value="asssessment">...create assessment opportunities</a>
+                                <option value="Create">...create learning resources</option>
+                                <option value="Connect">...communicate with students electronically</option>
+                                <option value="Collaborate">...act as a platform for collaboration</option>
+                                <option value="Curate">...collect, organise and share content</option>
+                                <option value="Capture">...record an event</option>
+                                <option value="Captivate">...create interactive learning opportunities</option>
+                                <option value="Check">...gauge students understanding</option>
                             </select>
                         </div>
                         <div class="card cataloguepane" data-spy="scroll">                
@@ -54,10 +56,8 @@
                                     <a href="padlet_card.html" class="list-group-item list-group-item-action">
                                         <div class="applist">
                                             <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/padlet-slider.png"> Padlet</h5>
-                                            <div class="blooms-pills-main">
-                                                <h6><span class="tag evaluate">Create</span> <span class="tag apply">Connect</span> <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Tooltip on top" aria-hidden="true"></i></h6>
-                                            </div>
-                                            <p class="submitter"><small>Submitted  by Dr Joe Bloggs | School of Humanities</small></p>
+                                            <p class="categories"><span class="tag create">Create</span> <span class="tag collaborate">Collaborate</span> <span class="tag curate">Curate</span> <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Tooltip on top" aria-hidden="true"></i></p>
+                                            <p class="submitter"><small>Submitted by Tim Hinchcliffe | Student Services</small></p>
                                             <p class="appinfo">A Padlet is a digital canvas that's easy to share and collaborate with.</p>
                                         </div>
                                     </a>
@@ -65,20 +65,16 @@
                                     <a href="snagit_card.html" class="list-group-item list-group-item-action">
                                         <div class="applist">
                                             <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/snagit.jpg"> Snagit</h5>
-                                            <div class="blooms-pills-main">
-                                                <h6><span class="tag evaluate">Create</span> <span class="tag apply">Connect</span> <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Tooltip on top" aria-hidden="true"></i></h6>
-                                            </div>
-                                            <p class="submitter"><small>Submitted  by Ella Tennant | Language Centre</small></p>
+                                            <p class="categories"><span class="tag create">Create</span> <span class="tag capture">Capture</span> <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Tooltip on top" aria-hidden="true"></i></p>
+                                            <p class="submitter"><small>Submitted by Ella Tennant | Language Centre</small></p>
                                             <p class="appinfo">Capture screenshots or record video to visually explain anything on your screen.</p>
                                         </div>
                                     </a>
                                     
-                                    <a href="mentimeter_card.html" class="list-group-item list-group-item-action disabled">
+                                    <a href="mentimeter_card.html" class="list-group-item list-group-item-action">
                                         <div class="applist">
                                             <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/mentimeter.png"> Mentimeter</h5>
-                                            <div class="blooms-pills-main">
-                                                <h6><span class="tag evaluate">Create</span> <span class="tag apply">Connect</span> <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Tooltip on top" aria-hidden="true"></i></h6>
-                                            </div>
+                                            <p class="categories"><span class="tag create">Create</span> <span class="tag captivate">Captivate</span> <span class="tag check">Check</span> <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Tooltip on top" aria-hidden="true"></i></p>
                                             <p class="submitter"><small>Submitted by Dr Chris Little | Student Services</small></p>
                                             <p class="appinfo">A real-time polling tool that engages audiences using their smartphone or other internet connected device.</p>
                                         </div>
@@ -87,10 +83,8 @@
                                     <a href="pocket_card.html" class="list-group-item list-group-item-action">
                                         <div class="applist">
                                             <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/pocket.png"> Pocket</h5>
-                                            <div class="blooms-pills-main">
-                                                <h6><span class="tag evaluate">Create</span> <span class="tag apply">Connect</span> <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Tooltip on top" aria-hidden="true"></i></h6>
-                                            </div>
-                                            <p class="submitter"><small>Submitted  by Dr Emma Head | School of Social Science and Public Policy</small></p>
+                                            <p class="categories"><span class="tag create">Create</span> <span class="tag curate">Curate</span> <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Tooltip on top" aria-hidden="true"></i></p>
+                                            <p class="submitter"><small>Submitted by Dr Emma Head | School of Social Science and Public Policy</small></p>
                                             <p class="appinfo">A social bookmarking tool that saves web content across all of your devices.</p>
                                         </div>
                                     </a>
@@ -101,23 +95,6 @@
                 </div>
             </div>
         </div>
-        <script>
-            function myFunction() {
-            var input, filter, ul, li, a, i;
-            input = document.getElementById("myInput");
-            filter = input.value.toUpperCase();
-            ul = document.getElementById("myUL");
-            li = ul.getElementsByTagName("li");
-            for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByTagName("a")[0];
-            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-            } else {
-            li[i].style.display = "none";
-            }
-            }
-}
-        </script>
         
         <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
         <script src="js/tether.min.js" type="text/javascript"></script>
@@ -135,7 +112,6 @@
 	       }
 	
         function clearFilter() {
-		$('.filterText').val('');
 		$('.list-group-item').show();
         }
         </script>

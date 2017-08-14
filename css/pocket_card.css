@@ -9,7 +9,7 @@ body {
 
 .titlebarfront {
     height: 250px;
-    padding-top: 145px;
+    padding-top: 125px;
     background-color: #343A40;
 
 
@@ -152,28 +152,36 @@ a {
     padding: 0 5%;
 }
 
-.remember {
-    background-color: #AA7FB8;
-}
-
-.understand {
-    background-color: #6C94C4;
-}
-
-.apply {
-    background-color: #78D1F0;
-}
-
-.analyse {
-    background-color: #89B83F;
-}
-
-.evaluate {
-    background-color: #FDC20E;
-}
-
 .create {
-    background-color: #F68C1E;
+    background-color: #ba68c8;
+}
+
+.connect {
+    background-color: #4dd0e1;
+}
+
+.collaborate {
+    background-color: #f06292;
+}
+
+.curate {
+    background-color: #ffb74d;
+}
+
+.capture {
+    background-color: #4fc3f7;
+}
+
+.captivate {
+    background-color: #4db6ac;
+}
+
+.check {
+    background-color: #90a4ae;
+}
+
+.sub {
+    background-color: #90a4ae;
 }
 
 /* ATTRIBUTES */
