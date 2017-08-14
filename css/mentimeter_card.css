@@ -186,6 +186,8 @@ a {
 
 /* ATTRIBUTES */
 
+/* ATTRIBUTES */
+
 .usestext1 {
     float: right;
     width: 75%;
@@ -219,7 +221,7 @@ a {
     color: #343A40;
     padding-left: 10px;
     padding-right: 10px;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .thermometer2 {
@@ -229,7 +231,7 @@ a {
     padding-top: 5px;
     height: 110px;
     width: 20%;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .usestext3 {
@@ -242,6 +244,7 @@ a {
     color: #343A40;
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 5px;
     
 }
 
@@ -252,11 +255,7 @@ a {
     padding-top: 5px;
     height: 110px;
     width: 20%;
-    margin-bottom: 20px;
-}
-
-.usestext .tag {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 /* SUBMITTER */

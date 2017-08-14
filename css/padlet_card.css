@@ -34,9 +34,9 @@ background:
     background: transparent;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
-    background-image: url(../img/padlet-slider.png);
-    background-size: 25px;
-    background-position: 50% 50%;
+    background-image: url(../img/padlet.jpg);
+    background-size: 35px;
+    background-position: 5% 50%;
     background-repeat: no-repeat;
     border: solid 3px #FF4A76;
 }
@@ -192,9 +192,9 @@ a {
 
 /* ATTRIBUTES */
 
-.usestext {
+.usestext1 {
     float: right;
-    width: 80%;
+    width: 75%;
     font-weight: 500;
     height: 110px;
     line-height: 1.7em;
@@ -202,34 +202,79 @@ a {
     color: #343A40;
     padding-left: 10px;
     padding-right: 10px;
-    margin-bottom: 20px;
+    margin-top: 5px;
 }
 
-.thermometer {
+.thermometer1 {
+    float: left;
+    width: 20%;
+    text-align: center;
+    color: #343A40;
+    padding-top: 5px;
+    height: 110px;
+    margin-top: 5px;
+}
+
+.usestext2 {
+    float: right;
+    width: 75%;
+    font-weight: 500;
+    height: 110px;
+    line-height: 1.7em;
+    text-align: left;
+    color: #343A40;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+
+.thermometer2 {
     float: left;
     text-align: center;
     color: #343A40;
     padding-top: 5px;
     height: 110px;
     width: 20%;
-    margin-bottom: 20px
+    margin-top: 5px;
 }
 
-.usestext .tag {
-    margin-top: 10px;
+.usestext3 {
+    float: right;
+    width: 75%;
+    font-weight: 500;
+    height: 110px;
+    line-height: 1.7em;
+    text-align: left;
+    color: #343A40;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    
+}
+
+.thermometer3 {
+    float: left;
+    text-align: center;
+    color: #343A40;
+    padding-top: 5px;
+    height: 110px;
+    width: 20%;
+    margin-top: 5px;
 }
 
 /* SUBMITTER */
 
 .submitterinfo {
-    width: 80%;
+    width: 90%;
     height: 30px;
-    margin: 20px 0 0 10px;
+    margin-top: 20px;
+    margin-left: 10px;
     color: #fff;
 }
 
 .submitterimg {
-    margin: 20px 0 0 5%;
+    margin-top: 20px; 
+    margin-left: 5%;
     margin-right: 15px;
     font-size: 1.75em;
     float: left;
