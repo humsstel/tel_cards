@@ -291,16 +291,17 @@ a {
 /* RATING */
 
 .ratings {
+    display: block;
     text-align: center;
     background-color: #343A40;
     color: #fff;
+    margin-top: -10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .ratings .btn {
     background-color: transparent;
-    color: #fff;
-    border-color: #fff;
-    margin-top: 10px;
     margin-bottom: 5px;
 }
 
