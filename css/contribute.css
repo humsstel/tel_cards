@@ -43,6 +43,10 @@ body {
     margin-left: 25px;
 }
 
+.bs-thanks {
+    display: none;
+}
+
 .btn-block {
     background-color: #343A40;
     color: #fff;
@@ -82,4 +86,8 @@ form {
     font-weight: 500;
 }
 
+/* HONEYPOT */
 
+#honeypot {
+  display: none; 
+}
