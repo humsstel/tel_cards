@@ -64,6 +64,11 @@ background:
 
 .cardflipper:hover .fa-repeat {
     animation: fa-spin 2s infinite linear;
+    cursor: pointer;
+}
+
+.cardflipper:hover {
+    cursor: pointer;
 }
 
 .mainlogocontainer {

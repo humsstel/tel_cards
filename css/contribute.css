@@ -27,10 +27,9 @@ body {
     border-left: 5px solid #eee;
 }   
 
-.bs-callout-warning {
-    background-color: #343A40;
-    border-color: #AA7FB8;
-    color: #fff;
+.bs-callout-info {
+    background-color: #fafafa;
+    border-color: #ba68c8;
 }
 
 .bs-callout .icon {
@@ -45,11 +44,16 @@ body {
 
 .bs-thanks {
     display: none;
+    border-color: #4db6ac;
 }
 
 .btn-block {
     background-color: #343A40;
     color: #fff;
+}
+
+.btn-block:hover {
+    cursor: pointer;
 }
 
 /* TEXT STYLES */

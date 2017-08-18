@@ -66,6 +66,10 @@ background:
     animation: fa-spin 2s infinite linear;
 }
 
+.cardflipper:hover {
+    cursor: pointer;
+}
+
 .mainlogocontainer {
     max-width: 650px;
     margin-left: auto;

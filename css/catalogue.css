@@ -27,10 +27,9 @@ body {
     border-left: 5px solid #eee;
 }   
 
-.bs-callout-warning {
-    background-color: #343A40;
-    border-color: #FDC20E;
-    color: #fff;
+.bs-callout-info {
+    background-color: #fafafa;
+    border-color: #ffb74d;
 }
 
 .bs-callout .icon {

@@ -24,9 +24,8 @@ body {
 }   
 
 .bs-callout-warning {
-    background-color: #343A40;
-    border-color: #78D1F0;
-    color: #fff;
+    background-color: #fafafa;
+    border-color: #4dd0e1;
 }
 
 .bs-callout .icon {
@@ -45,7 +44,7 @@ body {
 }
 
 .bs-callout a {
-    color: #78D1F0;
+    color: #4dd0e1;
 }
 
 .mainCard {
