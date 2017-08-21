@@ -81,7 +81,7 @@
                         </div>
                         <div class="card-body ratings">
                             <p>Not what you're looking for?</p>
-                            <a href="#" role="button" class="btn btn-outline-light" onclick="myFunction();" id="appLink">See more apps</a>
+                            <a href="#" role="button" class="btn btn-outline-light" onclick="myFunction();" id="appLink" target="#">See more apps</a>
                         </div>
                     </div> <!-- End back panel -->
                 </div> <!-- End of card -->
@@ -120,6 +120,7 @@
                 var yesIframe = "catalogue.html";
                 if (parent.document.getElementById("myFrame")) {
                     document.getElementById("appLink").setAttribute('href', yesIframe);
+                    document.getElelementId("appLink").setAttribute('target', '_parent');
                 } else {
                     goBack();
                 }
