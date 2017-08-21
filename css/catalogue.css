@@ -67,11 +67,14 @@ body {
 .cataloguepane {
     height: 500px;
     overflow-y: scroll;
-    border-top-style: none;
 }
 
 .applist {
     margin-top: 15px;
+}
+
+.list-group-item {
+    border-top-style: none;
 }
 
 /* TEXT STYLES */
