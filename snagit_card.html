@@ -79,7 +79,6 @@
                                 <p>Use Snagit to record audiovisual feedback based on anonymised draft submissions to help resolve common assignment issues.</p>
                             </div>
                         </div>
-                        <div id='nav-item'></div>
                         <div class="card-body ratings">
                             <p>Not what you're looking for?</p>
                             <a href="#" role="button" class="btn btn-outline-light" onclick="myFunction()" id="appLink" target="">See more apps</a>
@@ -112,18 +111,19 @@
             }
         </script>
         <script>
+            function goReload() {
+                location.reload();
+            }
             
             function goBack() {
                 window.history.back();
             }
             
+            var doesItExist = parent.document.getElementsByClassName('nav-item');
+            
             function myFunction() {
-                var yesIframe = "catalogue.html";
-                var noIframe = "https://www.bbc.co.uk";
-                var addTarget = "_top"
-                if (window.parent.document.getElementById('nav-item')) {
-                    document.getElementById("appLink").setAttribute('target', addTarget)
-                    document.getElementById("appLink").setAttribute('href', yesIframe);
+                if (doesItExist > 0) {
+                    goReload();
                 } else {
                     goBack();
                 }
