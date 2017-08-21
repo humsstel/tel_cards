@@ -5,7 +5,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         <link href='css/snagit_card.css' rel='stylesheet' />
         <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/fontawesome-stars.css">
         <link href="https://fonts.googleapis.com/css?family=Catamaran:300,500,700,800" rel="stylesheet">
     </head>
     
@@ -82,7 +81,7 @@
                         </div>
                         <div class="card-body ratings">
                             <p>Not what you're looking for?</p>
-                            <a href="#" role="button" class="btn btn-outline-light" onclick="goBack();">See more apps</a>
+                            <a href="#" role="button" class="btn btn-outline-light" onclick="myFunction();" id="appLink">See more apps</a>
                         </div>
                     </div> <!-- End back panel -->
                 </div> <!-- End of card -->
@@ -96,14 +95,6 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-        <script src="js/jquery.barrating.js"></script>
-        <script type="text/javascript">
-           $(function() {
-              $('#example').barrating({
-                theme: 'fontawesome-stars'
-              });
-           });
-        </script>
         <script type="text/javascript">
             $(function () {
             $('[data-toggle="tooltip"]').tooltip()
@@ -120,9 +111,21 @@
             }
         </script>
         <script>
+            
             function goBack() {
-            window.history.back();
+                window.history.back();
             }
+            
+            function myFunction() {
+                var yesIframe = "catalogue.html";
+                var noIframe = "https://www.bbc.co.uk";
+                if (document.getElementById("myFrame")) {
+                    document.getElementById("appLink").setAttribute('href', yesIframe);
+                } else {
+                    goBack();
+                }
+            }
+
         </script>
     </body>
 </html>
