@@ -82,7 +82,7 @@
                         </div>
                         <div class="card-body ratings">
                             <p>Not what you're looking for?</p>
-                            <a href="#" role="button" class="btn btn-outline-light" onclick="myFrameReload();">See more apps</a>
+                            <a href="#" role="button" class="btn btn-outline-light" onclick="goBack();">See more apps</a>
                         </div>
                     </div> <!-- End back panel -->
                 </div> <!-- End of card -->
@@ -120,8 +120,8 @@
             }
         </script>
         <script>
-            function myFrameReload() {
-            window.location.reload(true);
+            function goBack() {
+            window.history.back();
             }
         </script>
     </body>
