@@ -118,8 +118,7 @@
             
             function myFunction() {
                 var yesIframe = "catalogue.html";
-                var noIframe = "https://www.bbc.co.uk";
-                if (document.getElementById("myFrame")) {
+                if (parent.document.getElementById("myFrame")) {
                     document.getElementById("appLink").setAttribute('href', yesIframe);
                 } else {
                     goBack();
