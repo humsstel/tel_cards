@@ -122,10 +122,10 @@
                 var noIframe = "https://www.bbc.co.uk";
                 var addTarget = "_top"
                 if (window.parent.document.getElementById('nav-item')) {
-                    document.getElementById("appLink").setAttribute('href', yesIframe);
                     document.getElementById("appLink").setAttribute('target', addTarget);
+                    document.getElementById("appLink").setAttribute('href', yesIframe);
                 } else {
-                    document.getElementById("appLink").setAttribute('href', noIframe);
+                    goBack();
                 }
             }
 
