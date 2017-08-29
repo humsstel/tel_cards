@@ -81,7 +81,7 @@
                         </div>
                         <div class="card-body ratings">
                             <p>Not what you're looking for?</p>
-                            <a href="#" role="button" class="btn btn-outline-light" onclick="windowFunction()" id="appLink" target="#">See more apps</a>
+                            <a href="#" role="button" class="btn btn-outline-light" onclick="windowFunction()" id="appLink">See more apps</a>
                         </div>
                        
                     </div> <!-- End back panel -->
@@ -117,22 +117,12 @@
                 window.history.back();
             }
             
-            function myFunction() {
-                if (myElem === null) {
-                    console.log('Hello')
-                } else {
-                    console.log('Goodbye')
-                }
-            }
-            
             function windowFunction() {
                 if (window.parent === window.top) {
-                    var link = document.getElementById("appLink")
-                    link.setAttribute("href", "catalogue.html");
+                    goBack();
                 } else {
                     var link = document.getElementById("appLink")
-                    link.setAttribute("href", "catalogue.html")
-                    link.setAttribute("target", "_self");
+                    link.setAttribute("href", "catalogue.html");
                 }
             }
 
