@@ -1,0 +1,335 @@
+/* NAVIGATION */
+
+.card-header {
+    background-color: #fff;
+}
+
+.card-header a {
+    font-size: 0.85em;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+}
+
+.card {
+    width: 100%
+}
+
+/* MAIN BODY */
+
+body {
+	font-size: 14px;
+	font-family: "Helvetica Nueue", Arial, Verdana, sans-serif;
+	background-color: #ffffff;
+}
+
+iframe {
+    width: 100%;
+    height: 850px;
+}
+
+
+/* CONTRIBUTE */
+
+
+/* MAIN BODY */
+
+body {
+	font-size: 14px;
+	font-family: "Helvetica Nueue", Arial, Verdana, sans-serif;
+	background-color: #ffffff;
+}
+
+.bs-callout {
+    margin: 15px 0px 10px 0px;
+    padding: 20px 30px 5px 20px;
+    border-left: 5px solid #eee;
+}   
+
+.bs-callout-info {
+    background-color: #fafafa;
+    border-color: #ffb74d;
+}
+
+.bs-callout .icon {
+    float: left;
+    font-size: 1.5em;
+    margin-top: -4px;
+}
+
+.bs-callout p {
+    margin-left: 25px;
+}
+
+.btn-block {
+    background-color: #343A40;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+}
+
+.btn-block:hover {
+    background-color: #343A40;
+    color: #fff;
+}
+
+.btn-block:focus {
+    background-color: #343A40;
+    color: #fff;
+}
+
+.dropdown-menu {
+    width: 100%;
+}
+
+.cataloguepane {
+    height: 500px;
+    overflow-y: scroll;
+    margin-bottom: 15px;
+}
+
+.applist {
+    margin-top: 15px;
+}
+
+.list-group-item {
+    border-top-style: none;
+}
+
+/* TEXT STYLES */
+
+h4 {
+    margin-left: 25px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+}
+
+a {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+}
+
+.submitter {
+    margin-top: -10px;
+}
+
+.appinfo {
+    margin-top: -10px;
+}
+
+/* PILLS */
+
+.create {
+    background-color: #ba68c8;
+}
+
+.connect {
+    background-color: #4dd0e1;
+}
+
+.collaborate {
+    background-color: #f06292;
+}
+
+.curate {
+    background-color: #ffb74d;
+}
+
+.capture {
+    background-color: #4fc3f7;
+}
+
+.captivate {
+    background-color: #4db6ac;
+}
+
+.check {
+    background-color: #90a4ae;
+}
+
+
+/* CONTRIBUTE */
+
+
+/* MAIN BODY */
+
+body {
+	font-size: 14px;
+	font-family: "Helvetica Nueue", Arial, Verdana, sans-serif;
+	background-color: #ffffff;
+}
+
+.bs-callout {
+    margin: 15px 0px 10px 0px;
+    padding: 20px 30px 5px 20px;
+    border-left: 5px solid #eee;
+}   
+
+.bs-callout-info {
+    background-color: #fafafa;
+    border-color: #ba68c8;
+}
+
+.bs-callout .icon {
+    float: left;
+    font-size: 1.5em;
+    margin-top: -4px;
+}
+
+.bs-callout p {
+    margin-left: 25px;
+}
+
+.bs-thanks {
+    display: none;
+    border-color: #4db6ac;
+}
+
+.btn-block {
+    background-color: #343A40;
+    color: #fff;
+}
+
+.btn-block:hover {
+    cursor: pointer;
+}
+
+/* TEXT STYLES */
+
+h4 {
+    margin-left: 25px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+}
+
+a {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+}
+
+.instruction {
+    color: #999
+}
+
+/* FORM */
+
+form {
+    margin-top: 20px;
+}
+
+.form-group label {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+}
+
+/* HONEYPOT */
+
+#honeypot {
+  display: none; 
+}
+
+
+/* ABOUT */
+
+
+/* NAVIGATION */
+
+.card-header {
+    background-color: #fff;
+}
+
+.card-header a {
+    font-size: 0.85em;
+}
+
+/* MAIN BODY */
+
+body {
+	font-size: 14px;
+	font-family: "Helvetica Nueue", Arial, Verdana, sans-serif;
+	background-color: #ffffff;
+}
+
+.bs-callout {
+    margin: 15px 0px 10px 0px;
+    padding: 20px 30px 5px 20px;
+    border-left: 5px solid #eee;
+}   
+
+.bs-callout-warning {
+    background-color: #fafafa;
+    border-color: #4dd0e1;
+}
+
+.bs-callout .icon {
+    float: left;
+    font-size: 1.5em;
+    margin-top: -4px;
+}
+
+.bs-callout p {
+    margin-left: 25px;
+}
+
+.bs-callout img {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.bs-callout a {
+    color: #4dd0e1;
+}
+
+.btn-block {
+    background-color: #343A40;
+    color: #fff;
+}
+
+/* TEXT STYLES */
+
+h4 {
+    margin-left: 25px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+}
+
+a {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+}
+
+.instruction {
+    color: #999
+}
+
+/* FORM */
+
+.form-entry {
+    padding: 10px;
+}
+
+.form-group label {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+}
+
+
