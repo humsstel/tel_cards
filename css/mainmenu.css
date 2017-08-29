@@ -5,9 +5,13 @@
 }
 
 .card-header a {
-    font-size: 0.85em;
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 700;
+    color: black;
+    font-size: 1.1em;
+}
+
+.nav-item {
+    width: 60px;
+    text-align: center;
 }
 
 .card {
@@ -63,10 +67,11 @@ iframe {
     float: left;
     font-size: 1.5em;
     margin-top: -4px;
+    margin-right: 20px;
 }
 
 .bs-callout p {
-    margin-left: 25px;
+    margin-left: 35px;
 }
 
 .btn-block {
