@@ -121,10 +121,10 @@
                 if (window.parent === window.top) {
                     goBack();
                 } else {
-                    var link = document.getElementById("appLink")
-                    link.setAttribute("href", "mainmenu.html/#catalogue");
+                    this.top.location = "mainmenu.html";
                 }
             }
+            
 
         </script>
     </body>
