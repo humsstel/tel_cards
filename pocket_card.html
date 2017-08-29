@@ -80,8 +80,8 @@
                             </div>
                         </div>
                         <div class="card-body ratings">
-                            <p>Not what you're looking for?</p>
-                            <a href="catalogue.html" role="button" class="btn btn-outline-light">See more apps</a>
+                            <p>Not quite what you're looking for?</p>
+                            <a href="#" role="button" class="btn btn-outline-light" onclick="windowFunction()">Try another app</a>
                         </div>
                     </div> <!-- End back panel -->
                 </div> <!-- End of card -->
@@ -109,6 +109,21 @@
                 $card.addClass('hover');
                 }
             }
+        </script>
+        <script>
+                
+            function goBack() {
+                window.history.back();
+            }
+            
+            function windowFunction() {
+                if (window.parent === window.top) {
+                    goBack();
+                } else {
+                    this.parent.location = "mainmenu.html";
+                }
+            }
+
         </script>
     </body>
 </html>

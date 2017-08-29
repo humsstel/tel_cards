@@ -34,7 +34,7 @@
                     <div class="tab-pane fade" id="catalogue" role="tabpanel" aria-labelledby="catalogue-tab">
                         <div class="card-container manual-flip">
                             <div class="col-md-12">
-                                <div class="bs-callout bs-callout-info">
+                                <div class="bs-callout bs-callout-catalogue">
                                     <div class="icon">
                                         <i class="fa fa-info" aria-hidden="true"></i> 
                                     </div>
@@ -42,7 +42,7 @@
                                     <p>Browse the list below or use the dropdown filter to find an application that supports a specific activity.</p>
                                 </div>
                                 <div class="dropdown">
-                                    <select id="filterText" class="btn btn-secondary dropdown-toggle btn-block" onchange='filterText()'>
+                                    <select id="filterText" class="btn btn-secondary dropdown-toggle btn-block" onchange='filterText();'>
                                         <option selected value="all"><i class="fa fa-search" aria-hidden="true"></i> Find an app to...</option>
                                         <option value="Create">...create learning resources</option>
                                         <option value="Connect">...communicate with students electronically</option>
@@ -101,7 +101,7 @@
                     <div class="tab-pane fade" id="contribute" role="tabpanel" aria-labelledby="contribute-tab">
                         <div class="card-container manual-flip">
                             <div class="col-md-12">
-                                <div class="bs-callout bs-callout-info">
+                                <div class="bs-callout bs-callout-contribute">
                                     <div class="icon">
                                         <i class="fa fa-info" aria-hidden="true"></i> 
                                     </div>
@@ -136,7 +136,7 @@
                                         <label class="sr-only">Keep this field blank</label>
                                         <input id="honeypot" type="text" name="honeypot" value="" />
                                     </div>
-                                    <button type="submit" class="btn btn-block">
+                                    <button type="submit" class="btn btn-block submitbutton">
                                         Submit
                                     </button>
                                 </form>                        
@@ -146,7 +146,7 @@
                     <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
                         <div class="card-container manual-flip">
                             <div class="col-md-12">
-                                <div class="bs-callout bs-callout-warning">
+                                <div class="bs-callout bs-callout-about">
                                     <div class="icon">
                                         <i class="fa fa-info" aria-hidden="true"></i> 
                                     </div>
@@ -155,7 +155,7 @@
                                     <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
                                     <p>All resources are freely available via <a href="https://github.com/danieladamharding/tel_cards" target="_blank">this GitHub repository</a>.</p>
                                     <p>Produced by <a href="https://www.twitter.com/danielharding" target="_blank">Dan Harding</a> and <a href="https://www.twitter.com/Matthew_Street" target="_blank">Matthew Street</a> at <a href="https://www.keele.ac.uk" target="_blank">Keele University</a>, UK.</p>
-                                    <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"></a><br /></a>
+                                    <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank"><img alt="Creative Commons License" class="creativecommons" style="border-width: 0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"></a><br /></a>
                                 </div>
                             </div>
                         </div>
@@ -164,6 +164,7 @@
             </div> <!-- End of parent card -->
         </div> <!-- End of parent columm -->
         
+        <script data-cfasync="false" type="text/javascript" src="js/formhandler.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
@@ -184,7 +185,7 @@
             loadPages();
         </script>
         <script>
-            function filterText(){  
+            function filterText(){
               var rex = new RegExp($('#filterText').val());
               if(rex =="/all/"){clearFilter()}else{
                 $('.list-group-item').hide();
@@ -197,6 +198,7 @@
             function clearFilter() {
             $('.list-group-item').show();
             }
+            
         </script>
     </body>
 </html>
