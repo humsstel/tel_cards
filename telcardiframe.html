@@ -2,16 +2,19 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script>
+            window.onload = function iframeResizer(iframe) {
+                var iframeCatcher = document.getElementById('topIframe');
+                console.log(iframeCatcher);
+                var size = iframeCatcher.contentWindow.document.body.scrollHeight; 
+                console.log(size);
+                var size_new = size + 10; 
+                iframeCatcher.height = size_new + "px";
+            }
+        </script>  
     </head>
     <body>
-        <iframe src="https://humsstel.github.io/tel_cards/mainmenu.html" name="iframe_top" width="100%" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" onload="setTimeout('frameSizer()', 1000);"></iframe>  
-        
-        <script>
-            function frameSizer(iframe) {
-                var size = iframe.contentWindow.document.body.scrollHeight; 
-                var size_new = size + 10; 
-                iframe.height = size_new + "px";
-            };
-        </script>  
+        <iframe id="topIframe" src="mainmenu.html" width="100%" height="" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe>
     </body>
 </html>
+
