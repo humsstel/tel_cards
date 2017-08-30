@@ -3,7 +3,6 @@
 body {
 	margin-top: 10px;
 	font-size: 14px;
-	font-family: "Helvetica Nueue", Arial, Verdana, sans-serif;
 	background-color: #ffffff;
 }
 
@@ -73,6 +72,8 @@ background:
     padding-top: 15px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.1em;
 }
 
 .cardflipper:hover .fa-repeat {
@@ -94,7 +95,7 @@ background:
     height: 190px;
     background-color: #343A40;
     color: #fff;
-        border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
@@ -166,10 +167,12 @@ a {
 
 .blooms-pills-main {
     padding: 30px 25px 0px 5%;
+    font-family: 'Catamaran', sans-serif;
 }
 
 .blooms-pills-sub {
     padding: 0 5%;
+    font-family: 'Catamaran', sans-serif;
 }
 
 .create {

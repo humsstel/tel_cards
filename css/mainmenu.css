@@ -67,7 +67,10 @@ iframe {
     float: left;
     font-size: 1.5em;
     margin-top: -4px;
-    margin-right: 20px;
+}
+
+.bs-callout h4 {
+    margin-left: 35px;
 }
 
 .bs-callout p {
@@ -158,6 +161,7 @@ iframe {
 
 .bs-thanks {
     display: none;
+    background-color: #fafafa;
     border-color: #4db6ac;
 }
 
@@ -208,6 +212,7 @@ form {
 
 .creativecommons {
     margin-bottom: 20px;
+    margin-left: 35px;
 }
 
 
