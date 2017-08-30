@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    </head>
+    <body>
+        <iframe id="topIframe" src="mainmenu.html" width="100%" height="" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe>
         <script>
             window.onload = function iframeResizer(iframe) {
                 var iframeCatcher = document.getElementById('topIframe');
@@ -11,10 +14,7 @@
                 var size_new = size + 10; 
                 iframeCatcher.height = size_new + "px";
             }
-        </script>  
-    </head>
-    <body>
-        <iframe id="topIframe" src="mainmenu.html" width="100%" height="" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe>
+        </script>
     </body>
 </html>
 
