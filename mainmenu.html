@@ -30,7 +30,7 @@
                 </div>
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="appgenerator" role="tabpanel" aria-labelledby="app-tab">
-                        <iframe src='' id="myFrame" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe>
+                        <iframe src='' id="myFrame" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
                     </div>
                     <div class="tab-pane fade" id="catalogue" role="tabpanel" aria-labelledby="catalogue-tab">
                         <div class="card-container manual-flip">
@@ -202,12 +202,10 @@
             
         </script>
         <script>
-            window.onload = function iframeLoaded() {
-                var iFrameID = document.getElementById('myFrame');
-                if(iFrameID) {
-                iFrameID.height = "";
-                iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
-                }   
+            function resizeIframe(iframe) {
+                var size = iframe.contentWindow.document.body.scrollHeight; 
+                var size_new = size + 10; 
+                iframe.height = size_new + "px";
             }
         </script>   
     
