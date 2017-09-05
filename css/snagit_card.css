@@ -8,7 +8,7 @@ body {
 
 .titlebarfront {
     height: 250px;
-    padding-top: 100px;
+    padding-top: 120px;
     background-color: #343A40;
 
 
@@ -23,14 +23,7 @@ background:
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    }
-
-.carouselimg {
-    height: 250px;
-    background-color: #343A40;
-    background-position: bottom !important;
-    background-size: cover !important;
-    }
+}
 
 .smalllogo {
     float: left;
@@ -56,12 +49,6 @@ background:
     font-weight: 400;
     font-size: 1.5em;
     width: 60%;
-}
-
-.carousel-indicators li {
-    border-radius: 50%;
-    width: 5px;
-    height: 5px;
 }
 
 .cardflipper {
@@ -219,102 +206,39 @@ a {
     text-align: center;
 }
 
+.thermometer2,
+.thermometer3 {
+    margin-top: 10px;
+}
+
 .usestext {
     flex-basis: 80%;
-    padding-left: 10px;
+    padding-left: 15px;
     padding-right: 10px;
 }
 
-/* .usestext1 {
-
-    width: 100%;
-    font-weight: 500;
-    height: 110px;
-    line-height: 1.7em;
-    text-align: left;
-    color: #343A40;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 5px;
-}
-
-.thermometer1 {
-    float: left;
-    position: relative;
-    width: 20%;
-    text-align: center;
-    color: #343A40;
-    padding-top: 5px;
-    height: 110px;
-    margin-top: 5px;
-    margin-right: 15px;
-}
-
-.usestext2 {
-
-    width: 100%;
-    font-weight: 500;
-    height: 110px;
-    line-height: 1.7em;
-    text-align: left;
-    color: #343A40;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 5px;
-}
-
-.thermometer2 {
-    float: left;
-    text-align: center;
-    color: #343A40;
-    padding-top: 5px;
-    height: 110px;
-    width: 20%;
-    margin-top: 5px;
-    margin-right: 15px;
-}
-
+.usestext2,
 .usestext3 {
-
-    width: 100%;
-    font-weight: 500;
-    height: 110px;
-    line-height: 1.7em;
-    text-align: left;
-    color: #343A40;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 5px;
-    
-}
-
-.thermometer3 {
-    float: left;
-    text-align: center;
-    color: #343A40;
-    padding-top: 5px;
-    height: 110px;
-    width: 20%;
-    margin-top: 5px;
-    margin-right: 15px;
+    margin-top: 10px;
 }
 
 /* SUBMITTER */
 
+.submitter {
+    display: flex;
+}
+
 .submitterinfo {
-    width: 90%;
-    height: 30px;
     margin-top: 20px;
     margin-left: 10px;
     color: #fff;
 }
 
 .submitterimg {
+    text-align: center;
     margin-top: 20px; 
     margin-left: 5%;
-    margin-right: 15px;
     font-size: 1.75em;
-    float: left;
 }
 
 .submitterschool {
@@ -328,7 +252,6 @@ a {
     text-align: center;
     background-color: #343A40;
     color: #fff;
-    margin-top: -10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
