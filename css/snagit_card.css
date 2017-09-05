@@ -209,7 +209,23 @@ a {
 
 /* ATTRIBUTES */
 
-.usestext1 {
+.framework {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thermometer {
+    flex-basis: 20%;
+    text-align: center;
+}
+
+.usestext {
+    flex-basis: 80%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* .usestext1 {
 
     width: 100%;
     font-weight: 500;
