@@ -10,6 +10,7 @@ body {
     height: 250px;
     padding-top: 120px;
     background-color: #343A40;
+    display: flex;
 
 
 background: 
@@ -26,7 +27,6 @@ background:
 }
 
 .smalllogo {
-    float: left;
     width: 40px;
     height: 40px;
     margin-left: 20px;
@@ -41,13 +41,10 @@ background:
 }
 
 .apptitle {
-    display: inline-block;
     color: #fff;
     margin-left: 10px;
     padding-top: 5px;
     font-family: 'Catamaran', sans-serif;
-    font-weight: 400;
-    font-size: 1.5em;
     width: 60%;
 }
 
@@ -362,4 +359,43 @@ a {
  */
 .clearfix {
     *zoom: 1;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 300px) {
+    .titlebarfront {
+        flex-direction: column;
+        height: 280px;
+        padding-top: 75px;
+        padding-left: 10px;
+    }
+    
+    .apptitle {
+        width: 85%;
+        margin-top: 10px;
+    }
+    
+    .framework {
+        flex-direction: column;
+        flex: 1;
+    }
+    
+    .details {
+        height: 250px;
+    }
+    
+    .submitterimg {
+        display: none;
+    }
+}
+
+@media (max-width: 190px) {
+    .titlebarfront {
+        height: 320px;
+    }
+    
+    .details {
+        height: 320px;
+    }
 }
