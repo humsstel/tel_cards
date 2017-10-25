@@ -9,7 +9,7 @@
         <script>
             function resizeIframe(iframe) {
                 var size = iframe.contentWindow.document.body.scrollHeight; 
-                var size_new = size + 10; 
+                var size_new = size + 20; 
                 iframe.height = size_new + "px";
             }
         </script>  
@@ -51,7 +51,7 @@
                                 </div>
                                 <div class="dropdown">
                                     <select id="filterText" class="btn btn-secondary dropdown-toggle btn-block" onchange='filterText();'>
-                                        <option selected value="all"><i class="fa fa-search" aria-hidden="true"></i> Find an app to...</option>
+                                        <option selected value="all">Find an app to...</option>
                                         <option value="Create">...create learning resources</option>
                                         <option value="Connect">...communicate with students electronically</option>
                                         <option value="Collaborate">...act as a platform for collaboration</option>
@@ -59,6 +59,7 @@
                                         <option value="Capture">...record an event</option>
                                         <option value="Captivate">...create interactive learning opportunities</option>
                                         <option value="Check">...gauge students understanding</option>
+                                        <option value="">All apps</option>
                                     </select>
                                 </div>
                                 <div class="card cataloguepane" data-spy="scroll">                
@@ -73,6 +74,15 @@
                                                     <p class="appinfo">An online polling tool that encourages audience participation.</p>
                                                 </div>
                                             </a>
+                                            
+                                            <a href="officelens_card.html" class="list-group-item list-group-item-action">
+                                                <div class="applist">
+                                                    <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/officelens.jpg"> Office Lens</h5>
+                                                    <p class="categories"><span class="badge create">Create</span> <span class="badge capture">Capture</span></p>
+                                                    <p class="submitter"><small>Submitted by K Beaumont | Student Learning & Development</small></p>
+                                                    <p class="appinfo">Capture screenshots or record video to visually explain anything from your screen.</p>
+                                                </div>
+                                            </a>
 
                                             <a href="padlet_card.html" class="list-group-item list-group-item-action">
                                                 <div class="applist">
@@ -80,6 +90,15 @@
                                                     <p class="categories"><span class="badge create">Create</span> <span class="badge collaborate">Collaborate</span> <span class="badge curate">Curate</span></p>
                                                     <p class="submitter"><small>Submitted by T Hinchcliffe | Student Learning & Development</small></p>
                                                     <p class="appinfo">Padlet creates digital noticeboards that make sharing and collaborating easy.</p>
+                                                </div>
+                                            </a>
+                                            
+                                            <a href="pinterest_card.html" class="list-group-item list-group-item-action">
+                                                <div class="applist">
+                                                    <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/pinterest.png"> Pinterest</h5>
+                                                    <p class="categories"><span class="badge create">Create</span> <span class="badge collaborate">Collaborate</span> <span class="badge curate">Curate</span></p>
+                                                    <p class="submitter"><small>Submitted by Dr E De Quincey | School of Computing and Maths</small></p>
+                                                    <p class="appinfo">Upload, save and manage visual content (e.g. images and video) via collections known as pinboards.</p>
                                                 </div>
                                             </a>
 
@@ -91,6 +110,15 @@
                                                     <p class="appinfo">A social bookmarking tool that saves web content across all of your devices.</p>
                                                 </div>
                                             </a>
+                                            
+                                            <a href="quizlet_card.html" class="list-group-item list-group-item-action">
+                                                <div class="applist">
+                                                    <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/quizlet.png"> Quizlet</h5>
+                                                    <p class="categories"><span class="badge create">Create</span> <span class="badge captivate">Captivate</span> <span class="badge check">Check</span></p>
+                                                    <p class="submitter"><small>Submitted by D Harding | Faculty of Humanities and Social Science</small></p>
+                                                    <p class="appinfo">Create or search for flashcard sets that quickly adapt to a variety of interative learning resources.</p>
+                                                </div>
+                                            </a>
 
                                             <a href="snagit_card.html" class="list-group-item list-group-item-action">
                                                 <div class="applist">
@@ -100,6 +128,16 @@
                                                     <p class="appinfo">Capture screenshots or record video to visually explain anything from your screen.</p>
                                                 </div>
                                             </a>
+                                            
+                                            <a href="socrative_card.html" class="list-group-item list-group-item-action">
+                                                <div class="applist">
+                                                    <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/socrative.png"> Socrative</h5>
+                                                    <p class="categories"><span class="badge create">Create</span> <span class="badge captivate">Captivate</span> <span class="badge check">Check</span></p>
+                                                    <p class="submitter"><small>Submitted by Dr R Leach | School of Social Science and Public Policy</small></p>
+                                                    <p class="appinfo">An online polling tool that encourages audience participation.</p>
+                                                </div>
+                                            </a>
+                                            
                                         </ul>
                                     </div>
                                 </div>
@@ -121,7 +159,7 @@
                                     <div class="icon">
                                         <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 
                                     </div>
-                                    <p><strong>Alright! </strong>Thanks for making a suggestion.</p>
+                                    <p><strong>Alright! </strong>Thanks for making a suggestion.<a href="#"> Click here to make another.</a></p>
                                 </div>
                                 <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwdPK1Xn_XdIKYYnMLltp6u51nGpuRltLkwPvMUyLmMY1biPhpz/exec">
                                     <div class="form-group">
@@ -171,22 +209,25 @@
                 </div>
             </div> <!-- End of parent card -->
         </div> <!-- End of parent columm -->
-        
         <script data-cfasync="false" type="text/javascript" src="js/formhandler.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
         <script>
             var cards = [
+                "mentimeter_card.html",
                 "padlet_card.html",
-                "snagit_card.html",
+                "pinterest_card.html",
                 "pocket_card.html",
-                "mentimeter_card.html"
+                "snagit_card.html",
+                "socrative_card.html",
+                "officelens_card.html",
+                "quizlet_card.html"
             ];
 
             var randomise = Math.floor(Math.random()*cards.length);
 
-            function loadPages() {
+            function loadPages( ) {
             document.getElementById("myFrame").setAttribute('src', cards[randomise]);
             };
             
