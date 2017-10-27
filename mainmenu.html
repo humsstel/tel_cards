@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         <link href='css/mainmenu.css' rel='stylesheet' />
         <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/font-awesome-animation.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Catamaran:300,500,700,800" rel="stylesheet">
         <script>
             function resizeIframe(iframe) {
@@ -25,7 +26,7 @@
 </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="catalogue-tab" data-toggle="tab" href="#catalogue" role="tab" aria-controls="Catalogue"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a>
+                            <a class="nav-link" id="catalogue-tab" data-toggle="tab" href="#catalogue" role="tab" aria-controls="Catalogue"><i class="fa fa-bookmark-o faa-float animated-hover" aria-hidden="true"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="contribute-tab" data-toggle="tab" href="#contribute" role="tab" aria-controls="Contribute"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a>
@@ -47,7 +48,7 @@
                                         <i class="fa fa-bookmark-o" aria-hidden="true"></i> 
                                     </div>
                                     <h4>Catalogue</h4>
-                                    <p>Browse the list below or use the dropdown filter to find an application that supports a specific activity.</p>
+                                    <p>Browse the list or use the dropdown filter to find an application that supports a specific activity.</p>
                                 </div>
                                 <div class="dropdown">
                                     <select id="filterText" class="btn btn-secondary dropdown-toggle btn-block" onchange='filterText();'>
@@ -56,7 +57,7 @@
                                         <option value="Connect">...communicate with students electronically</option>
                                         <option value="Collaborate">...act as a platform for collaboration</option>
                                         <option value="Curate">...collect, organise and share content</option>
-                                        <option value="Capture">...record an event</option>
+                                        <option value="Capture">...record an event or artefact</option>
                                         <option value="Captivate">...create interactive learning opportunities</option>
                                         <option value="Check">...gauge students understanding</option>
                                         <option value="">All apps</option>
@@ -159,7 +160,7 @@
                                     <div class="icon">
                                         <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 
                                     </div>
-                                    <p><strong>Alright! </strong>Thanks for making a suggestion.<a href="#"> Click here to make another.</a></p>
+                                    <p><strong>Alright! </strong>Thanks for making a suggestion.<a href="#" onclick="submitAgain();"> Click here to make another.</a></p>
                                 </div>
                                 <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwdPK1Xn_XdIKYYnMLltp6u51nGpuRltLkwPvMUyLmMY1biPhpz/exec">
                                     <div class="form-group">
@@ -228,7 +229,7 @@
             var randomise = Math.floor(Math.random()*cards.length);
 
             function loadPages( ) {
-            document.getElementById("myFrame").setAttribute('src', cards[randomise]);
+                document.getElementById("myFrame").setAttribute('src', cards[randomise]);
             };
             
             loadPages();
@@ -257,6 +258,13 @@
 
             ga('create', 'UA-105652803-1', 'auto');
             ga('send', 'pageview');
+        </script>
+        <script>
+            function submitAgain() {
+                document.getElementById('gform').style.display = 'block'; // show form
+                document.getElementById('thankyou_message').style.display = 'none'; // hide thank you message
+                document.getElementById('gform').reset();
+            }
         </script>
     
     </body>

@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         <link href='css/padlet_card.css' rel='stylesheet' />
         <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/font-awesome-animation.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Catamaran:300,500,700,800" rel="stylesheet">
     </head>
     
@@ -17,8 +18,8 @@
                             <i class="fa fa-repeat" aria-hidden="true"></i> Flip card
                         </div> 
                         <div class="titlebarfront">
-                            <div class="smalllogo">
-                            </div>
+                            <a class="smalllogo faa-tada animated-hover" href="https://www.padlet.com" target="_blank">
+                            </a>
                             <div class="apptitle">
                                 <h5>Padlet</h5>
                                 <h6>Padlet creates digital noticeboards that make sharing and collaborating easy.</h6>
@@ -26,8 +27,7 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text">Padlet provides an empty canvas to add digital content. Drag in a video, record an interview, snap a picture, write text posts or upload documents. Make it even more individual by choosing custom wallpapers and themes. Padlets can be selectively shared and edited among multiple contributors, in real time.</p>
-                            <button onclick="refreshIframe();">Change iframe</button>
-                        <a class="tool-link" href="http://www.padlet.com" target="_blank" class="tool-link"> http://www.padlet.com</a>
+                        <a class="tool-link" href="https://www.padlet.com" target="_blank" class="tool-link"> https://www.padlet.com</a>
                         </div>
                         <div class="details">
                             <div class="blooms-pills-main">
@@ -44,8 +44,8 @@
                                     <p class="small"><b>Submitted by</b><br>T Hinchcliffe<span class="submitterschool"> | Head of Student Learning & Development</span></p>
                                 </div>
                             </div>
-                            <div class="nextcard" role="button" onclick="refreshIframe();">
-                                    <i class="fa fa-hand-o-right" aria-hidden="true"></i> Try another app
+                            <div class="nextcard faa-parent animated-hover" role="button" onclick="newWindowFunction();">
+                                    <i class="fa fa-magic faa-shake animated-hover" aria-hidden="true"></i>&nbsp;&nbsp;Try another app
                             </div>
                         </div>
                     </div><!-- End front panel -->
@@ -92,8 +92,8 @@
                                 <p>Collect feedback and take questions from students by maintaining a Padlet wall throughout the semester. Tidy and share it with future cohorts.</p>
                             </div>
                         </div>
-                        <div class="nextcard" role="button" onclick="refreshIframe();">
-                            <i class="fa fa-hand-o-right" aria-hidden="true"></i> Try another app
+                        <div class="nextcard faa-parent animated-hover" role="button" onclick="newWindowFunction();">
+                            <i class="fa fa-magic faa-shake animated-hover" aria-hidden="true"></i>&nbsp;&nbsp;Try another app
                         </div>
                     </div> <!-- End back panel -->
                 </div> <!-- End of card -->
@@ -121,12 +121,8 @@
             }
         </script>
         <script>
-                
-            function goBack() {
-                history.go(-1);
-            }
             
-            function windowFunction() {
+            function oldWindowFunction() {
                 if (window.parent === window.top) {
                     goBack();
                 } else {
@@ -152,6 +148,19 @@
             function refreshIframe() {
                 parent.document.getElementById('myFrame').setAttribute('src', cards[randomise]);
             }
+                
+            function goBack() {
+                history.go(-1);
+            }
+            
+            function windowFunction() {
+                if (window.parent === window.top) {
+                    goBack();
+                } else {
+                    refreshIframe();
+                }
+            }
+            
         </script>
     </body>
 </html>
