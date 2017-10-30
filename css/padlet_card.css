@@ -87,17 +87,6 @@ background:
     background-color: #FF4A76;
 }
 
-.mainlogocontainer {
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.mainlogo {
-    max-width: 100%;
-    margin-top: 2px;
-}
-
 .details {
     height: 160px;
     background-color: #343A40;
