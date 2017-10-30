@@ -35,9 +35,8 @@ background:
     -webkit-border-radius: 50px;
     background-image: url(../img/pinterest.png);
     background-size: 30px;
-    background-position: 50% 20%;
+    background-position: 50% 25%;
     background-repeat: no-repeat;
-    border: solid 3px #fff;
 }
 
 .apptitle {

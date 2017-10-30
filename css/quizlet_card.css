@@ -30,14 +30,13 @@ background:
     width: 40px;
     height: 40px;
     margin-left: 20px;
-    background: white;
+    background: #445AAF;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     background-image: url(../img/quizlet.png);
     background-size: 30px;
-    background-position: 50% 60%;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
-    border: solid 3px #fff;
 }
 
 .apptitle {

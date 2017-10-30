@@ -30,12 +30,12 @@ background:
     width: 40px;
     height: 40px;
     margin-left: 20px;
-    background: transparent;
+    background: #2C72B7;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
-    background-image: url(../img/snagit.jpg);
-    background-size: 40px;
-    background-position: 50% 20%;
+    background-image: url(../img/snagit.png);
+    background-size: 32px;
+    background-position: 50% 25%;
     background-repeat: no-repeat;
     border: solid 3px #fff;
 }
