@@ -68,6 +68,25 @@ background:
     cursor: pointer;
 }
 
+.nextcard {
+    height: 55px;
+    text-align: center;
+    background-color: #353B40;
+    color: #fff;
+    padding-top: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.1em;
+    border-top-style: solid;
+    border-width: 1px;
+}
+
+.nextcard:hover {
+    cursor: pointer;
+    background-color: #00a5bd;
+}
+
 .mainlogocontainer {
     max-width: 650px;
     margin-left: auto;
@@ -75,11 +94,9 @@ background:
 }
 
 .details {
-    height: 190px;
+    height: 160px;
     background-color: #343A40;
     color: #fff;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 hr {

@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         <link href='css/pocket_card.css' rel='stylesheet' />
         <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/font-awesome-animation.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Catamaran:300,500,700,800" rel="stylesheet">
     </head>
     
@@ -35,7 +36,6 @@
                             <div class="blooms-pills-sub">
                                 <span class="badge sub">Bookmarking</span> <span class="badge sub">Collating</span> <span class="badge sub">Researching</span> <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Examples of how this app can be used" aria-hidden="true"></i></a>
                             </div>
-                            <hr>
                             <div class="submitter">
                                 <div class="submitterimg">
                                     <i class="fa fa-user-o" aria-hidden="true"></i>
@@ -44,6 +44,9 @@
                                     <p class="small"><b>Submitted by</b><br>Dr Emma Head<span class="submitterschool"> | Lecturer in Sociology</span></p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="nextcard faa-parent animated-hover" role="button" onclick="windowFunction();">
+                            <i class="fa fa-magic faa-shake animated-hover" aria-hidden="true"></i>&nbsp;&nbsp;Try another app
                         </div>
                     </div><!-- End front panel -->
 
@@ -81,9 +84,8 @@
                                 <p>Set up a module Twitter account or use a hashtag (e.g. #HUM1020) to start sharing articles with students from your Pocket reading list.</p>
                             </div>
                         </div>
-                        <div class="card-body ratings">
-                            <p>Not quite what you're looking for?</p>
-                            <a href="#" role="button" class="btn btn-outline-light" onclick="windowFunction()">Try another app</a>
+                        <div class="nextcard faa-parent animated-hover" role="button" onclick="windowFunction();">
+                            <i class="fa fa-magic faa-shake animated-hover" aria-hidden="true"></i>&nbsp;&nbsp;Try another app
                         </div>
                     </div> <!-- End back panel -->
                 </div> <!-- End of card -->
@@ -113,6 +115,22 @@
             }
         </script>
         <script>
+            var cards = [
+                "mentimeter_card.html",
+                "padlet_card.html",
+                "pinterest_card.html",
+                "pocket_card.html",
+                "snagit_card.html",
+                "socrative_card.html",
+                "officelens_card.html",
+                "quizlet_card.html"
+            ];
+
+            var randomise = Math.floor(Math.random()*cards.length);
+            
+            function refreshIframe() {
+                parent.document.getElementById('myFrame').setAttribute('src', cards[randomise]);
+            }
                 
             function goBack() {
                 history.go(-1);
@@ -122,10 +140,10 @@
                 if (window.parent === window.top) {
                     goBack();
                 } else {
-                    this.parent.location = "mainmenu.html";
+                    refreshIframe();
                 }
             }
-
+            
         </script>
     </body>
 </html>
