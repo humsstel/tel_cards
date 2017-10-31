@@ -203,23 +203,23 @@ a {
 .framework {
     display: flex;
     flex-wrap: wrap; 
-    margin-bottom: -10px;
+    margin-bottom: -5px;
     margin-top: -5px;
 }
 
 .thermometer {
-    flex-basis: 20%;
+    flex-basis: 30%;
     text-align: center;
-    padding-top: 4px;
+    padding-top: 5px;
 }
 
 .thermometer2,
 .thermometer3 {
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .usestext {
-    flex-basis: 80%;
+    flex-basis: 70%;
     padding-left: 15px;
     padding-right: 10px;
 }
@@ -227,21 +227,20 @@ a {
 .frameworkheading {
     display: flex;
     flex-direction: row;
-    background-color: #fafafa;
+    background-color: #353B40;
+    color: #fff;
     padding-top: 15px;
-    border-bottom: dashed;
-    border-width: 1px;
 }
 
 .frameworktext1 {
     text-align: center;
-    flex-basis: 20%;
+    flex-basis: 30%;
     margin-left: 15px;
 }
 
 .frameworktext2 {
     text-align: left;
-    flex-basis: 80%;
+    flex-basis: 70%;
     margin-left: 15px;
 }
 
@@ -251,13 +250,9 @@ a {
 }
 
 .usestext1 {
-    border-bottom-style: dashed;
-    border-width: 1px;
 }
 
 .usestext2 {
-    border-bottom-style: dashed;
-    border-width: 1px;
     padding-top: 5px;
 }
 
@@ -267,7 +262,7 @@ a {
 
 .usestext2,
 .usestext3 {
-    margin-top: 10px;
+
 }
 
 /* SUBMITTER */

@@ -211,28 +211,67 @@ a {
 
 .framework {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    margin-bottom: -5px;
+    margin-top: -5px;
 }
 
 .thermometer {
-    flex-basis: 20%;
+    flex-basis: 30%;
     text-align: center;
+    padding-top: 5px;
 }
 
 .thermometer2,
 .thermometer3 {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .usestext {
-    flex-basis: 80%;
+    flex-basis: 70%;
     padding-left: 15px;
     padding-right: 10px;
 }
 
+.frameworkheading {
+    display: flex;
+    flex-direction: row;
+    background-color: #353B40;
+    color: #fff;
+    padding-top: 15px;
+}
+
+.frameworktext1 {
+    text-align: center;
+    flex-basis: 30%;
+    margin-left: 15px;
+}
+
+.frameworktext2 {
+    text-align: left;
+    flex-basis: 70%;
+    margin-left: 15px;
+}
+
+.thermometer1,
+.usestext1 {
+    margin-top: 5px;
+}
+
+.usestext1 {
+}
+
+.usestext2 {
+    padding-top: 5px;
+}
+
+.usestext3 {
+    padding-top: 5px;
+}
+
 .usestext2,
 .usestext3 {
-    margin-top: 10px;
+
 }
 
 /* SUBMITTER */
