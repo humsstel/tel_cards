@@ -80,8 +80,8 @@ iframe {
     margin-left: 35px;
 }
 
-.btn-block {
-    background-color: #343A40;
+.dropdown-toggle {
+    background-color: #90A4AD;
     color: #fff;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -89,18 +89,14 @@ iframe {
     font-weight: 500;
 }
 
-.btn-block:hover {
-    background-color: #343A40;
+.dropdown-toggle:hover {
+    background-color: #90A4AD;
     color: #fff;
 }
 
-.btn-block:focus {
-    background-color: #343A40;
+..dropdown-toggle:focus {
+    background-color: #90A4AD;
     color: #fff;
-}
-
-.dropdown-menu {
-    width: 100%;
 }
 
 .cataloguepane {
@@ -172,10 +168,16 @@ iframe {
     cursor: pointer;
 }
 
+form input:focus,
+form textarea:focus {
+    border-color: #ba68c8 !important;
+    border-width: 1px;
+}
+
 /* Text */
 
 .instruction {
-    color: #999
+    color: #90A4AD;
 }
 
 /* Form */
@@ -191,6 +193,12 @@ form {
 
 .submitbutton {
     margin-bottom: 15px;
+    background-color: #353B40;
+    color: #fff;
+}
+
+.submitbutton:hover {
+    opacity: 0.9;
 }
 
 /* Honeypot */

@@ -66,6 +66,7 @@ background:
 
 .cardflipper:hover {
     cursor: pointer;
+    opacity: .9;
 }
 
 .nextcard {
