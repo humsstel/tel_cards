@@ -47,7 +47,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="nextcard faa-parent animated-hover" role="button" onclick="windowFunction();">
+                        <div class="nextcard faa-parent animated-hover" role="button" onclick="refreshIframe();">
                             <i class="fa fa-magic faa-shake animated-hover" aria-hidden="true"></i>&nbsp;&nbsp;Try another app
                         </div>
                     </div><!-- End front panel -->
@@ -94,7 +94,7 @@
                                 <p>Set up a module Twitter account or use a hashtag (e.g. #HUM1020) to start sharing articles with students from your Pocket reading list.</p>
                             </div>
                         </div>
-                        <div class="nextcard faa-parent animated-hover" role="button" onclick="windowFunction();">
+                        <div class="nextcard faa-parent animated-hover" role="button" onclick="refreshIframe();">
                             <i class="fa fa-magic faa-shake animated-hover" aria-hidden="true"></i>&nbsp;&nbsp;Try another app
                         </div>
                     </div> <!-- End back panel -->
@@ -140,18 +140,6 @@
             
             function refreshIframe() {
                 parent.document.getElementById('myFrame').setAttribute('src', cards[randomise]);
-            }
-                
-            function goBack() {
-                history.go(-1);
-            }
-            
-            function windowFunction() {
-                if (window.parent === window.top) {
-                    goBack();
-                } else {
-                    refreshIframe();
-                }
             }
             
         </script>

@@ -48,7 +48,7 @@
                                     <p class="small"><b>Submitted by</b><br>T Hinchcliffe<span class="submitterschool"> | Head of Student Learning & Development</span></p>
                                 </div>
                             </div>
-                            <div class="nextcard faa-parent animated-hover" role="button" onclick="windowFunction();">
+                            <div class="nextcard faa-parent animated-hover" role="button" onclick="refreshIframe();">
                                     <i class="fa fa-magic faa-shake animated-hover" aria-hidden="true"></i>&nbsp;&nbsp;Try another app
                             </div>
                         </div>
@@ -96,7 +96,7 @@
                                 <p>Collect feedback and take questions from students by maintaining a Padlet wall throughout the semester. Tidy and share it with future cohorts.</p>
                             </div>
                         </div>
-                        <div class="nextcard faa-parent animated-hover" role="button" onclick="windowFunction();">
+                        <div class="nextcard faa-parent animated-hover" role="button" onclick="refreshIframe();">
                             <i class="fa fa-magic faa-shake animated-hover" aria-hidden="true"></i>&nbsp;&nbsp;Try another app
                         </div>
                     </div> <!-- End back panel -->
@@ -140,18 +140,6 @@
             
             function refreshIframe() {
                 parent.document.getElementById('myFrame').setAttribute('src', cards[randomise]);
-            }
-                
-            function goBack() {
-                history.go(-1);
-            }
-            
-            function windowFunction() {
-                if (window.parent === window.top) {
-                    goBack();
-                } else {
-                    refreshIframe();
-                }
             }
             
         </script>
