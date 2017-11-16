@@ -20,28 +20,27 @@ background:
         rgba(52, 58, 64, 0.9) 95%
     ),
     /* Bottom, image */
-    url(../img/quizlet_background.png);
+    url(../img/classroom_screenshot.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    }
+}
 
 .smalllogo {
     width: 40px;
     height: 40px;
     margin-left: 20px;
-    background: #445AAF;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    background-image: url(../img/quizlet.png);
-    background-size: 30px;
-    background-position: 50% 50%;
+    background: transparent;
+    background-image: url(../img/google_classroom.png);
+    background-size: 35px;
+    background-position: 50% 40%;
     background-repeat: no-repeat;
+    
 }
 
 .apptitle {
     color: #fff;
-    margin-left: 10px;
+    margin-left: 20px;
     padding-top: 5px;
     font-family: 'Catamaran', sans-serif;
     width: 60%;
@@ -50,7 +49,7 @@ background:
 .cardflipper {
     height: 50px;
     text-align: center;
-    background-color: #445AAF;
+    background-color: #FDBC45;
     color: #fff;
     padding-top: 15px;
     border-top-left-radius: 10px;
@@ -65,6 +64,7 @@ background:
 
 .cardflipper:hover {
     cursor: pointer;
+    opacity: .9;
 }
 
 .nextcard {
@@ -83,13 +83,7 @@ background:
 
 .nextcard:hover {
     cursor: pointer;
-    background-color: #445AAF;
-}
-
-.mainlogocontainer {
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: #FDBC45;
 }
 
 .details {
@@ -112,10 +106,11 @@ hr {
 }
 
 .videocontainer {
-    max-width: 560px !important; 
-    max-height: 315px !important;
+    max-width: 560px;
+    max-height: 315px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #343A40;
 }
 
 /* TEXT STYLES */
@@ -135,12 +130,6 @@ h4 {
     line-height: 1.2em;
 }
 
-.card-text {
-    line-height: 1.7em;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
 p {
     font-family: 'Catamaran', sans-serif;
     font-weight: 500;
@@ -158,11 +147,13 @@ a {
     margin-left: 10px;
 }
 
-/* PILLS */
-
-.tags {
-    font-size: 20px;
+.card-text {
+    line-height: 1.7em;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
+/* PILLS */
 
 .blooms-pills-main {
     padding: 30px 25px 0px 5%;
@@ -272,10 +263,12 @@ a {
 .usestext3 {
 
 }
+
 /* SUBMITTER */
 
 .submitter {
     display: flex;
+    margin-bottom: 5px;
 }
 
 .submitterinfo {
@@ -294,6 +287,7 @@ a {
 .submitterschool {
     color: #999999;
 }
+
 /* RATING */
 
 .ratings {
@@ -313,8 +307,19 @@ a {
 /* FOOTER */
 
 .card-footer {
-    background-color: #00a5bd;
+    background-color: #FF4A76;
     color: #fff;
+}
+
+/* CONTRIBUTE */
+
+.form-entry {
+    padding: 10px;
+}
+
+.form-group label {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
 }
 
 /* FLIP */

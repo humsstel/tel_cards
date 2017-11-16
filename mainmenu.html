@@ -7,13 +7,7 @@
         <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="css/font-awesome-animation.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Catamaran:300,500,700,800" rel="stylesheet">
-        <script>
-            function resizeIframe(iframe) {
-                var size = iframe.contentWindow.document.body.scrollHeight; 
-                var size_new = size + 20; 
-                iframe.height = size_new + "px";
-            }
-        </script>  
+        
     </head>
     
     <body>
@@ -67,6 +61,15 @@
                                     <div class="front">
                                         <ul class="list-group list-group-flush">
 
+                                            <a href="googleclassroom_card.html" class="list-group-item list-group-item-action">
+                                                <div class="applist">
+                                                    <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/google_classroom.png"> Google Classroom</h5>
+                                                    <p class="categories"><span class="badge connect">Connect</span> <span class="badge collaborate">Collaborate</span> <span class="badge curate">Curate</span></p>
+                                                    <p class="submitter"><small>Submitted by A Rhead | Student Learning & Development</small></p>
+                                                    <p class="appinfo">Manage classes, set assignments and interact with students all in one place.</p>
+                                                </div>
+                                            </a>
+                                            
                                             <a href="mentimeter_card.html" class="list-group-item list-group-item-action">
                                                 <div class="applist">
                                                     <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/mentimeter.png"> Mentimeter</h5>
@@ -81,7 +84,7 @@
                                                     <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/officelens.jpg"> Office Lens</h5>
                                                     <p class="categories"><span class="badge create">Create</span> <span class="badge capture">Capture</span></p>
                                                     <p class="submitter"><small>Submitted by K Beaumont | Student Learning & Development</small></p>
-                                                    <p class="appinfo">Capture screenshots or record video to visually explain anything from your screen.</p>
+                                                    <p class="appinfo">Capture images of whiteboards and documents to make them into readable learning resources.</p>
                                                 </div>
                                             </a>
 
@@ -99,7 +102,7 @@
                                                     <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/pinterest.png"> Pinterest</h5>
                                                     <p class="categories"><span class="badge create">Create</span> <span class="badge collaborate">Collaborate</span> <span class="badge curate">Curate</span></p>
                                                     <p class="submitter"><small>Submitted by Dr E De Quincey | School of Computing and Maths</small></p>
-                                                    <p class="appinfo">Upload, save and manage visual content (e.g. images and video) via collections known as pinboards.</p>
+                                                    <p class="appinfo">Upload, save and manage visual content via collections known as pinboards.</p>
                                                 </div>
                                             </a>
 
@@ -117,7 +120,7 @@
                                                     <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/quizlet.png"> Quizlet</h5>
                                                     <p class="categories"><span class="badge create">Create</span> <span class="badge captivate">Captivate</span> <span class="badge check">Check</span></p>
                                                     <p class="submitter"><small>Submitted by D Harding | Faculty of Humanities and Social Science</small></p>
-                                                    <p class="appinfo">Create or search for flashcard sets that quickly adapt to interative learning resources.</p>
+                                                    <p class="appinfo">Create or search for flashcard sets that quickly adapt into interative learning resources.</p>
                                                 </div>
                                             </a>
 
@@ -135,7 +138,7 @@
                                                     <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/socrative.png"> Socrative</h5>
                                                     <p class="categories"><span class="badge create">Create</span> <span class="badge captivate">Captivate</span> <span class="badge check">Check</span></p>
                                                     <p class="submitter"><small>Submitted by Dr R Leach | School of Social Science and Public Policy</small></p>
-                                                    <p class="appinfo">An online polling tool that encourages audience participation.</p>
+                                                    <p class="appinfo">Encourages student participation via online polls and quizzes for real time feedback.</p>
                                                 </div>
                                             </a>
                                             
@@ -210,20 +213,28 @@
                 </div>
             </div> <!-- End of parent card -->
         </div> <!-- End of parent columm -->
+        <script>
+            function resizeIframe(iframe) {
+                var size = iframe.contentWindow.document.body.scrollHeight; 
+                var size_new = size + 20; 
+                iframe.height = size_new + "px";
+            }
+        </script> 
         <script data-cfasync="false" type="text/javascript" src="js/formhandler.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
         <script>
             var cards = [
+                "googleclassroom_card.html",
                 "mentimeter_card.html",
+                "officelens_card.html",
                 "padlet_card.html",
                 "pinterest_card.html",
                 "pocket_card.html",
+                "quizlet_card.html",
                 "snagit_card.html",
-                "socrative_card.html",
-                "officelens_card.html",
-                "quizlet_card.html"
+                "socrative_card.html"
             ];
 
             var randomise = Math.floor(Math.random()*cards.length);
