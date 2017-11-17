@@ -102,7 +102,7 @@ hr {
 /* EMBEDDED VIDEO */
 
 .mediabackground {
-    background-color: #343A40;
+    background-image: url(../img/congruent_outline.png);
 }
 
 .videocontainer {
