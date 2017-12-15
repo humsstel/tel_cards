@@ -155,13 +155,8 @@
     
     <body>
         
-        <div class="ui-layout-center">
-            
-            <div class="container">
-                
-                <div class="alert text-white fade show" role="alert"><strong><i class="fa fa-question-circle-o" aria-hidden="true"></i>
- New around here?</strong> Browse the apps below or use the dropdown menu to find an app based on a teaching and learning activity.<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
-            
+        <div class="ui-layout-north">
+            <div class="top">
                 <select id="filterText" class="btn btn-secondary dropdown-toggle btn-lg btn-block" onchange='filterText();'>
                     <option selected value="all">Find an app to...</option>
                     <option value="Create">...create learning resources</option>
@@ -173,7 +168,13 @@
                     <option value="Check">...gauge students understanding</option>
                     <option value="">All apps</option>
                 </select>
+            </div>
+        </div>
+        
+        <div class="ui-layout-center">
             
+            <div class="container">
+                
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card-container manual-flip">

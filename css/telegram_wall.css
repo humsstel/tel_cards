@@ -4,11 +4,11 @@
     background-color: #343A40 !important;
 }
 
-/* NAVIGATION */
-
-.alert {
-    background-color: #343A40;
+.ui-layout-north {
+    background-color: #343A40 !important;
 }
+
+/* NAVIGATION */
 
 .nav-item {
     text-align: center;
@@ -30,7 +30,7 @@
 }
 
 .east-nav .nav-pills .nav-link.active {
-    background-color: #ba68c8;
+    background-color: #000;
 }
 
 .east-nav .nav-item:hover {
@@ -97,9 +97,10 @@ a {
 .dropdown-toggle {
     background-color: #343A40;
     color: #fff;
-    margin: 10px 0px 25px 0px;
     font-family: 'Catamaran', sans-serif;
-    font-weight: 500;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .dropdown-toggle:hover {
