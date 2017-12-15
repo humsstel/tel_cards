@@ -1,0 +1,222 @@
+/* PANES */
+
+.ui-layout-east {
+    background-color: #343A40 !important;
+}
+
+/* NAVIGATION */
+
+.alert {
+    background-color: #343A40;
+}
+
+.nav-item {
+    text-align: center;
+    margin: 5px;
+    border: solid 1px #fff;
+    border-radius: 5px;
+}
+
+.nav-item a {
+    color: #fff;
+}
+
+.nav-item:hover {
+    background: #000;
+}
+
+.nav-item:active {
+    background: #000;
+}
+
+.east-nav .nav-pills .nav-link.active {
+    background-color: #ba68c8;
+}
+
+.east-nav .nav-item:hover {
+    background-color: #000;
+}
+
+/* Text Styles */
+
+h4 {
+    margin-left: 25px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+}
+
+a {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+}
+
+.alert {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.15em;
+}
+
+.alert i {
+    font-size: 1em;
+}
+
+.alert button {
+    color: #fff;
+    font-family: 'system-ui', sans-serif;
+    line-height: 0.8em;
+}
+
+/* PANEL DARK GENERAL */
+
+.bs-callout {
+    margin: 15px 0px 10px 0px;
+    padding: 20px 30px 5px 20px;
+    border-left: 5px solid #eee;
+}   
+
+.bs-callout .icon {
+    float: left;
+    font-size: 1.5em;
+}
+
+.bs-callout h4 {
+    margin-left: 35px;
+}
+
+.bs-callout p {
+    margin-left: 35px;
+}
+
+/* APP SELECTOR */
+
+.dropdown-toggle {
+    background-color: #343A40;
+    color: #fff;
+    margin: 10px 0px 25px 0px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+}
+
+.dropdown-toggle:hover {
+    background-color: #343A40;
+    color: #fff;
+}
+
+..dropdown-toggle:focus {
+    background-color: #343A40;
+    color: #fff;
+}
+
+/* CONTRIBUTE */
+
+/* Main Body */
+
+.bs-callout-contribute {
+    background-color: #343A40;
+    border-color: #ba68c8;
+    color: white;
+}
+
+.bs-thanks {
+    display: none;
+    background-color: #343A40;
+    border-color: #4db6ac;
+    color: #ffffff;
+}
+
+.btn-block {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+}
+
+.btn-block:hover {
+    cursor: pointer;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #ba68c8 !important;
+    border-width: 1px;
+}
+
+/* Text */
+
+.instruction {
+    color: #90A4AD;
+}
+
+/* Form */
+
+form {
+    margin-top: 20px;
+}
+
+.form-group label {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.submitbutton {
+    margin-bottom: 15px;
+    background-color: #ba68c8;
+    color: #fff;
+}
+
+.submitbutton:hover {
+    opacity: 0.9;
+}
+
+/* Honeypot */
+
+#honeypot {
+  display: none; 
+}
+
+/* SUPPORT */
+
+.bs-callout-support {
+    background-color: #343A40;
+    border-color: #FCCC30;
+    color: white;
+}
+
+.bs-callout-support .nav-item .nav-link {
+    color: #fff;
+}
+
+.list-group-item {
+    background-color: transparent;
+    border: solid 1px #fff;
+    color: #fff !important;
+}
+
+.list-group-item:hover {
+    background-color: #000;
+}
+
+.list-group-item i {
+    color: #FCCC30;
+}
+
+/* ABOUT */
+
+.bs-callout-about {
+    background-color: #343A40;
+    border-color: #4dd0e1;
+    color: #ffffff;
+}
+
+.bs-callout a {
+    color: #4dd0e1;
+}
+
+.creativecommons {
+    margin-bottom: 20px;
+    margin-left: 35px;
+}
