@@ -6,6 +6,7 @@
 
 .ui-layout-north {
     background-color: #343A40 !important;
+    padding-top: 15px
 }
 
 /* NAVIGATION */
@@ -29,11 +30,19 @@
     background: #000;
 }
 
+.nav-item.visited {
+    background-color: transparent;
+}
+
 .east-nav .nav-pills .nav-link.active {
     background-color: #000;
 }
 
 .east-nav .nav-item:hover {
+    background-color: #000;
+}
+
+.contacts-nav .nav-pills .nav-link.active {
     background-color: #000;
 }
 

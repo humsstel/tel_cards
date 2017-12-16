@@ -68,6 +68,7 @@
                 ,	livePaneResizing:			true
 
                 //	some pane-size settings
+                ,   north__size:                75
                 ,	east__size:					375
                 ,	east__minSize:				250
                 ,	east__maxSize:				.5 // 50% of layout width
@@ -156,7 +157,7 @@
     <body>
         
         <div class="ui-layout-north">
-            <div class="top">
+            <div class="selector">
                 <select id="filterText" class="btn btn-secondary dropdown-toggle btn-lg btn-block" onchange='filterText();'>
                     <option selected value="all">Find an app to...</option>
                     <option value="Create">...create learning resources</option>
@@ -174,6 +175,8 @@
         <div class="ui-layout-center">
             
             <div class="container">
+                
+                
                 
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-12">
@@ -378,7 +381,7 @@
                                             <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Activities this app can support" aria-hidden="true"></i></h5>
                                         </div>
                                         <div class="blooms-pills-sub">
-                                            <span class="badge sub">Notetaking</span> <span class="badge sub">Annotating</span> <span class="badge sub">Documenting</span> <span class="badge sub">Converting</span> <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Examples of how this app can be used" aria-hidden="true"></i></a>
+                                            <span class="badge sub">Notetaking</span> <span class="badge sub">Annotating</span> <span class="badge sub">Documenting</span> <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Examples of how this app can be used" aria-hidden="true"></i></a>
                                         </div>
                                         <div class="submitter">
                                             <div class="submitterimg">
@@ -729,7 +732,7 @@
                                             <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Activities this app can support" aria-hidden="true"></i></h5>
                                         </div>
                                         <div class="blooms-pills-sub">
-                                            <span class="badge sub">Flashcards</span> <span class="badge sub">Quizzes</span> <span class="badge sub">Interactive activities</span> <span class="badge sub">Gamification</span> <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Examples of how this app can be used" aria-hidden="true"></i></a>
+                                            <span class="badge sub">Flashcards</span> <span class="badge sub">Quizzes</span> <span class="badge sub">Gamification</span> <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Examples of how this app can be used" aria-hidden="true"></i></a>
                                         </div>
                                         <div class="submitter">
                                             <div class="submitterimg">
@@ -984,69 +987,73 @@
                             <a class="nav-link" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="About" aria-selected="false"><i class="fa fa-info" aria-hidden="true"></i>&nbsp;&nbsp;About</a>
                         </li>
                     </ul>
-                </div>
 
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="contribute" role="tabpanel" aria-labelledby="contribute-tab">
-                        <div class="bs-callout bs-callout-contribute clearfix">
-                            <div class="icon">
-                                <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="contribute" role="tabpanel" aria-labelledby="contribute-tab">
+                            <div class="bs-callout bs-callout-contribute clearfix">
+                                <div class="icon">
+                                    <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                                </div>
+                                <h4>Contribute</h4>
+                                <p>Help others discover new technologies by telling us about the apps you use.</p>
+                                <p class="instruction">Complete the form below and we'll be in touch to discuss creating a custom card for your suggestion.</p>
                             </div>
-                            <h4>Contribute</h4>
-                            <p>Help others discover new technologies by telling us about the apps you use.</p>
-                            <p class="instruction">Complete the form below and we'll be in touch to discuss creating a custom card for your suggestion.</p>
+                            <div class="bs-callout bs-thanks clearfix" id="thankyou_message">
+                                <div class="icon">
+                                    <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 
+                                </div>
+                                <p><strong>Alright! </strong>Thanks for making a suggestion.<a href="#" onclick="submitAgain();"> Click here to make another.</a></p>
+                            </div>
+                            <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwdPK1Xn_XdIKYYnMLltp6u51nGpuRltLkwPvMUyLmMY1biPhpz/exec">
+                                <div class="form-group">
+                                    <label for="name">Name:</label>
+                                    <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email address:</label>
+                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                <label for="location">School/Faculty/Directorate:</label>
+                                <input class="form-control" id="location" name="location" aria-describedby="emailHelp" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">App suggestion:</label>
+                                    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only">Keep this field blank</label>
+                                    <input id="honeypot" type="text" name="honeypot" value="" />
+                                </div>
+                                <button type="submit" class="btn btn-block submitbutton">
+                                    Submit
+                                </button>
+                            </form>                        
                         </div>
-                        <div class="bs-callout bs-thanks clearfix" id="thankyou_message">
-                            <div class="icon">
-                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 
-                            </div>
-                            <p><strong>Alright! </strong>Thanks for making a suggestion.<a href="#" onclick="submitAgain();"> Click here to make another.</a></p>
-                        </div>
-                        <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwdPK1Xn_XdIKYYnMLltp6u51nGpuRltLkwPvMUyLmMY1biPhpz/exec">
-                            <div class="form-group">
-                                <label for="name">Name:</label>
-                                <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp" placeholder="">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email address:</label>
-                                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="">
-                            </div>
-                            <div class="form-group">
-                            <label for="location">School/Faculty/Directorate:</label>
-                            <input class="form-control" id="location" name="location" aria-describedby="emailHelp" placeholder="">
-                            </div>
-                            <div class="form-group">
-                                <label for="message">App suggestion:</label>
-                                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only">Keep this field blank</label>
-                                <input id="honeypot" type="text" name="honeypot" value="" />
-                            </div>
-                            <button type="submit" class="btn btn-block submitbutton">
-                                Submit
-                            </button>
-                        </form>                        
-                    </div>
 
 
-                    <div class="tab-pane fade" id="support" role="tabpanel" aria-labelledby="support-tab">
-                        <div class="bs-callout bs-callout-support clearfix">
-                            <div class="icon">
-                                <i class="fa fa-comments-o" aria-hidden="true"></i> 
+                        <div class="tab-pane fade" id="support" role="tabpanel" aria-labelledby="support-tab">
+                            <div class="bs-callout bs-callout-support clearfix">
+                                <div class="icon">
+                                    <i class="fa fa-comments-o" aria-hidden="true"></i> 
+                                </div>
+                                <h4>Support</h4>
+                                <p>If you have any questions or issues relating to the apps featured here, please speak to your local learning technology support person.</p> <p>A list of University contacts can be found below.</p>
                             </div>
-                            <h4>Support</h4>
-                            <p>If you have any questions or issues relating to the apps featured here, please speak to your local learning technology support person.</p> <p>A list of University contacts can be found below.</p>
-                            <div>
-                                <ul class="nav nav-fill" role="tablist">
+                            <div class="contacts-nav">
+                                <ul class="nav nav-pills nav-fill" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="#humss" role="tab" data-toggle="tab">Faculty of HumSS</a></li>
+                                        <a class="nav-link active" href="#humss" role="tab" data-toggle="pill">Faculty of HumSS</a>
+                                    </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#health" role="tab" data-toggle="tab">Faculty of Medicine and Health Sciences</a></li>
+                                        <a class="nav-link" href="#health" role="tab" data-toggle="pill">Faculty of Medicine and Health Sciences</a>
+                                    </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#naturalsciences" role="tab" data-toggle="tab">Faculty of Natural Sciences</a></li>
+                                        <a class="nav-link" href="#naturalsciences" role="tab" data-toggle="pill">Faculty of Natural Sciences</a>
+                                    </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#lpdc" role="tab" data-toggle="tab">LPDC</a></li>
+                                        <a class="nav-link" href="#lpdc" role="tab" data-toggle="pill">LPDC</a>
+                                    </li>
                                 </ul>
                                 <div class="tab-content">
                                     <div role="tabpanel" class="tab-pane fade show active" id="humss">             
@@ -1079,23 +1086,23 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
 
-                    <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
-                        <div class="bs-callout bs-callout-about clearfix">
-                            <div class="icon">
-                                <i class="fa fa-info" aria-hidden="true"></i> 
+                        <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
+                            <div class="bs-callout bs-callout-about clearfix">
+                                <div class="icon">
+                                    <i class="fa fa-info" aria-hidden="true"></i> 
+                                </div>
+                                <h4>About</h4>
+                                <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+                                <p>All resources are freely available via <a href="https://github.com/danieladamharding/tel_cards" target="_blank">this GitHub repository</a>.</p>
+                                <p>Produced by <a href="https://www.twitter.com/danielharding" target="_blank">Dan Harding</a> and <a href="https://www.twitter.com/Matthew_Street" target="_blank">Matthew Street</a> at <a href="https://www.keele.ac.uk" target="_blank">Keele University</a>, UK.</p>
+                                <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank"><img alt="Creative Commons License" class="creativecommons" style="border-width: 0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"></a><br /></a>
                             </div>
-                            <h4>About</h4>
-                            <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
-                            <p>All resources are freely available via <a href="https://github.com/danieladamharding/tel_cards" target="_blank">this GitHub repository</a>.</p>
-                            <p>Produced by <a href="https://www.twitter.com/danielharding" target="_blank">Dan Harding</a> and <a href="https://www.twitter.com/Matthew_Street" target="_blank">Matthew Street</a> at <a href="https://www.keele.ac.uk" target="_blank">Keele University</a>, UK.</p>
-                            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank"><img alt="Creative Commons License" class="creativecommons" style="border-width: 0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"></a><br /></a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> <!-- End of container -->
         </div> <!-- End of east pane -->
 
         <script data-cfasync="false" type="text/javascript" src="js/formhandler.js"></script>
