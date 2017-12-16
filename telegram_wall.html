@@ -176,8 +176,6 @@
             
             <div class="container">
                 
-                
-                
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card-container manual-flip">
@@ -1127,15 +1125,17 @@
         </script>
 
         <script>
-            function filterText(){
+            function filterText() {
               var rex = new RegExp($('#filterText').val());
-              if(rex =="/all/"){clearFilter()}else{
+              if (rex =="/all/") {
+                  clearFilter()
+              } else {
                 $('.card-container').hide();
                 $('.card-container').filter(function() {
                 return rex.test($(this).text());
                 }).show();
                }
-               }
+            }
 
             function clearFilter() {
             $('.card-container').show();
