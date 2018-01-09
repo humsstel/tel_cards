@@ -705,7 +705,7 @@ a {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 300px) {
+/* @media (max-width: 300px) {
     .titlebarfront {
         flex-direction: column;
         height: 280px;
@@ -743,3 +743,5 @@ a {
         height: 320px;
     }
 }
+
+*/
