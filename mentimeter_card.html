@@ -49,7 +49,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="nextcard faa-parent animated-hover" role="button" onclick="windowFunction();">
+                        <div class="nextcard faa-parent animated-hover" role="button" onclick="refreshIframe();">
                             <i class="fa fa-magic faa-shake animated-hover" aria-hidden="true"></i>&nbsp;&nbsp;Try another app
                         </div>
                     </div><!-- End front panel -->
@@ -96,7 +96,7 @@
                                 <p>Create a short answer question that asks students to suggest revision topics. Turn the answers into a poll and use it to inform the next session's content.</p>
                             </div>
                         </div>
-                        <div class="nextcard faa-parent animated-hover" role="button" onclick="windowFunction();">
+                        <div class="nextcard faa-parent animated-hover" role="button" onclick="refreshIframe();">
                             <i class="fa fa-magic faa-shake animated-hover" aria-hidden="true"></i>&nbsp;&nbsp;Try another app
                         </div>
                     </div> <!-- End back panel -->
@@ -128,6 +128,7 @@
         </script>
         <script>
             var cards = [
+                "googleclassroom_card.html",
                 "mentimeter_card.html",
                 "padlet_card.html",
                 "pinterest_card.html",
@@ -142,18 +143,6 @@
             
             function refreshIframe() {
                 parent.document.getElementById('myFrame').setAttribute('src', cards[randomise]);
-            }
-                
-            function goBack() {
-                history.go(-1);
-            }
-            
-            function windowFunction() {
-                if (window.parent === window.top) {
-                    goBack();
-                } else {
-                    refreshIframe();
-                }
             }
             
         </script>

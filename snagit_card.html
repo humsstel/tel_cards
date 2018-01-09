@@ -48,7 +48,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="nextcard faa-parent animated-hover" role="button" onclick="windowFunction();">
+                        <div class="nextcard faa-parent animated-hover" role="button" onclick="refreshIframe();">
                             <i class="fa fa-magic faa-shake animated-hover" aria-hidden="true"></i>&nbsp;&nbsp;Try another app
                         </div>
                     </div><!-- End front panel -->
@@ -95,7 +95,7 @@
                                 <p>Use Snagit to record audiovisual feedback based on anonymised draft submissions to help resolve common assignment issues.</p>
                             </div>
                         </div>
-                        <div class="nextcard faa-parent animated-hover" role="button" onclick="windowFunction();">
+                        <div class="nextcard faa-parent animated-hover" role="button" onclick="refreshIframe();">
                             <i class="fa fa-magic faa-shake animated-hover" aria-hidden="true"></i>&nbsp;&nbsp;Try another app
                         </div>
                        
@@ -128,6 +128,7 @@
         </script>
         <script>
             var cards = [
+                "googleclassroom_card.html",
                 "mentimeter_card.html",
                 "padlet_card.html",
                 "pinterest_card.html",
@@ -143,19 +144,7 @@
             function refreshIframe() {
                 parent.document.getElementById('myFrame').setAttribute('src', cards[randomise]);
             }
-                
-            function goBack() {
-                history.go(-1);
-            }
-            
-            function windowFunction() {
-                if (window.parent === window.top) {
-                    goBack();
-                } else {
-                    refreshIframe();
-                }
-            }
-            
+
         </script>
     </body>
 </html>
