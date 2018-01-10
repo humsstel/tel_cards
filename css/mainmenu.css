@@ -58,8 +58,8 @@ iframe {
 }   
 
 .bs-callout-catalogue {
+    border-color: #fccc30;
     background-color: #fafafa;
-    border-color: #ffb74d;
 }
 
 .bs-callout .icon {
@@ -77,7 +77,7 @@ iframe {
 }
 
 .dropdown-toggle {
-    background-color: #90A4AD;
+    background-color: #343a40;
     color: #fff;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -86,12 +86,12 @@ iframe {
 }
 
 .dropdown-toggle:hover {
-    background-color: #90A4AD;
+    background-color: #343a40;
     color: #fff;
 }
 
 ..dropdown-toggle:focus {
-    background-color: #90A4AD;
+    background-color: #343a40;
     color: #fff;
 }
 
@@ -151,7 +151,7 @@ iframe {
 
 .bs-callout-contribute {
     background-color: #fafafa;
-    border-color: #ba68c8;
+    border-color: #a168c8;
 }
 
 .bs-thanks {
@@ -166,7 +166,7 @@ iframe {
 
 form input:focus,
 form textarea:focus {
-    border-color: #ba68c8 !important;
+    border-color: #a168c8 !important;
     border-width: 1px;
 }
 
@@ -189,7 +189,7 @@ form {
 
 .submitbutton {
     margin-bottom: 15px;
-    background-color: #353B40;
+    background-color: #343a40;
     color: #fff;
 }
 
