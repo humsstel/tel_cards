@@ -36,26 +36,35 @@ Create interactive learning opportunities that engage.
 Check (Checking)
 Gauge students understanding.
 
+
 /* PALETTE */
 
-Create (Creating)
+.create {
+    background-color: #a168c8;
+}
 
+.connect {
+    background-color: #4db6ac;
+}
 
-Connect (Connecting)
+.collaborate {
+    background-color: #f06292;
+}
 
+.curate {
+    background-color: #fccc30;
+}
 
-Collaborate (Collaborating)
+.capture {
+    background-color: #4fc3f7;
+}
 
+.captivate {
+    background-color: #4b768d;
+}
 
-Curate (Curating)
-
-
-Capture (Capturing)
-
-
-Captivate (Captivating)
-
-
-Check (Checking)
+.check {
+    background-color: #dadfe1;
+}
 
 
