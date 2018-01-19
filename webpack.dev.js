@@ -32,6 +32,7 @@ module.exports = {
                     loader: 'svelte-loader',
                     options: {
                         emitCSS: true,
+                        store: true,
                     },
                 },
             },

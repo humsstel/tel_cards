@@ -1,24 +1,18 @@
-<h1>Hello {{name}}!</h1>
+<h1>Hello {{$name}}!</h1>
 
-{{#each modules as module}}
-	<Module :module />
+{{#each $cards as card}}
+	<Card :card />
 {{/each}}
 
-<style>
-	h1 {
-		color: purple;
-	}
-</style>
-
 <script>
-	import Module from './Module.html'
+	import Card from './Card.html'
 
 	export default {
 		oncreate() {
-			console.log(this.get('modules'))
+			console.log(this.get('cards'))
 		},
 		components: {
-			Module
+			Card
 		}
 	}
 </script>

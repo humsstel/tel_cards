@@ -1,0 +1,15 @@
+<h2>{{ card.name }}</h2>
+
+{{#if card.subtitle !== undefined}}
+<h4>{{ card.subtitle }}</h4>
+{{/if}}
+
+<p>{{ card.description }}.</p>
+{{#if card.tags !== undefined}}
+<ul>
+{{#each card.tags as tag}}
+    <li>{{ tag }}</li>
+{{/each}}
+</ul>
+{{/if}}
+<hr />
