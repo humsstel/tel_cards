@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Mentimeter",
+        "url": "https://www.mentimeter.com",
+        "tagline": "An online polling tool that encourages audience participation.",
+        "description": "Energise presentations and make lectures more interactive by building informal quizzes and polls that students can respond to using any Internet connected device. Live results are displayed on-screen or hidden until the presenter chooses to reveal them. Great for formative feedback and to monitor understanding.",
+        "activities": [
+
+        ],
+        "uses": [
+            "Assessment",
+            "Polls",
+            "Quizzes",
+            "Feedback"
+        ],
+        "submitter": {
+            "name": "Dr C Little",
+            "title": "Learning Developer"
+        },
+        "videoURL": "https://www.youtube.com/embed/f1s7UhcIA7I?rel=0&amp;showinfo=0?&cc_load_policy=1",
+        "framework": {
+            "enhance": "Plan an icebreaker activity that poses a quick quiz to help gauge students prior knowledge and to introduce topics that are due to be covered.",
+            "empower": "Integrate your slides with Mentimeter and use Reactions to help indicate when students are ready to move on or don't understand.",
+            "extend": "Create a short answer question that asks students to suggest revision topics. Turn the answers into a poll and use it to inform the next session's content."
+        }
+    }
+]

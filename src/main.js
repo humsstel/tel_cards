@@ -1,11 +1,10 @@
 import { Store } from 'svelte/store'
 
 import App from './templates/App.html'
-import data from './data.json'
+import cards from './cards.json'
 
 const store = new Store({
-	name: 'world',
-	cards: data.modules,
+	cards,
 })
 
 const app = new App({
