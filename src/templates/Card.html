@@ -27,7 +27,7 @@
                     </div>
                     <div class="blooms-pills-sub">
                         {{#each card.uses as use}}
-                        <span class="badge sub">{{ use }} </span>
+                        <span class="badge sub">{{ use }} </span>&nbsp;
                         {{/each}} 
                         <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Examples of how this app can be used" aria-hidden="true"></i>
                     </div>
@@ -36,7 +36,7 @@
                             <i class="fa fa-user-o" aria-hidden="true"></i>
                         </div>
                         <div class="submitterinfo">
-                            <p class="small"><b>Submitted by</b><br>{{ card.submitter.name }}<span class="submitterschool"> | {{ card.submitter.title }}</span></p>
+                            <p class="small"><b>Submitted by</b><br>{{ card.submitter.name }}<span class="submitterschool">&nbsp;| {{ card.submitter.title }}</span></p>
                         </div>
                     </div>
                 </div>
@@ -97,4 +97,10 @@
 
 <script>
     import "../css/card.css"
+
+    export default {
+        oncreate() {
+            //console.log(this.get('card'))
+        }
+    }
 </script>

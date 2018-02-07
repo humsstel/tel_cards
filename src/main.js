@@ -5,11 +5,12 @@ import cards from './cards.json'
 
 const store = new Store({
 	cards,
+	currentCard: 'socrative',
 })
 
 const app = new App({
 	target: document.body,
-	store
-});
+	store,
+})
 
 export default app;

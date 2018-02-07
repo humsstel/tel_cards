@@ -1,16 +1,17 @@
-{{#each $cards as card}}
-	<Card :card />
-{{/each}}
+<Card :card />
 
 <script>
 	import Card from './Card.html'
 
 	export default {
 		oncreate() {
-			console.log(this.get('cards'))
+			//console.log(this.store.get('card'))
 		},
 		components: {
 			Card
+		},
+		computed: {
+			card: ($cards, $currentCard) => $cards.find(card => card.id === $currentCard)
 		}
 	}
 </script>
