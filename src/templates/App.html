@@ -1,11 +1,49 @@
-<Card :card />
+<div class="col-md-12">
+	<div class="card mainCard">
+		<div class="card-header" role="navigation">
+			<ul class="nav nav-tabs card-header-tabs justify-content-center" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="app-tab" data-toggle="tab" href="#appgenerator" role="tab" aria-controls="App Generator" aria-expanded="true"><i class="fa fa-magic" aria-hidden="true"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="catalogue-tab" data-toggle="tab" href="#catalogue" role="tab" aria-controls="Catalogue"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="contribute-tab" data-toggle="tab" href="#contribute" role="tab" aria-controls="Contribute"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="About"><i class="fa fa-info" aria-hidden="true"></i></a>
+				</li>
+			</ul>
+		</div>
+		<div class="tab-content" id="myTabContent">
+			<div class="tab-pane fade show active" id="appgenerator" role="tabpanel" aria-labelledby="app-tab">
+				<Card :card />
+			</div>
+			<div class="tab-pane fade" id="catalogue" role="tabpanel" aria-labelledby="catalogue-tab">
+				
+			</div>
+			<div class="tab-pane fade" id="contribute" role="tabpanel" aria-labelledby="contribute-tab">
+				
+			</div>
+			<div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
+				
+			</div>
+		</div>
+	</div>
+</div>
 
 <script>
+	import "../css/mainmenu.css"
+	import "../css/font-awesome-animation.min.css"
+
 	import Card from './Card.html'
 
 	export default {
 		oncreate() {
-			//console.log(this.store.get('card'))
+			// Child is positioned absolutely, so this forces container to fill height of child
+			const childHeight = document.querySelector('.card').scrollHeight
+			document.querySelector('#appgenerator').style.height = `${childHeight}px`
 		},
 		components: {
 			Card

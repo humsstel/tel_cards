@@ -16,6 +16,7 @@ class AppStore extends Store {
 const store = new AppStore({
 	cards,
 	currentCard: 'socrative',
+	currentPage: 'cards',
 })
 
 const app = new App({

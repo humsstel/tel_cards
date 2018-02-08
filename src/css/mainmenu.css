@@ -90,7 +90,7 @@ iframe {
     color: #fff;
 }
 
-..dropdown-toggle:focus {
+.dropdown-toggle:focus {
     background-color: #343a40;
     color: #fff;
 }
