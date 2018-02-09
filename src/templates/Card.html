@@ -20,7 +20,7 @@
                 <div class="details">
                     <div class="blooms-pills-main">
                         <h5>
-                            {{#each activities as activity}}
+                            {{#each card.activities as activity}}
                             <span class="badge activity {{ activity.name }}" data-toggle="tooltip" data-placement="top" title="{{ activity.description }}" aria-hidden="true">{{ activity.name }}</span>&nbsp;
                             {{/each}}
                             <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Activities this app can support" aria-hidden="true"></i>
@@ -111,21 +111,6 @@
             return {
                 // Set the card to unflipped state by default
                 flipped: false,
-            }
-        },
-
-        computed: {
-            activities: card => {
-                const activities = [
-                    { name: "create", description: "Build learning resources, from scratch or remixing existing materials." },
-                    { name: "captivate", description: "Create interactive learning opportunities that engage." },
-                    { name: "check", description: "Gauge students understanding." },
-                    { name: "connect", description: "Communicate with students in real time or asynchronously." },
-                    { name: "collaborate", description: "A platform for collaboration and co-creation." },
-                    { name: "curate", description: "Collect, organise and share content." },
-                    { name: "capture", description: "Record an event, activity or artefact." },
-                ]
-                return card.activities.map(name => activities.find(activity => activity.name === name))
             }
         },
 

@@ -20,82 +20,23 @@
                 <option value="">All apps</option>
             </select>
         </div>
-        <div class="card cataloguepane" data-spy="scroll">                
+        <div class="card cataloguepane" data-spy="scroll">       
             <div class="front">
                 <ul class="list-group list-group-flush">
-
-                    <a href="?page=googleclassroom_card.html" class="list-group-item list-group-item-action">
+                    {{#each $cards as card}}
+                    <li class="list-group-item list-group-item-action">
                         <div class="applist">
-                            <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/google_classroom.png"> Google Classroom</h5>
-                            <p class="categories"><span class="badge connect">Connect</span> <span class="badge collaborate">Collaborate</span> <span class="badge curate">Curate</span></p>
-                            <p class="submitter"><small>Submitted by A Rhead | Student Learning &amp; Development</small></p>
-                            <p class="appinfo">Manage classes, set assignments and interact with students all in one place.</p>
+                            <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/google_classroom.png"> {{ card.name }}</h5>
+                            <p class="categories">
+                                {{#each card.activities as activity}}
+                                <span class="badge activity {{ activity.name }}">{{ activity.name }}</span>&nbsp;
+                                {{/each}}
+                            </p>
+                            <p class="submitter"><small>Submitted by {{ card.submitter.name }} | {{ card.submitter.title }}</small></p>
+                            <p class="appinfo">{{ card.tagline }}</p>
                         </div>
-                    </a>
-                    
-                    <a href="?page=mentimeter_card.html" class="list-group-item list-group-item-action">
-                        <div class="applist">
-                            <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/mentimeter.png"> Mentimeter</h5>
-                            <p class="categories"><span class="badge create">Create</span> <span class="badge captivate">Captivate</span> <span class="badge check">Check</span></p>
-                            <p class="submitter"><small>Submitted by Dr C Little | Student Learning &amp; Development</small></p>
-                            <p class="appinfo">An online polling tool that encourages audience participation.</p>
-                        </div>
-                    </a>
-                    
-                    <a href="?page=officelens_card.html" class="list-group-item list-group-item-action">
-                        <div class="applist">
-                            <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/officelens.jpg"> Office Lens</h5>
-                            <p class="categories"><span class="badge create">Create</span> <span class="badge capture">Capture</span></p>
-                            <p class="submitter"><small>Submitted by K Beaumont | Student Learning &amp; Development</small></p>
-                            <p class="appinfo">Capture images of whiteboards and documents to make them into readable learning resources.</p>
-                        </div>
-                    </a>
-
-                    <a href="?page=padlet_card.html" class="list-group-item list-group-item-action">
-                        <div class="applist">
-                            <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/padlet.jpg"> Padlet</h5>
-                            <p class="categories"><span class="badge create">Create</span> <span class="badge collaborate">Collaborate</span> <span class="badge curate">Curate</span></p>
-                            <p class="submitter"><small>Submitted by T Hinchcliffe | Student Learning &amp; Development</small></p>
-                            <p class="appinfo">Padlet creates digital noticeboards that make sharing and collaborating easy.</p>
-                        </div>
-                    </a>
-                    
-                    <a href="?page=pinterest_card.html" class="list-group-item list-group-item-action">
-                        <div class="applist">
-                            <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/pinterest.png"> Pinterest</h5>
-                            <p class="categories"><span class="badge create">Create</span> <span class="badge collaborate">Collaborate</span> <span class="badge curate">Curate</span></p>
-                            <p class="submitter"><small>Submitted by Dr E De Quincey | School of Computing and Maths</small></p>
-                            <p class="appinfo">Upload, save and manage visual content via collections known as pinboards.</p>
-                        </div>
-                    </a>
-
-                    <a href="?page=pocket_card.html" class="list-group-item list-group-item-action">
-                        <div class="applist">
-                            <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/pocket.png"> Pocket</h5>
-                            <p class="categories"><span class="badge create">Create</span> <span class="badge curate">Curate</span></p>
-                            <p class="submitter"><small>Submitted by TBC | TBC</small></p>
-                            <p class="appinfo">A social bookmarking tool that saves web content across all of your devices.</p>
-                        </div>
-                    </a>
-                    
-                    <a href="?page=snagit_card.html" class="list-group-item list-group-item-action">
-                        <div class="applist">
-                            <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/snagit.png"> Snagit</h5>
-                            <p class="categories"><span class="badge create">Create</span> <span class="badge capture">Capture</span></p>
-                            <p class="submitter"><small>Submitted by E Tennant | Language Centre</small></p>
-                            <p class="appinfo">Capture screenshots or record video to visually explain anything from your screen.</p>
-                        </div>
-                    </a>
-                    
-                    <a href="?page=socrative_card.html" class="list-group-item list-group-item-action">
-                        <div class="applist">
-                            <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/socrative.png"> Socrative</h5>
-                            <p class="categories"><span class="badge create">Create</span> <span class="badge captivate">Captivate</span> <span class="badge check">Check</span></p>
-                            <p class="submitter"><small>Submitted by Dr R Leach | School of Social Science and Public Policy</small></p>
-                            <p class="appinfo">Encourages student participation via online polls and quizzes for real time feedback.</p>
-                        </div>
-                    </a>
-                    
+                    </li>
+                    {{/each}}
                 </ul>
             </div>
         </div>
