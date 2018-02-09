@@ -6,7 +6,9 @@
         "tagline": "An online polling tool that encourages audience participation.",
         "description": "Energise presentations and make lectures more interactive by building informal quizzes and polls that students can respond to using any Internet connected device. Live results are displayed on-screen or hidden until the presenter chooses to reveal them. Great for formative feedback and to monitor understanding.",
         "activities": [
-
+            "create",
+            "captivate",
+            "check"
         ],
         "uses": [
             "Assessment",
@@ -33,7 +35,9 @@
         "tagline": "Classroom allows educators to manage classes, set assignments and interact with students all in one place.",
         "description": "Classroom connects students and instructors using tools such as Google Docs, Calendar, Drive, and Forms to build a streamlined platform for learning. Teachers can create classes, distribute assignments, communicate and stay organized whilst students can see their assignments on their To-Do page, share resources and interact in the class stream.",
         "activities": [
-
+            "connect",
+            "collaborate",
+            "curate"
         ],
         "uses": [
             "Assessment",
@@ -59,7 +63,8 @@
         "tagline": "Capture images of whiteboards and documents to make them into readable learning resources.",
         "description": "Simply put, Office Lens puts a scanner in your pocket. Frame your shot, shoot from any angle, and like magic, it digitises notes from whiteboards or physical documents for you to easily tidy up. Office Lens uses optical character recognition (OCR) to recognise and convert static images into searchable, editable documents such as Word or PDF. Never lose your sticky notes again!",
         "activities": [
-
+            "create",
+            "capture"
         ],
         "uses": [
             "Notetaking",
@@ -85,7 +90,9 @@
         "tagline": "Padlet creates digital noticeboards that make sharing and collaborating easy.",
         "description": "Padlet provides a flexible digital canvas to add a variety of content. Drag in a video, snap a picture, write text posts or upload documents! Make it even more individual by choosing custom wallpapers and themes. Padlets can be selectively shared and edited among multiple contributors, in real time.",
         "activities": [
-
+            "create",
+            "collaborate",
+            "curate"
         ],
         "uses": [
             "Mindmapping",
@@ -111,7 +118,9 @@
         "tagline": "Upload, save and manage visual content (e.g. images and video) via collections known as pinboards.",
         "description": "Pinterest is a visual bookmarking tool that helps to discover and save creative ideas. Known as pins, images and videos can be uploaded, saved and categorised into collections  (pinboards) that can be kept private or shared online. Pinboards can be split into sections and made collaborative, allowing others to add content. Pinterest's bookmarking tool can also be used to quickly save content from around the web.",
         "activities": [
-
+            "create",
+            "collaborate",
+            "curate"
         ],
         "uses": [
             "Bookmarking",
@@ -137,7 +146,7 @@
         "tagline": "A social bookmarking tool that saves web content across all of your devices.",
         "description": "Pocket saves and organises interesting articles, videos and other web content so you can return to it later. Once saved, your personalised library is available on any device, from anywhere — even offline. Easily share items via email or post them to Twitter and Facebook for others to discover.",
         "activities": [
-
+            "curate"
         ],
         "uses": [
             "Bookmarking",
@@ -163,7 +172,8 @@
         "tagline": "Capture screenshots or record video to visually explain anything from your screen.",
         "description": "Snagit is an all-in-one tool for image and video capture, making it easy to create a variety of learning resources. For example, produce step-by-step tutorials, short introductory videos or annotated images. Snagit's integrated editor simplifies the process by providing a range of professional markup options.",
         "activities": [
-
+            "create",
+            "capture"
         ],
         "uses": [
             "Screencasting",
@@ -189,7 +199,9 @@
         "tagline": "An app that encourages student participation via online polls and quizzes for real time feedback.",
         "description": "SEngage students with Socrative, an app that helps to build activities that provide feedback as learning happens. Launch pre-prepared quizzes or ask ad-hoc questions to quickly assess students and get immediate insights into their understanding at class, individual or question level. Automatically populated results visualise feedback, either to be shared with the class or collected anonymously by the tutor.",
         "activities": [
-
+            "create",
+            "captivate",
+            "check"
         ],
         "uses": [
             "Assessment",

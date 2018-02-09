@@ -19,11 +19,12 @@
                 </div>
                 <div class="details">
                     <div class="blooms-pills-main">
-                    <h5>
-                        <span class="badge create" data-toggle="tooltip" data-placement="top" title="Build learning resources, from scratch or remixing existing materials." aria-hidden="true">Create</span>
-                        <span class="badge captivate" data-toggle="tooltip" data-placement="top" title="Create interactive learning opportunities that engage." aria-hidden="true">Captivate</span>
-                        <span class="badge check" data-toggle="tooltip" data-placement="top" title="Gauge students understanding." aria-hidden="true">Check</span>  
-                        <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Activities this app can support" aria-hidden="true"></i></h5>
+                        <h5>
+                            {{#each activities as activity}}
+                            <span class="badge activity {{ activity.name }}" data-toggle="tooltip" data-placement="top" title="{{ activity.description }}" aria-hidden="true">{{ activity.name }}</span>&nbsp;
+                            {{/each}}
+                            <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Activities this app can support" aria-hidden="true"></i>
+                        </h5>
                     </div>
                     <div class="blooms-pills-sub">
                         {{#each card.uses as use}}
@@ -110,6 +111,21 @@
             return {
                 // Set the card to unflipped state by default
                 flipped: false,
+            }
+        },
+
+        computed: {
+            activities: card => {
+                const activities = [
+                    { name: "create", description: "Build learning resources, from scratch or remixing existing materials." },
+                    { name: "captivate", description: "Create interactive learning opportunities that engage." },
+                    { name: "check", description: "Gauge students understanding." },
+                    { name: "connect", description: "Communicate with students in real time or asynchronously." },
+                    { name: "collaborate", description: "A platform for collaboration and co-creation." },
+                    { name: "curate", description: "Collect, organise and share content." },
+                    { name: "capture", description: "Record an event, activity or artefact." },
+                ]
+                return card.activities.map(name => activities.find(activity => activity.name === name))
             }
         },
 

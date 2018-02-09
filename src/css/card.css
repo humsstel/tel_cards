@@ -176,6 +176,10 @@ a {
     font-family: 'Catamaran', sans-serif;
 }
 
+.activity {
+    text-transform: capitalize;
+}
+
 .create {
     background-color: #ba68c8;
 }
