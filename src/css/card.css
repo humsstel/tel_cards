@@ -330,7 +330,7 @@ a {
     -moz-perspective: 800px;
     -o-perspective: 800px;
     perspective: 800px;
-    margin-bottom: 30px;
+    margin: 15px 0;
 }
 
 .noborder {

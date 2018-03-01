@@ -28,7 +28,7 @@ cards.forEach(card => {
 
 const store = new AppStore({
 	cards,
-	currentCard: 'socrative',
+	currentCard: cards[Math.floor(Math.random() * cards.length)].id,
 	currentPage: 'card',
 })
 
