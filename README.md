@@ -4,4 +4,4 @@
 `yarn start`
 
 ## Compile production app to dist
-`yarn build:prod`
+`yarn build`
