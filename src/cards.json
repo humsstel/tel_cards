@@ -38,7 +38,7 @@
         "url": "https://classroom.google.com",
         "tagline": "Classroom allows educators to manage classes, set assignments and interact with students all in one place.",
         "description": "Classroom connects students and instructors using tools such as Google Docs, Calendar, Drive, and Forms to build a streamlined platform for learning. Teachers can create classes, distribute assignments, communicate and stay organized whilst students can see their assignments on their To-Do page, share resources and interact in the class stream.",
-        "colour": "#FF4A76",
+        "colour": "#FDBC45",
         "image": {
             "logo": "google_classroom.png"
         },
@@ -70,7 +70,7 @@
         "url": "https://www.microsoft.com/en-gb/store/p/office-lens/9wzdncrfj3t8",
         "tagline": "Capture images of whiteboards and documents to make them into readable learning resources.",
         "description": "Simply put, Office Lens puts a scanner in your pocket. Frame your shot, shoot from any angle, and like magic, it digitises notes from whiteboards or physical documents for you to easily tidy up. Office Lens uses optical character recognition (OCR) to recognise and convert static images into searchable, editable documents such as Word or PDF. Never lose your sticky notes again!",
-        "colour": "#2C72B7",
+        "colour": "#D83C18",
         "image": {
             "logo": "officelens.jpg"
         },
@@ -195,7 +195,7 @@
         "url": "http://www.snagit.com",
         "tagline": "Capture screenshots or record video to visually explain anything from your screen.",
         "description": "Snagit is an all-in-one tool for image and video capture, making it easy to create a variety of learning resources. For example, produce step-by-step tutorials, short introductory videos or annotated images. Snagit's integrated editor simplifies the process by providing a range of professional markup options.",
-        "colour": "#00a5bd",
+        "colour": "#2C72B7",
         "image": {
             "logo": "snagit.png"
         },
@@ -226,7 +226,7 @@
         "url": "https://www.socrative.com",
         "tagline": "An app that encourages student participation via online polls and quizzes for real time feedback.",
         "description": "SEngage students with Socrative, an app that helps to build activities that provide feedback as learning happens. Launch pre-prepared quizzes or ask ad-hoc questions to quickly assess students and get immediate insights into their understanding at class, individual or question level. Automatically populated results visualise feedback, either to be shared with the class or collected anonymously by the tutor.",
-        "colour": "#00a5bd",
+        "colour": "#8EB4CF",
         "image": {
             "logo": "socrative.png"
         },
