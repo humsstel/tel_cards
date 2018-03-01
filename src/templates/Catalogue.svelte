@@ -24,9 +24,9 @@
             <div class="front">
                 <ul class="list-group list-group-flush">
                     {{#each $cards as card}}
-                    <li class="list-group-item list-group-item-action">
+                    <a href="#" class="list-group-item list-group-item-action" on:click="store.set({ currentPage: 'card', currentCard: card.id })">
                         <div class="applist">
-                            <h5><img style="display: inline; height: 1em; vertical-align: top;" src="img/{{ card.image.logo }}"> {{ card.name }}</h5>
+                            <h5><img style="display: inline; height: 1em; vertical-align: top;" src="{{ card.assets.logo.image }}"> {{ card.name }}</h5>
                             <p class="categories">
                                 {{#each card.activities as activity}}
                                 <span class="badge activity {{ activity.name }}">{{ activity.name }}</span>&nbsp;
@@ -35,7 +35,7 @@
                             <p class="submitter"><small>Submitted by {{ card.submitter.name }} | {{ card.submitter.title }}</small></p>
                             <p class="appinfo">{{ card.tagline }}</p>
                         </div>
-                    </li>
+                    </a>
                     {{/each}}
                 </ul>
             </div>

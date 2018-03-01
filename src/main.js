@@ -1,14 +1,14 @@
 import { Store } from 'svelte/store'
 
 import App from './templates/App.svelte'
-import cards from './cards.json'
+import cards from './cards.js'
 
 class AppStore extends Store {
 	loadRandomCard(currentCardId) {
 		const cards = this.get('cards').filter(card => card.id !== currentCardId)
         const card = cards[Math.floor(Math.random() * cards.length)]
         this.set({
-			currentCard: card.id,			
+			currentCard: card.id,
 		})
 	}
 }
@@ -29,7 +29,7 @@ cards.forEach(card => {
 const store = new AppStore({
 	cards,
 	currentCard: 'socrative',
-	currentPage: 'cards',
+	currentPage: 'card',
 })
 
 const app = new App({

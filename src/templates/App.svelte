@@ -17,16 +17,16 @@
 			</ul>
 		</div>
 		<div class="tab-content" id="myTabContent">
-			<div class="tab-pane fade show active" id="appgenerator" role="tabpanel" aria-labelledby="app-tab">
+			<div class="tab-pane fade {{ $currentPage === 'card' ? 'active show' : ''}}" id="appgenerator" role="tabpanel" aria-labelledby="app-tab">
 				<Card :card />
 			</div>
-			<div class="tab-pane fade" id="catalogue" role="tabpanel" aria-labelledby="catalogue-tab">
+			<div class="tab-pane fade {{ $currentPage === 'catalogue' ? 'active show' : ''}}" id="catalogue" role="tabpanel" aria-labelledby="catalogue-tab">
 				<Catalogue />
 			</div>
-			<div class="tab-pane fade" id="contribute" role="tabpanel" aria-labelledby="contribute-tab">
+			<div class="tab-pane fade {{ $currentPage === 'contribute' ? 'active show' : ''}}" id="contribute" role="tabpanel" aria-labelledby="contribute-tab">
 				<Contribute />
 			</div>
-			<div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
+			<div class="tab-pane fade {{ $currentPage === 'about' ? 'active show' : ''}}" id="about" role="tabpanel" aria-labelledby="about-tab">
 				<About />
 			</div>
 		</div>

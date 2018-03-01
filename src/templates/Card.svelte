@@ -1,7 +1,18 @@
 <div class="card-container manual-flip {{flipped ? 'hover' : ''}}">
     <style type="text/css">
-        .cardflipper, .smalllogo, .nextcard:hover {
-            background-color: {{ card.colour }}
+        .cardflipper, .nextcard:hover {
+            background-color: {{ card.colour }};
+        }
+        .titlebarfront {
+            background: linear-gradient(
+                rgba(52, 58, 64, 0.9) 0%, 
+                rgba(52, 58, 64, 0.9) 95%
+            ), url({{card.assets.cover.image }});
+            {{ card.assets.cover.styles }}
+        }
+        .smalllogo {
+            background-image: url({{ card.assets.logo.image }});
+            {{ card.assets.logo.styles }}
         }
     </style>
     <div class="col-md-12">
@@ -46,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="nextcard faa-parent animated-hover" role="button" on:click="store.loadRandomCard()">
+                <div class="nextcard faa-parent animated-hover" role="button" on:click="store.loadRandomCard(card.id)">
                     <i class="fa fa-magic faa-shake animated-hover" aria-hidden="true"></i>&nbsp;&nbsp;Try another app
                 </div>
             </div><!-- End front panel -->

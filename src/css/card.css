@@ -9,7 +9,6 @@ body {
 .titlebarfront {
     height: 250px;
     padding-top: 120px;
-    background-color: #343A40;
     display: flex;
 
     /* EDITABLE */
@@ -27,8 +26,6 @@ body {
     -webkit-border-radius: 50px;
     
     /* EDITABLE */
-    background: #00a5bd;
-    /* background-image: url(../img/mentimeter.png); */
     background-size: 35px;
     background-position: 50% 35%;
     background-repeat: no-repeat;
