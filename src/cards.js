@@ -52,7 +52,7 @@ export default [
                 image: require('./img/google_classroom.png')
             },
             cover: {
-                styles: "background-size: cover;",
+                styles: "background-size: cover !important;",
                 image: require('./img/classroom_screenshot.jpg')
             }
         },
@@ -91,7 +91,7 @@ export default [
                 image: require('./img/officelens.jpg')
             },
             cover: {
-                styles: "",
+                styles: "background-size: cover !important;",
                 image: require('./img/officelens_background.jpg')
             }
         },
@@ -168,7 +168,7 @@ export default [
                 image: require('./img/pinterest.png')
             },
             cover: {
-                styles: "",
+                styles: "background-size: cover !important;",
                 image: require('./img/pinterest_logo.jpg')
             }
         },
@@ -244,7 +244,7 @@ export default [
                 image: require('./img/snagit.png')
             },
             cover: {
-                styles: "",
+                styles: "background-size: cover !important;",
                 image: require('./img/snagit_logo.jpg')
             }
         },
