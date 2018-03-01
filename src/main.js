@@ -1,6 +1,6 @@
 import { Store } from 'svelte/store'
 
-import App from './templates/App.html'
+import App from './templates/App.svelte'
 import cards from './cards.json'
 
 class AppStore extends Store {
