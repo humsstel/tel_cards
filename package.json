@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "build": "parcel build src/index.html --public-url ./",
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "deploy": "npm run build && ./deploy.sh"
   },
   "author": "",
   "license": "ISC",
