@@ -37,6 +37,14 @@ a {
     font-weight: 700;
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../img/icons/down-arrow-white.png) right 10px center / 30px no-repeat #fff;
+    padding-right: 20px;
+}
+
 /* MAIN BODY */
 
 body {
