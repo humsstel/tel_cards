@@ -121,6 +121,10 @@
             this.store.observe('currentCard', res => {
                 this.set({ flipped: false })
             })
+
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
         },
         
         data() {
