@@ -8,22 +8,22 @@
             <p>Browse the list or use the dropdown filter to find an application that supports a specific activity.</p>
         </div>
         <div class="dropdown">
-            <select id="filterText" class="btn btn-secondary dropdown-toggle btn-block" onchange='filterText();'>
+            <select id="filterText" class="btn btn-secondary dropdown-toggle btn-block" on:change="set({ filter: event.target.value })">
                 <option selected value="all">Find an app to...</option>
-                <option value="Create">...create learning resources</option>
-                <option value="Connect">...communicate with students electronically</option>
-                <option value="Collaborate">...act as a platform for collaboration</option>
-                <option value="Curate">...collect, organise and share content</option>
-                <option value="Capture">...record an event or artefact</option>
-                <option value="Captivate">...create interactive learning opportunities</option>
-                <option value="Check">...gauge students understanding</option>
-                <option value="">All apps</option>
+                <option value="create">...create learning resources</option>
+                <option value="connect">...communicate with students electronically</option>
+                <option value="collaborate">...act as a platform for collaboration</option>
+                <option value="curate">...collect, organise and share content</option>
+                <option value="capture">...record an event or artefact</option>
+                <option value="captivate">...create interactive learning opportunities</option>
+                <option value="check">...gauge students understanding</option>
+                <option value="all">All apps</option>
             </select>
         </div>
         <div class="card cataloguepane" data-spy="scroll">
             <div class="front">
                 <ul class="list-group list-group-flush">
-                    {{#each $cards as card}}
+                    {{#each filteredCards as card}}
                     <a href="#" class="list-group-item list-group-item-action" on:click="store.set({ currentPage: 'card', currentCard: card.id })">
                         <div class="applist">
                             <h5><img style="display: inline; height: 1em; vertical-align: top;" src="{{ card.assets.logo.image }}"> {{ card.name }}</h5>
@@ -42,3 +42,22 @@
         </div>
     </div>
 </div>
+
+<script>
+    export default {
+        data() {
+            return {
+                filter: 'all'
+            }
+        },
+        computed: {
+            filteredCards: ($cards, filter) => {
+                if (filter === 'all') return $cards
+                
+                return $cards.filter(card => {
+                    return card.activities.map(a => a.name).indexOf(filter) !== -1
+                })
+            }
+        }
+    }
+</script>
