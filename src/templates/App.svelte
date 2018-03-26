@@ -43,11 +43,6 @@
 	import About from './About.svelte'
 
 	export default {
-		oncreate() {
-			// Child is positioned absolutely, so this forces container to fill height of child
-			const childHeight = document.querySelector('.card').scrollHeight
-			document.querySelector('#appgenerator').style.height = `${childHeight}px`
-		},
 		components: {
 			Card,
 			Catalogue,

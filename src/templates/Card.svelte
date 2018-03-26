@@ -16,7 +16,7 @@
         }
     </style>
     <div class="col-md-12">
-        <div class="card noborder">
+        <div class="app-card card noborder">
             <div class="front">
                 <div class="cardflipper" role="button" on:click="rotateCard()">
                     <i class="fa fa-repeat" aria-hidden="true"></i> Flip card
@@ -117,8 +117,15 @@
 
     export default {
         oncreate() {
-            // Whenever the current card changes make sure the card is in the unflipped state
+            // What the currentCard variable for changes
             this.store.observe('currentCard', res => {
+                // Child is positioned absolutely, so this forces container to fill height of child on re-render
+                setTimeout(() => {
+			        const childHeight = document.querySelector('.front').scrollHeight
+			        document.querySelector('.app-card').style.height = `${childHeight}px`
+                }, 20)
+
+                // When the current card changes make sure the card is in the unflipped state
                 this.set({ flipped: false })
             })
 
