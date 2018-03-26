@@ -44,12 +44,17 @@
 
 <script>
     export default {
+        // Custom methods that can be called in the template
         methods: {
+
+            // Resets the form to a fresh state
             resetForm() {
                 document.getElementById('gform').style.display = 'block'; // show form
                 document.getElementById('thankyou_message').style.display = 'none'; // hide thank you message
                 document.getElementById('gform').reset(); // resets form
             },
+
+            // Submits the form data to be captured by google doc
             submitForm(event) {
                 const remoteURL = "https://script.google.com/macros/s/AKfycbwdPK1Xn_XdIKYYnMLltp6u51nGpuRltLkwPvMUyLmMY1biPhpz/exec"
 
@@ -60,7 +65,6 @@
 
                 const isBot = honeypot => honeypot
 
-                // get all data in form and return object
                 const getFormData = () => {
                     const elements = document.getElementById("gform").elements // all form elements
                     const fields = Object.keys(elements).map(k => {

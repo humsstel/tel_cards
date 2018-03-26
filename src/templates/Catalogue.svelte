@@ -45,11 +45,14 @@
 
 <script>
     export default {
+        // Set the initial filter state to show all cards
         data() {
             return {
                 filter: 'all'
             }
         },
+
+        // Compute the filteredCards array so that it only contains cards matching the current filter
         computed: {
             filteredCards: ($cards, filter) => {
                 if (filter === 'all') return $cards

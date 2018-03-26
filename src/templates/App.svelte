@@ -34,21 +34,26 @@
 </div>
 
 <script>
+	// Load the neccessary CSS for this template
 	import "../css/mainmenu.css"
 	import "../css/font-awesome-animation.min.css"
 
+	// All the sub-templates
 	import Card from './Card.svelte'
 	import Catalogue from './Catalogue.svelte'
 	import Contribute from './Contribute.svelte'
 	import About from './About.svelte'
 
 	export default {
+		// Expose the templates as components that can be referened in this template
 		components: {
 			Card,
 			Catalogue,
 			Contribute,
 			About,
 		},
+
+		// Compute the card object by indexing the currentCard in the cards array
 		computed: {
 			card: ($cards, $currentCard) => $cards.find(card => card.id === $currentCard)
 		}
