@@ -17,9 +17,9 @@
     </style>
     <div class="col-md-12">
         <div class="app-card card noborder">
-            <div class="front">
-                <div class="cardflipper" role="button" on:click="rotateCard()">
-                    <i class="fa fa-repeat" aria-hidden="true"></i> Flip card
+            <div class="front face">
+                <div class="cardflipper faa-parent animated-hover" role="button" on:click="rotateCard()">
+                    <i class="fa faa-spin fa-repeat" aria-hidden="true"></i> Flip card
                 </div>
                 <div class="titlebarfront">
                     <a class="smalllogo faa-tada animated-hover" href="{{ card.url }}" target="_blank">
@@ -58,13 +58,13 @@
                     </div>
                 </div>
                 <div class="nextcard faa-parent animated-hover" role="button" on:click="store.loadRandomCard(card.id)">
-                    <i class="fa fa-magic faa-shake animated-hover" aria-hidden="true"></i>&nbsp;&nbsp;Try another app
+                    <i class="fa fa-magic faa-shake" aria-hidden="true"></i>&nbsp;&nbsp;Try another app
                 </div>
             </div><!-- End front panel -->
 
-            <div class="back">
-                <div class="cardflipper" role="button" on:click="rotateCard()">
-                    <i class="fa fa-repeat" aria-hidden="true"></i> Flip back
+            <div class="back face">
+                <div class="cardflipper faa-parent animated-hover" role="button" on:click="rotateCard()">
+                    <i class="fa faa-spin fa-repeat" aria-hidden="true"></i> Flip back
                 </div>
                 <div class="mediabackground">
                     <div class="videocontainer">
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 <div class="nextcard faa-parent animated-hover" role="button" on:click="store.loadRandomCard(card.id)">
-                    <i class="fa fa-magic faa-shake animated-hover" aria-hidden="true"></i>&nbsp;&nbsp;Try another app
+                    <i class="fa fa-magic faa-shake" aria-hidden="true"></i>&nbsp;&nbsp;Try another app
                 </div>
             </div> <!-- End back panel -->
         </div> <!-- End of card -->
@@ -121,16 +121,13 @@
             this.store.observe('currentCard', res => {
                 // Child is positioned absolutely, so this forces container to fill height of child on re-render
                 setTimeout(() => {
-			        const childHeight = document.querySelector('.front').scrollHeight
-			        document.querySelector('.app-card').style.height = `${childHeight}px`
+                    $(function () {
+                        $('[data-toggle="tooltip"]').tooltip()
+                    })
                 }, 20)
 
                 // When the current card changes make sure the card is in the unflipped state
                 this.set({ flipped: false })
-            })
-
-            $(function () {
-                $('[data-toggle="tooltip"]').tooltip()
             })
         },
         

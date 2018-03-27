@@ -52,14 +52,6 @@ body {
     border-top-right-radius: 10px;
     font-family: 'Catamaran', sans-serif;
     font-size: 1.1em;
-}
-
-.cardflipper:hover .fa-repeat {
-    animation: fa-spin 2s infinite linear;
-    cursor: pointer;
-}
-
-.cardflipper:hover {
     cursor: pointer;
 }
 
@@ -75,13 +67,7 @@ body {
     font-size: 1.1em;
     border-top-style: solid;
     border-width: 1px;
-}
-
-.nextcard:hover {
     cursor: pointer;
-    /* EDITABLE */
-    background-color: #00a5bd;
-    /* END EDITABLE */
 }
 
 .mainlogocontainer {
@@ -338,57 +324,31 @@ a {
 }
 
 /* Flip the pane */
-.card-container.hover.manual-flip .front {
-    -webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
+.card-container.hover.manual-flip .card {
     transform: rotateY( 180deg );
 }
-.card-container.hover.manual-flip .back {
-    -webkit-transform: rotateY( 0deg );
-    -moz-transform: rotateY( 0deg );
-    -o-transform: rotateY( 0deg );
-    transform: rotateY( 0deg );
+
+.app-card {
+    transition: transform .5s;
+    transform-style: preserve-3d;
 }
 
-/* Flip speed */
-.front, .back {
-	-webkit-transition: -webkit-transform .5s;
-    -moz-transition: -moz-transform .5s;
-    -o-transition: -o-transform .5s;
-    transition: transform .5s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-	position: relative;
-	-webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-     -o-backface-visibility: hidden;
+.face {
     backface-visibility: hidden;
-	position: absolute;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.5);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
     box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.5);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     width: 100%;
 }
 
-/* Front pane, placed above back */
 .front {
-	z-index: 2;
+    z-index: 2;
+    transform: rotateY(0deg);
 }
-
-/* Back, initially hidden pane */
 .back {
-    -webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg );
-    z-index: 3;
+    transform: rotateY(180deg);
 }
 
 /* Clearfix */
