@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "build": "parcel build src/index.html --public-url ./",
+    "build": "parcel build src/index.html --public-url ./ && yarn copy:iframe_index",
+    "copy:iframe_index": "cp src/iframe_index.html dist/iframe_index.html",
     "start": "parcel src/index.html",
     "deploy": "npm run build && ./deploy.sh"
   },
