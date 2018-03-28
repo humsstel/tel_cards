@@ -1,0 +1,21 @@
+{
+  "name": "svelte-demo",
+  "version": "0.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "parcel build src/index.html --public-url ./",
+    "start": "parcel src/index.html",
+    "deploy": "npm run build && ./deploy.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "parcel-bundler": "^1.6.2",
+    "parcel-plugin-svelte": "^0.2.1",
+    "svelte": "^1.56.0"
+  }
+}
