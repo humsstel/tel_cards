@@ -1,3 +1,9 @@
+body {
+	margin: 0;
+	font-size: 14px;
+	background-color: #ffffff;
+}
+
 /* NAVIGATION */
 
 .card-header {

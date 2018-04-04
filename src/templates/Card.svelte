@@ -1,22 +1,22 @@
 <div class="card-container manual-flip {{flipped ? 'hover' : ''}}">
     <style type="text/css">
-        .cardflipper, .nextcard:hover {
+        .{{ card.id }} .cardflipper, .nextcard:hover {
             background-color: {{ card.colour }};
         }
-        .titlebarfront {
+        .{{ card.id }} .titlebarfront {
             background: linear-gradient(
                 rgba(52, 58, 64, 0.9) 0%, 
                 rgba(52, 58, 64, 0.9) 95%
             ), url({{card.assets.cover.image }});
             {{ card.assets.cover.styles }}
         }
-        .smalllogo {
+        .{{ card.id }} .smalllogo {
             background-image: url({{ card.assets.logo.image }});
             {{ card.assets.logo.styles }}
         }
     </style>
     <div class="col-md-12">
-        <div class="app-card card noborder">
+        <div class="app-card card noborder {{ card.id }}">
             <div class="front face">
                 <div class="cardflipper faa-parent animated-hover" role="button" on:click="rotateCard()">
                     <i class="fa faa-spin fa-repeat" aria-hidden="true"></i> Flip card
@@ -113,8 +113,6 @@
 </div> <!-- End of child card container -->
 
 <script>
-    import "../css/card.css"
-
     export default {
         oncreate() {
             // What the currentCard variable for changes

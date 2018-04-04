@@ -34,10 +34,6 @@
 </div>
 
 <script>
-	// Load the neccessary CSS for this template
-	import "../css/mainmenu.css"
-	import "../css/font-awesome-animation.min.css"
-
 	// All the sub-templates
 	import Card from './Card.svelte'
 	import Catalogue from './Catalogue.svelte'

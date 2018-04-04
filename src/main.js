@@ -1,7 +1,8 @@
 import { Store } from 'svelte/store'
 
-// Base template 
+// Base templates
 import App from './templates/App.svelte'
+import Wall from './templates/Wall.svelte'
 
 // data for all the cards
 import cards from './cards.js'
@@ -41,8 +42,13 @@ const store = new AppStore({
 	currentPage: 'card',
 })
 
+const searchParams = new URL(document.location).searchParams
+const display = searchParams.get('display')
+
+const BaseTemplate = display === 'wall' ? Wall : App
+
 // Create the app using App as the default template and pass it the store
-const app = new App({
+const app = new BaseTemplate({
 	target: document.body,
 	store,
 })
