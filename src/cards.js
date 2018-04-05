@@ -1,43 +1,5 @@
 export default [
-    {
-        id: "mentimeter",
-        name: "Mentimeter",
-        url: "https://www.mentimeter.com",
-        tagline: "An online polling tool that encourages audience participation.",
-        description: "Energise presentations and make lectures more interactive by building informal quizzes and polls that students can respond to using any Internet connected device. Live results are displayed on-screen or hidden until the presenter chooses to reveal them. Great for formative feedback and to monitor understanding.",
-        colour: "#00a5bd",
-        assets: {
-            logo: {
-                styles: "background-color: #00a5bd",
-                image: require('./img/mentimeter.png')
-            },
-            cover: {
-                styles: "",
-                image: require('./img/mentimeter_logo.jpg')
-            }
-        },
-        activities: [
-            "create",
-            "captivate",
-            "check"
-        ],
-        uses: [
-            "Assessment",
-            "Polls",
-            "Quizzes",
-            "Feedback"
-        ],
-        submitter: {
-            name: "Dr C Little",
-            title: "Learning Developer"
-        },
-        videoURL: "https://www.youtube.com/embed/f1s7UhcIA7I?rel=0&amp;showinfo=0?&cc_load_policy=1",
-        framework: {
-            enhance: "Plan an icebreaker activity that poses a quick quiz to help gauge students prior knowledge and to introduce topics that are due to be covered.",
-            empower: "Integrate your slides with Mentimeter and use Reactions to help indicate when students are ready to move on or don't understand.",
-            extend: "Create a short answer question that asks students to suggest revision topics. Turn the answers into a poll and use it to inform the next session's content."
-        }
-    },
+    
 
     {
         id: "google-classroom",
@@ -75,6 +37,84 @@ export default [
             enhance: "Set up a class and keep it organised by applying topics to posts. Structure materials by week, lesson, theme or assignment.",
             empower: "Add learning resources in Google formats, amending sharing settings for students to edit or add comments.",
             extend: "Use the Classroom stream to set up discussion topics or create quick polls that engage students inbetween lessons."
+        }
+    },
+    
+    {
+        id: "gdocs",
+        name: "Google Docs",
+        url: "https://www.google.co.uk/docs/about/",
+        tagline: "An online word processor that allows you to write, edit and collaborate wherever you are.",
+        description: "As part of GSuite (formerly Google Apps for Education), Google Docs is a simple but powerful word processing application that helps to create documents wherever you go. As well as familiar features for formatting and styling documents, Docs makes it possible to work together in real-time from whichever device you choose. Sharing files is easy too, with adjustable security settings that make emailing multiple copies of the same  document a thing of the past.",
+        colour: "#5793EF",
+        assets: {
+            logo: {
+                styles: "background-color: #fff; background-size: 30px; background-position: 50% 60%; border: 3px solid #ffffff;",
+                image: require('./img/docs.png')
+            },
+            cover: {
+                styles: "background-color: #fff;",
+                image: require('./img/docs_background.png')
+            }
+        },
+        activities: [
+            "create",
+            "collaborate"
+        ],
+        uses: [
+            "Collaborative writing",
+            "Feedback",
+            "Workbooks"
+        ],
+        submitter: {
+            name: "Mark Davys",
+            title: "Senior Teaching Fellow"
+        },
+        videoURL: "https://www.youtube.com/embed/ns0U3zkHG7w?rel=0&amp;showinfo=0?&cc_load_policy=1",
+        framework: {
+            enhance: "Convert a resource that would normally be given to students in paper or static electronic format into a Google Doc and share it for students to make it their own.",
+            empower: "Organise an 'edit-a-thon' where groups of students are encouraged to collaborate in real-time on a Google Doc to demonstrate their knowledge of a particular topic.",
+            extend: "Ask students to share their Google Doc and provide feedback by annotating and inserting comments that prompt further discussion or revisions to their original work."
+        }
+    },
+    
+    {
+        id: "mentimeter",
+        name: "Mentimeter",
+        url: "https://www.mentimeter.com",
+        tagline: "An online polling tool that encourages audience participation.",
+        description: "Energise presentations and make lectures more interactive by building informal quizzes and polls that students can respond to using any Internet connected device. Live results are displayed on-screen or hidden until the presenter chooses to reveal them. Great for formative feedback and to monitor understanding.",
+        colour: "#00a5bd",
+        assets: {
+            logo: {
+                styles: "background-color: #00a5bd",
+                image: require('./img/mentimeter.png')
+            },
+            cover: {
+                styles: "",
+                image: require('./img/mentimeter_logo.jpg')
+            }
+        },
+        activities: [
+            "create",
+            "captivate",
+            "check"
+        ],
+        uses: [
+            "Assessment",
+            "Polls",
+            "Quizzes",
+            "Feedback"
+        ],
+        submitter: {
+            name: "Dr C Little",
+            title: "Learning Developer"
+        },
+        videoURL: "https://www.youtube.com/embed/f1s7UhcIA7I?rel=0&amp;showinfo=0?&cc_load_policy=1",
+        framework: {
+            enhance: "Plan an icebreaker activity that poses a quick quiz to help gauge students prior knowledge and to introduce topics that are due to be covered.",
+            empower: "Integrate your slides with Mentimeter and use Reactions to help indicate when students are ready to move on or don't understand.",
+            extend: "Create a short answer question that asks students to suggest revision topics. Turn the answers into a poll and use it to inform the next session's content."
         }
     },
 
