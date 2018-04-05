@@ -79,6 +79,44 @@ export default [
     },
     
     {
+        id: "medium",
+        name: "Medium",
+        url: "https://medium.com/",
+        tagline: "A blogging platform that makes writing and sharing content simple.",
+        description: "Medium simplifies the writing process, producing great looking articles that can easily be shared online. Show your appreciation for posts by using the applaud feature, or bookmark articles to read later. Medium allows anybody to read, write and respond to stories, with licensing options to allow others to remix and reuse your posts. Find an article you think needs more discussion? Write a reponse underneath or highlight specific text and add a comment inline.",
+        colour: "#000",
+        assets: {
+            logo: {
+                styles: "background-color: #fff; background-size: 30px; background-position: 50% 60%; border: 3px solid #ffffff;",
+                image: require('./img/medium.png')
+            },
+            cover: {
+                styles: "",
+                image: require('./img/medium_logo.png')
+            }
+        },
+        activities: [
+            "create",
+            "check"
+        ],
+        uses: [
+            "Blogging",
+            "Discussion",
+            "Portfolios",           
+        ],
+        submitter: {
+            name: "Tom Maurice",
+            title: "Digital Communications Officer"
+        },
+        videoURL: "https://www.youtube.com/embed/U0QOonYmDuU?rel=0&amp;showinfo=0?&cc_load_policy=1",
+        framework: {
+            enhance: "Design a short quiz using different question types to informally check students understanding during a lecture or seminar.",
+            empower: "Ask students to work in pairs or small groups to discuss their answers before responding to the quiz. Use a 'Space Race' for added competitiveness.",
+            extend: "Download the feedback report and identify areas which students had difficulty with. Use it to recap topics or inform future learning design."
+        }
+    },
+    
+    {
         id: "mentimeter",
         name: "Mentimeter",
         url: "https://www.mentimeter.com",
