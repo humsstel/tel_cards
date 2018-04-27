@@ -363,7 +363,7 @@ export default [
             },
             cover: {
                 styles: "",
-                image: require('./img/socrative_logo.png')
+                image: require('../img/socrative_logo.png')
             }
         },
         activities: [
@@ -393,8 +393,8 @@ export default [
         id: "zeetings",
         name: "Zeetings",
         url: "https://www.zeetings.com",
-        tagline: "Create interactive presentations by seamlessly combining slides, multimedia content, polls and Q&A features.",
-        description: "Zeetings helps create engaging presentations by combining a range of interactive tools into one, easy to use interface. Add slides from existing decks or use Zeetings to create a brand new presentation, quickly embedding videos, polls and surveys in a couple of clicks. A Zeeting is interactive, so share with students to receive real time feedback or live questions from your audience. With analytics built in, responses are saved and can be exported to repurpose outside of class.",
+        tagline: "Seamlessly combine slides, multimedia content, polls and Q&A features into interactive presentations.",
+        description: "Zeetings helps to create engaging presentations by combining a range of interactive tools into one, easy to use interface. Add slides from existing decks or use Zeetings to create brand new presentations, quickly embedding videos, polls and surveys. A Zeeting is interactive, so share with students to receive real time feedback and live questions. With in-built analytics, responses are saved automatically to repurpose outside of the classroom.",
         colour: "#2BA0D8",
         assets: {
             logo: {
