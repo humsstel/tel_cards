@@ -387,5 +387,45 @@ export default [
             empower: "Ask students to work in pairs or small groups to discuss their answers before responding to the quiz. Use a 'Space Race' for added competitiveness.",
             extend: "Download the feedback report and identify areas which students had difficulty with. Use it to recap topics or inform future learning design."
         }
+    },
+    
+    {
+        id: "zeetings",
+        name: "Zeetings",
+        url: "https://www.zeetings.com",
+        tagline: "Create interactive presentations by seamlessly combining slides, multimedia content, polls and Q&A features.",
+        description: "Zeetings helps create engaging presentations by combining a range of interactive tools into one, easy to use interface. Add slides from existing decks or use Zeetings to create a brand new presentation, quickly embedding videos, polls and surveys in a couple of clicks. A Zeeting is interactive, so share with students to receive real time feedback or live questions from your audience. With analytics built in, responses are saved and can be exported to repurpose outside of class.",
+        colour: "#2BA0D8",
+        assets: {
+            logo: {
+                styles: "background-size: 40px; background-position: 50% 30%; border: solid 3px #fff;",
+                image: require('./img/zeetings.svg')
+            },
+            cover: {
+                styles: "",
+                image: require('./img/zeetings_logo.svg')
+            }
+        },
+        activities: [
+            "create",
+            "captivate",
+            "check"
+        ],
+        uses: [
+            "Presentations",
+            "Notetaking",
+            "Polls",
+            "Feedback"
+        ],
+        submitter: {
+            name: "J Preston",
+            title: "Lecturer in Midwifery"
+        },
+        videoURL: "https://biteable.com/watch/embed/video-placeholder-1602227/9a0c58e895f0d2a844c91c1718fb40c2786b47d1?autoplay=1",
+        framework: {
+            enhance: "Import a previous presentation (e.g. PowerPoint) and add some interactive slides that will test student's comprehension during the session.",
+            empower: "Introduce students to the Q&A feature. Ask them to pose questions anonymously and vote on which ones they think should be answered first.",
+            extend: "Use Zeetings' analytics feature to export all questions and allocate a revision task that requires students to present back an answer at the next class."
+        }
     }
 ]
