@@ -107,7 +107,7 @@ export default [
             "Reflection"
         ],
         submitter: {
-            name: "Tom Maurice",
+            name: "T Maurice",
             title: "Digital Communications Officer"
         },
         videoURL: "https://www.youtube.com/embed/U0QOonYmDuU?rel=0&amp;showinfo=0?&cc_load_policy=1",
@@ -354,7 +354,7 @@ export default [
         name: "Socrative",
         url: "https://www.socrative.com",
         tagline: "An app that encourages student participation via online polls and quizzes for real time feedback.",
-        description: "SEngage students with Socrative, an app that helps to build activities that provide feedback as learning happens. Launch pre-prepared quizzes or ask ad-hoc questions to quickly assess students and get immediate insights into their understanding at class, individual or question level. Automatically populated results visualise feedback, either to be shared with the class or collected anonymously by the tutor.",
+        description: "Engage students with Socrative, an app that helps to build activities that provide feedback as learning happens. Launch pre-prepared quizzes or ask ad-hoc questions to quickly assess students and get immediate insights into their understanding at class, individual or question level. Automatically populated results visualise feedback, either to be shared with the class or collected anonymously by the tutor.",
         colour: "#8EB4CF",
         assets: {
             logo: {
@@ -421,7 +421,7 @@ export default [
             name: "J Preston",
             title: "Lecturer in Midwifery"
         },
-        videoURL: "https://youtu.be/qKsY_083uOk?rel=0&amp;showinfo=0?&cc_load_policy=1",
+        videoURL: "https://www.youtube.com/embed/qKsY_083uOk?rel=0&amp;showinfo=0?&cc_load_policy=1",
         framework: {
             enhance: "Import a previous presentation (e.g. PowerPoint) and add some interactive slides that will test student's comprehension during the session.",
             empower: "Introduce students to the Q&A feature. Ask them to pose questions anonymously and vote on which ones they think should be answered first.",
