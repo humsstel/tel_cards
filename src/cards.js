@@ -363,7 +363,7 @@ export default [
             },
             cover: {
                 styles: "",
-                image: require('../img/socrative_logo.png')
+                image: require('./img/socrative_logo.png')
             }
         },
         activities: [
@@ -398,7 +398,7 @@ export default [
         colour: "#2BA0D8",
         assets: {
             logo: {
-                styles: "background-size: 40px; background-position: 50% 30%; border: solid 3px #fff;",
+                styles: "background-color: #343A40; background-size: 20px; background-position: 50% 50%;",
                 image: require('./img/zeetings.svg')
             },
             cover: {
@@ -421,7 +421,7 @@ export default [
             name: "J Preston",
             title: "Lecturer in Midwifery"
         },
-        videoURL: "https://biteable.com/watch/embed/video-placeholder-1602227/9a0c58e895f0d2a844c91c1718fb40c2786b47d1?autoplay=1",
+        videoURL: "https://youtu.be/qKsY_083uOk?rel=0&amp;showinfo=0?&cc_load_policy=1",
         framework: {
             enhance: "Import a previous presentation (e.g. PowerPoint) and add some interactive slides that will test student's comprehension during the session.",
             empower: "Introduce students to the Q&A feature. Ask them to pose questions anonymously and vote on which ones they think should be answered first.",
