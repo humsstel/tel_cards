@@ -1,11 +1,22 @@
 #wall {
-    & .ui-layout-east {
-        background-color: #343A40 !important;
-    }
+    display: flex;
+    flex-wrap: wrap;
 
-    & .ui-layout-north {
+    & .wall-filter {
         background-color: #343A40 !important;
         padding: 10px 0;
+        flex: 0 0 100%;
+        height: 100px;
+    }
+
+    & .wall-cards {
+        flex: 3;
+    }
+
+    & .wall-misc {
+        background-color: #343A40 !important;
+        flex: 1;
+        height: calc(100vh - 100px);
     }
 
     & .nav-item {

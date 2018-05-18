@@ -1,5 +1,5 @@
 <div id="wall">
-    <div class="ui-layout-north">
+    <div class="wall-filter">
         <div class="selector">
             <select id="filterText" class="btn btn-secondary dropdown-toggle btn-lg btn-block" on:change="set({ filter: event.target.value })">
                 <option selected value="all">Find an app to...</option>
@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    <div class="ui-layout-center">
+    <div class="wall-cards">
         <div class="container">
             <div class="row">    
                 {{#each filteredCards as card}}
@@ -27,7 +27,7 @@
         </div>
     </div>
 
-    <div class="ui-layout-east">
+    <div class="wall-misc">
         <div class="container">
             <div class="east-nav">
                 <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
@@ -41,6 +41,18 @@
                         <a class="nav-link" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="About" aria-selected="false"><i class="fa fa-info" aria-hidden="true"></i>&nbsp;&nbsp;About</a>
                     </li>
                 </ul>
+            </div>
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="contribute" role="tabpanel" aria-labelledby="contribute-tab">
+                    <Contribute />
+                </div>
+                <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
+                    <About />
+                </div>
+                <div class="tab-pane fade" id="support" role="tabpanel" aria-labelledby="support-tab">
+                    <Support />
+                </div>
             </div>
         </div>
     </div>
@@ -56,6 +68,7 @@
     // All the sub-templates
 	import Card from './Card.svelte'
 	import Contribute from './Contribute.svelte'
+    import Support from './Support.svelte'
 	import About from './About.svelte'
 
     export default {
@@ -70,6 +83,7 @@
 		components: {
 			Card,
 			Contribute,
+            Support,
 			About,
 		},
 
