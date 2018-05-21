@@ -18,7 +18,9 @@
 		</div>
 		<div class="tab-content" id="myTabContent">
 			<div class="tab-pane fade {{ $currentPage === 'card' ? 'active show' : ''}}" id="appgenerator" role="tabpanel" aria-labelledby="app-tab">
-				<Card :card />
+				<div class="container">
+					<Card :card />
+				</div>
 			</div>
 			<div class="tab-pane fade {{ $currentPage === 'catalogue' ? 'active show' : ''}}" id="catalogue" role="tabpanel" aria-labelledby="catalogue-tab">
 				<Catalogue />
@@ -43,8 +45,8 @@
 	export default {
 		oncreate() {
 			// Child is positioned absolutely, so this forces container to fill height of child
-			const childHeight = document.querySelector('.card').scrollHeight
-			document.querySelector('#appgenerator').style.height = `${childHeight}px`
+			//const childHeight = document.querySelector('.card').scrollHeight
+			//document.querySelector('#appgenerator').style.height = `${childHeight}px`
 		},
 
 		// Expose the templates as components that can be referened in this template

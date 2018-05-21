@@ -16,14 +16,12 @@
     </div>
 
     <div class="wall-cards">
-        <div class="container">
-            <div class="row">    
-                {{#each filteredCards as card}}
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <Card :card />
-                    </div>
-                {{/each}}
-            </div>
+        <div class="row">    
+            {{#each filteredCards as card}}
+                <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+                    <Card :card />
+                </div>
+            {{/each}}
         </div>
     </div>
 
@@ -57,12 +55,6 @@
         </div>
     </div>
 </div>
-
-<style>
-    .card-container {
-        height: 840px;
-    }
-</style>
     
 <script>
     // All the sub-templates

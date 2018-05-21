@@ -309,26 +309,41 @@ a {
     -o-perspective: 800px;
     perspective: 800px;
     margin: 15px 0;
+    height: 800px;
 }
 
 .noborder {
     border: none;
 }
 
+.full-height {
+    height: 100%;
+}
+
 /* Flip the pane */
-.card-container.hover.manual-flip .card {
+.manual-flip .card {
+    background: transparent;
+}
+.manual-flip.hover .card {
     transform: rotateY( 180deg );
+    /* background: transparent; */
 }
 
 .app-card {
     transition: transform .5s;
     transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .face {
     backface-visibility: hidden;
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
     box-shadow: 0px 0px 5px 0px rgba(51,51,51,0.5);
     border-radius: 10px;
@@ -338,6 +353,8 @@ a {
 .front {
     z-index: 2;
     transform: rotateY(0deg);
+    display: flex;
+    flex-direction: column;
 }
 .back {
     transform: rotateY(180deg);

@@ -1,4 +1,4 @@
-<div class="card-container manual-flip">
+<div>
     <div class="col-md-12">
         <div class="bs-callout bs-callout-about clearfix">
             <div class="icon">

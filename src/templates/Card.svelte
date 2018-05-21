@@ -1,4 +1,4 @@
-<div class="card-container manual-flip {{flipped ? 'hover' : ''}}">
+<div class="manual-flip {{flipped ? 'hover' : ''}}">
     <style type="text/css">
         .{{ card.id }} .cardflipper, .nextcard:hover {
             background-color: {{ card.colour }};
@@ -15,7 +15,7 @@
             {{ card.assets.logo.styles }}
         }
     </style>
-    <div class="col-md-12">
+    <div class="card-container">
         <div class="app-card card noborder {{ card.id }}">
             <div class="front face">
                 <div class="cardflipper faa-parent animated-hover" role="button" on:click="rotateCard()">

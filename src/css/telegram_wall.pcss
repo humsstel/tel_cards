@@ -1,22 +1,26 @@
 #wall {
-    display: flex;
-    flex-wrap: wrap;
+    /* height: 100%; */
 
     & .wall-filter {
         background-color: #343A40 !important;
-        padding: 10px 0;
-        flex: 0 0 100%;
+        padding: 1.2em;
         height: 100px;
     }
 
     & .wall-cards {
-        flex: 3;
+        width: calc(100vw - 300px);
+        height: calc(100vh - 100px);
+        overflow-y: auto;
+        overflow-x: hidden;
+        float: left;
+        padding: 0 1em;
     }
 
     & .wall-misc {
         background-color: #343A40 !important;
-        flex: 1;
+        width: 300px;
         height: calc(100vh - 100px);
+        float: right;
     }
 
     & .nav-item {
@@ -77,7 +81,6 @@
     }
 
     & .dropdown-toggle {
-        width: 95%;
         margin-left: auto;
         margin-right: auto;
     }
