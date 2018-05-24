@@ -6,13 +6,21 @@ All code and content is released under a Creative Commons licence and openly pub
 
 For more information about the development of this project, please see our presentation from the OER18 conference at https://goo.gl/1W1GgE. 
 
+## Embedding the tool with a VLE
+
+To load the standard single card view, you should reference the iframe_index.html file.
+
+To load the wall display view, you should reference the iframe_wall.html file.
+
 This application uses the [Svelte](https://svelte.technology/) framework to compile templates to vanilla JS. 
 
 ## Run the application with hot-reloading (launches dev server)
-`yarn start`
+`yarn start` or if you don't have yarn, `npm run start`
+
+The development server will now be running at http://localhost:1234. To see wall display view, navigate to http://localhost:1234?display=wall
 
 ## Compile production app to dist
-`yarn build`
+`yarn build` or if you don't have yarn, `npm run build`
 
 ## Deploy the built bundle and assets to github pages
-`yarn deploy`
+`yarn deploy` or if you don't have yarn, `npm run deploy`
