@@ -1,4 +1,123 @@
 export default [
+    
+
+    {
+        id: "google-classroom",
+        name: "Google Classroom",
+        url: "https://classroom.google.com",
+        tagline: "Classroom allows educators to manage classes, set assignments and interact with students all in one place.",
+        description: "Classroom connects students and instructors using tools such as Google Docs, Calendar, Drive, and Forms to build a streamlined platform for learning. Teachers can create classes, distribute assignments, communicate and stay organized whilst students can see their assignments on their To-Do page, share resources and interact in the class stream.",
+        colour: "#FDBC45",
+        assets: {
+            logo: {
+                styles: "",
+                image: require('./img/google_classroom.png')
+            },
+            cover: {
+                styles: "background-size: cover !important;",
+                image: require('./img/classroom_screenshot.jpg')
+            }
+        },
+        activities: [
+            "connect",
+            "collaborate",
+            "curate"
+        ],
+        uses: [
+            "Assessment",
+            "Discussion",
+            "Feedback"
+        ],
+        submitter: {
+            name: "A Rhead",
+            title: "Learning Developer"
+        },
+        videoURL: "https://www.youtube.com/embed/UPgnim0Q5cs?rel=0&amp;showinfo=0?&cc_load_policy=1",
+        framework: {
+            enhance: "Set up a class and keep it organised by applying topics to posts. Structure materials by week, lesson, theme or assignment.",
+            empower: "Add learning resources in Google formats, amending sharing settings for students to edit or add comments.",
+            extend: "Use the Classroom stream to set up discussion topics or create quick polls that engage students inbetween lessons."
+        }
+    },
+    
+    {
+        id: "gdocs",
+        name: "Google Docs",
+        url: "https://www.google.com/docs/about",
+        tagline: "An online word processor that allows you to write, edit and collaborate wherever you are.",
+        description: "As part of GSuite (formerly Google Apps for Education), Google Docs is a simple but powerful word processing application that helps to create documents from any device. As well as familiar features for formatting and styling, Docs makes it possible to work together in real-time. Sharing files is easy too, with adjustable security settings that make emailing multiple copies of the same document a thing of the past.",
+        colour: "#5793EF",
+        assets: {
+            logo: {
+                styles: "background-color: #343A40; background-size: 20px; background-position: 50% 50%;",
+                image: require('./img/docs.png')
+            },
+            cover: {
+                styles: "background-color: #fff;",
+                image: require('./img/docs_background.png')
+            }
+        },
+        activities: [
+            "create",
+            "collaborate"
+        ],
+        uses: [
+            "Collaborative writing",
+            "Feedback",
+            "Workbooks"
+        ],
+        submitter: {
+            name: "M Davys",
+            title: "Senior Teaching Fellow in Law"
+        },
+        videoURL: "https://www.youtube.com/embed/ns0U3zkHG7w?rel=0&amp;showinfo=0?&cc_load_policy=1",
+        framework: {
+            enhance: "Convert a resource that would normally be given to students in a paper or static electronic format into a Google Doc and share it for students to annotate and make their own.",
+            empower: "Organise an 'edit-a-thon' where groups of students are encouraged to collaborate in real-time on a Google Doc to demonstrate their knowledge of a particular topic.",
+            extend: "Ask students to share their Google Doc and provide feedback by annotating and inserting comments that prompt further discussion or revisions to their original work."
+        }
+    },
+    
+    {
+        id: "medium",
+        name: "Medium",
+        url: "https://medium.com/",
+        tagline: "A blogging platform that makes writing and sharing posts simple.",
+        description: "Medium simplifies the writing process, producing great looking articles that can easily be shared online. Author your own or show your appreciation for other posts by using the applaud feature, or bookmark articles to read later. Medium allows anybody to read, write and respond to stories, with licensing options to allow others to remix and reuse your posts. Found an article that needs more discussion? Write a reponse underneath or highlight specific text and add comments inline.",
+        colour: "#000",
+        assets: {
+            logo: {
+                styles: "background-color: #000; background-size: 30px; background-position: 50% 60%; border: 3px solid #000;",
+                image: require('./img/medium.png')
+            },
+            cover: {
+                styles: "",
+                image: require('./img/medium_logo.png')
+            }
+        },
+        activities: [
+            "create",
+            "check"
+        ],
+        
+        uses: [
+            "Blogging",
+            "Discussion",
+            "Portfolios",
+            "Reflection"
+        ],
+        submitter: {
+            name: "T Maurice",
+            title: "Digital Communications Officer"
+        },
+        videoURL: "https://www.youtube.com/embed/U0QOonYmDuU?rel=0&amp;showinfo=0?&cc_load_policy=1",
+        framework: {
+            enhance: "Start a module blog, writing occasional articles that summarise topics or respond to a related post from another source or Medium author.",
+            empower: "Encourage students to respond to your article, asking questions inline or offering their own thoughts. Responses do not have to made public.",
+            extend: "Set a reflective task that asks students to write their own posts, either keeping to the same topic or setting a new theme. Add their posts to a class publication."
+        }
+    },
+    
     {
         id: "mentimeter",
         name: "Mentimeter",
@@ -40,48 +159,9 @@ export default [
     },
 
     {
-        id: "google-classroom",
-        name: "Google Classroom",
-        url: "https://classroom.google.com",
-        tagline: "Classroom allows educators to manage classes, set assignments and interact with students all in one place.",
-        description: "Classroom connects students and instructors using tools such as Google Docs, Calendar, Drive, and Forms to build a streamlined platform for learning. Teachers can create classes, distribute assignments, communicate and stay organized whilst students can see their assignments on their To-Do page, share resources and interact in the class stream.",
-        colour: "#FDBC45",
-        assets: {
-            logo: {
-                styles: "",
-                image: require('./img/google_classroom.png')
-            },
-            cover: {
-                styles: "background-size: cover !important;",
-                image: require('./img/classroom_screenshot.jpg')
-            }
-        },
-        activities: [
-            "connect",
-            "collaborate",
-            "curate"
-        ],
-        uses: [
-            "Assessment",
-            "Discussion",
-            "Feedback"
-        ],
-        submitter: {
-            name: "A Rhead",
-            title: "Learning Developer"
-        },
-        videoURL: "https://www.youtube.com/embed/UPgnim0Q5cs?rel=0&amp;showinfo=0?&cc_load_policy=1",
-        framework: {
-            enhance: "Set up a class and keep it organised by applying topics to posts. Structure materials by week, lesson, theme or assignment.",
-            empower: "Add learning resources in Google formats, amending sharing settings for students to edit or add comments.",
-            extend: "Use the Classroom stream to set up discussion topics or create quick polls that engage students inbetween lessons."
-        }
-    },
-
-    {
         id: "office-lens",
         name: "Office Lens",
-        url: "https://www.microsoft.com/en-gb/store/p/office-lens/9wzdncrfj3t8",
+        url: "https://twitter.com/msofficelens",
         tagline: "Capture images of whiteboards and documents to make them into readable learning resources.",
         description: "Simply put, Office Lens puts a scanner in your pocket. Frame your shot, shoot from any angle, and like magic, it digitises notes from whiteboards or physical documents for you to easily tidy up. Office Lens uses optical character recognition (OCR) to recognise and convert static images into searchable, editable documents such as Word or PDF. Never lose your sticky notes again!",
         colour: "#D83C18",
@@ -145,7 +225,7 @@ export default [
         ],
         submitter: {
             name: "T Hinchcliffe",
-            title: "Head of Student Learning &amp; Development"
+            title: "Head of Student Learning & Development"
         },
         videoURL: "https://www.youtube.com/embed/P9CJauuNw8c?rel=0&amp;showinfo=0?&cc_load_policy=1",
         framework: {
@@ -220,8 +300,8 @@ export default [
             "Researching"
         ],
         submitter: {
-            name: "TBC",
-            title: "TBC"
+            name: "Dr J Herbert",
+            title: "Senior Lecturer in Politics"
         },
         videoURL: "https://biteable.com/watch/embed/video-placeholder-1602227/9a0c58e895f0d2a844c91c1718fb40c2786b47d1?autoplay=1",
         framework: {
@@ -274,7 +354,7 @@ export default [
         name: "Socrative",
         url: "https://www.socrative.com",
         tagline: "An app that encourages student participation via online polls and quizzes for real time feedback.",
-        description: "SEngage students with Socrative, an app that helps to build activities that provide feedback as learning happens. Launch pre-prepared quizzes or ask ad-hoc questions to quickly assess students and get immediate insights into their understanding at class, individual or question level. Automatically populated results visualise feedback, either to be shared with the class or collected anonymously by the tutor.",
+        description: "Engage students with Socrative, an app that helps to build activities that provide feedback as learning happens. Launch pre-prepared quizzes or ask ad-hoc questions to quickly assess students and get immediate insights into their understanding at class, individual or question level. Automatically populated results visualise feedback, either to be shared with the class or collected anonymously by the tutor.",
         colour: "#8EB4CF",
         assets: {
             logo: {
@@ -299,13 +379,53 @@ export default [
         ],
         submitter: {
             name: "Dr R Leach",
-            title: "Senior Lecturer in Sociology"
+            title: "Head of Social Science and Public Policy"
         },
         videoURL: "https://biteable.com/watch/embed/video-placeholder-1602227/9a0c58e895f0d2a844c91c1718fb40c2786b47d1?autoplay=1",
         framework: {
             enhance: "Design a short quiz using different question types to informally check students understanding during a lecture or seminar.",
             empower: "Ask students to work in pairs or small groups to discuss their answers before responding to the quiz. Use a 'Space Race' for added competitiveness.",
             extend: "Download the feedback report and identify areas which students had difficulty with. Use it to recap topics or inform future learning design."
+        }
+    },
+    
+    {
+        id: "zeetings",
+        name: "Zeetings",
+        url: "https://www.zeetings.com",
+        tagline: "Seamlessly combine slides, multimedia content, polls and Q&A features into interactive presentations.",
+        description: "Zeetings helps to create engaging presentations by combining a range of interactive tools into one, easy to use interface. Add slides from existing decks or use Zeetings to create brand new presentations, quickly embedding videos, polls and surveys. A Zeeting is interactive, so share with students to receive real time feedback and live questions. With in-built analytics, responses are saved automatically to repurpose outside of the classroom.",
+        colour: "#2BA0D8",
+        assets: {
+            logo: {
+                styles: "background-color: #343A40; background-size: 20px; background-position: 50% 50%;",
+                image: require('./img/zeetings.svg')
+            },
+            cover: {
+                styles: "",
+                image: require('./img/zeetings_logo.svg')
+            }
+        },
+        activities: [
+            "create",
+            "captivate",
+            "check"
+        ],
+        uses: [
+            "Presentations",
+            "Notetaking",
+            "Polls",
+            "Feedback"
+        ],
+        submitter: {
+            name: "J Preston",
+            title: "Lecturer in Midwifery"
+        },
+        videoURL: "https://www.youtube.com/embed/qKsY_083uOk?rel=0&amp;showinfo=0?&cc_load_policy=1",
+        framework: {
+            enhance: "Import a previous presentation (e.g. PowerPoint) and add some interactive slides that will test student's comprehension during the session.",
+            empower: "Introduce students to the Q&A feature. Ask them to pose questions anonymously and vote on which ones they think should be answered first.",
+            extend: "Use Zeetings' analytics feature to export all questions and allocate a revision task that requires students to present back an answer at the next class."
         }
     }
 ]
