@@ -326,7 +326,6 @@ a {
 }
 .manual-flip.hover .card {
     transform: rotateY( 180deg );
-    /* background: transparent; */
 }
 
 .app-card {
