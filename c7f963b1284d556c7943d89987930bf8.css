@@ -1,0 +1,117 @@
+#wall .wall-filter {
+    background-color: #343A40 !important;
+    padding: 1.2em;
+    height: 100px;
+}
+#wall .wall-cards {
+    width: calc(100vw - 360px);
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    float: left;
+    padding: 0 1em;
+}
+#wall .wall-misc {
+    background-color: #343A40 !important;
+    width: 360px;
+    height: calc(100vh - 100px);
+    float: right;
+}
+#wall .nav-item {
+    margin: 5px;
+    border: solid 1px #fff;
+    border-radius: 5px;
+}
+#wall .nav-item a {
+    color: #fff;
+}
+#wall .nav-item:hover {
+    background: #000;
+}
+#wall .nav-item:active {
+    background: #000;
+}
+#wall .nav-item.visited {
+    background-color: transparent;
+}
+#wall .east-nav .nav-pills .nav-link.active {
+    background-color: #000;
+}
+#wall .east-nav .nav-item:hover {
+    background-color: #000;
+}
+#wall .contacts-nav .nav-pills .nav-link.active {
+    background-color: #000;
+}
+#wall .details {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#wall .nextcard {
+    display: none;
+}
+#wall .alert {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.15em;
+}
+#wall .alert i {
+    font-size: 1em;
+}
+#wall .alert button {
+    color: #fff;
+    font-family: 'system-ui', sans-serif;
+    line-height: 0.8em;
+}
+#wall .dropdown-toggle {
+    margin-left: auto;
+    margin-right: auto;
+}
+#wall .bs-callout-contribute {
+    background-color: #343A40;
+    border-color: #ba68c8;
+    color: white;
+}
+#wall .bs-thanks {
+    display: none;
+    background-color: #343A40;
+    border-color: #4db6ac;
+    color: #ffffff;
+}
+#wall .btn-block {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+}
+#wall form input:focus,
+    #wall form textarea:focus {
+    border-color: #ba68c8 !important;
+}
+#wall .form-group label {
+    color: #ffffff;
+}
+#wall .submitbutton {
+    background-color: #ba68c8;
+}
+#wall .bs-callout-support {
+    background-color: #343A40;
+    border-color: #FCCC30;
+    color: white;
+}
+#wall .bs-callout-support .nav-item .nav-link {
+    color: #fff;
+}
+#wall .list-group-item {
+    background-color: transparent;
+    border: solid 1px #fff;
+    color: #fff !important;
+}
+#wall .list-group-item:hover {
+    background-color: #000;
+}
+#wall .list-group-item i {
+    color: #FCCC30;
+}
+#wall .bs-callout-about {
+    background-color: #343A40;
+    border-color: #4dd0e1;
+    color: #ffffff;
+}
