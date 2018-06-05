@@ -138,7 +138,7 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./../img/congruent_outline.png":11,"_css_loader":7}],43:[function(require,module,exports) {
+},{"./../img/congruent_outline.png":9,"_css_loader":7}],43:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -160,7 +160,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '63368' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '60080' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -341,6 +341,6 @@ LazyPromise.prototype.catch = function (onError) {
   return this.promise || (this.promise = new Promise(this.executor).catch(onError));
 };
 },{"./bundle-url":13}],0:[function(require,module,exports) {
-var b=require(45);b.load([["43762566c02c0862fd12f54fedd7f391.png",11]]);
+var b=require(45);b.load([["43762566c02c0862fd12f54fedd7f391.png",9]]);
 },{}]},{},[43,0])
 //# sourceMappingURL=/dist/3f8440a54235fc6e658427f94a1a3f02.map
