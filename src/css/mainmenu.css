@@ -119,8 +119,8 @@ iframe {
     margin-top: 15px;
 }
 
-.submitter {
-    margin-top: -10px;
+.submittercatalogue {
+    margin-top: -10px ;
 }
 
 .appinfo {
@@ -157,9 +157,7 @@ iframe {
     background-color: #dadfe1;
 }
 
-
 /* CONTRIBUTE */
-
 
 /* Main Body */
 
@@ -217,9 +215,7 @@ form {
   display: none; 
 }
 
-
 /* ABOUT */
-
 
 .bs-callout-about {
     background-color: #fafafa;

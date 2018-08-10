@@ -3,16 +3,16 @@
 		<div class="card-header" role="navigation">
 			<ul class="nav nav-tabs card-header-tabs justify-content-center">
 				<li class="nav-item">
-					<a class="nav-link {{ $currentPage === 'card' ? 'active' : ''}}" id="app-tab" href="#appgenerator" on:click="store.set({ currentPage: 'card' })"><i class="fa fa-magic" aria-hidden="true"></i></a>
+					<a class="nav-link {{ $currentPage === 'card' ? 'active' : ''}}" id="app-tab" href="#appgenerator" on:click="store.set({ currentPage: 'card' })"><i class="fas fa-magic" aria-hidden="true"></i></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link {{ $currentPage === 'catalogue' ? 'active show' : ''}}" id="catalogue-tab" href="#catalogue" on:click="store.set({ currentPage: 'catalogue' })"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a>
+					<a class="nav-link {{ $currentPage === 'catalogue' ? 'active show' : ''}}" id="catalogue-tab" href="#catalogue" on:click="store.set({ currentPage: 'catalogue' })"><i class="far fa-bookmark" aria-hidden="true"></i></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link {{ $currentPage === 'contribute' ? 'active show' : ''}}" id="contribute-tab" href="#contribute" on:click="store.set({ currentPage: 'contribute' })"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a>
+					<a class="nav-link {{ $currentPage === 'contribute' ? 'active show' : ''}}" id="contribute-tab" href="#contribute" on:click="store.set({ currentPage: 'contribute' })"><i class="far fa-plus-square" aria-hidden="true"></i></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link {{ $currentPage === 'about' ? 'active show' : ''}}" id="about-tab" href="#about" on:click="store.set({ currentPage: 'about' })"><i class="fa fa-info" aria-hidden="true"></i></a>
+					<a class="nav-link {{ $currentPage === 'about' ? 'active show' : ''}}" id="about-tab" href="#about" on:click="store.set({ currentPage: 'about' })"><i class="fas fa-info" aria-hidden="true"></i></a>
 				</li>
 			</ul>
 		</div>
