@@ -1,9 +1,9 @@
 /* GRID LAYOUTS */
 
-.container {
+.card-holder {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 900px;
+    padding: 0 10px 0 10px;
 }
 
 .front {
@@ -231,8 +231,12 @@ p, h5, h6 {
 .framework {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
     grid-gap: 10px;
+}
+
+.usestext p {
+    margin-bottom: 10px;
 }
 
 /* FLIP */
