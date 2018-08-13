@@ -1,14 +1,26 @@
 #wall {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+        "nav nav"
+        "cards misc";
+    grid-gap: 10px;
+}
+
+
+#wall {
 
     & .wall-filter {
         background-color: #343A40 !important;
         padding: 1.2em;
         height: 100px;
+        grid-area: nav;
     }
 
     & .wall-cards {
-        width: calc(100vw - 360px);
-        height: calc(100vh - 100px);
+        /* width: calc(100vw - 360px); */
+        /* height: calc(100vh - 100px); */
         overflow-y: auto;
         overflow-x: hidden;
         float: left;
@@ -19,7 +31,8 @@
         background-color: #343A40 !important;
         width: 360px;
         height: calc(100vh - 100px);
-        float: right;
+        /* float: right; */
+        grid-area: misc;
     }
 
     & .nav-item {
