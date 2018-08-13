@@ -1,60 +1,9 @@
-/* GRID LAYOUTS */
-
-.card-holder {
-    display: grid;
-    grid-template-columns: auto;
-    padding: 0 10px 0 10px;
-}
-
-.front {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 50px auto auto auto 50px;
-}
-
-.back {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 50px auto 50px auto 50px;  
-}
-
-.noborder {
-    border: none;
-}
-
-/* FONT STYLES */
-
-h4, 
-a {
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 700;
-}
-
-p, h5, h6 {
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 500;
-}
-
-.card-text {
-    line-height: 25.6px;
-    line-height: 1.6rem;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.tool-link {
-    font-size: 17.6px;
-    font-size: 1.1rem;
-    margin-left: 5px;
-}
-
-/* CARD NAME & DESCRIPTION */
-
 .titlebarfront {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    grid-template-rows: auto;
-    padding: 110px 0 20px 0;
+    height: 250px;
+    padding-top: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 
     /* EDITABLE */
     background-size: contain !important;
@@ -66,9 +15,9 @@ p, h5, h6 {
 .smalllogo {
     width: 40px;
     height: 40px;
-    justify-self: center;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
+    margin-left: 20px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
     
     /* EDITABLE */
     background-size: 35px;
@@ -79,27 +28,20 @@ p, h5, h6 {
 
 .apptitle {
     color: #fff;
+    margin-left: 10px;
     padding-top: 5px;
-    width: 80%;
+    font-family: 'Catamaran', sans-serif;
+    width: 60%;
 }
 
-/* CARD FLIPPERS */
-
-.cardflipper,
-.nextcard {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 50px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+.cardflipper {
+    height: 50px;
+    text-align: center;
     /* EDITABLE */
-    background-color: #343A40;
+    background-color: #00a5bd;
     color: #fff;
     /* END EDITABLE */
+    padding-top: 15px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     font-family: 'Catamaran', sans-serif;
@@ -108,26 +50,106 @@ p, h5, h6 {
 }
 
 .nextcard {
-    background-color: #343A40;
-    border-radius: 0 0 10px 10px;
-    border-top: 1px solid #fff;
+    height: 55px;
+    text-align: center;
+    background-color: #353B40;
+    color: #fff;
+    padding-top: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.1em;
+    border-top-style: solid;
+    border-width: 1px;
+    cursor: pointer;
 }
 
-/* TAGS SECTION */
+.mainlogocontainer {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .details {
+    height: 160px;
     background-color: #343A40;
     color: #fff;
 }
 
-.pills-main {
-    font-family: 'Catamaran', sans-serif;
-    padding: 25px 25px 0 25px;
+hr {
+    width: 90%;
+    background-color: #fff;
+    margin-top: 25px;
+    margin-bottom: 0px;
 }
 
-.pills-sub {
+/* EMBEDDED VIDEO */
+
+.mediabackground {
+    background-image: url(28a2eebd1f7d54a58bf0dd27b2ab4d2b.png);
+}
+
+.videocontainer {
+    max-width: 560px !important; 
+    max-height: 315px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* TEXT STYLES */
+
+h4 {
     font-family: 'Catamaran', sans-serif;
-    padding: 0 25px 0 25px;
+    font-weight: 700;
+}
+
+.card-subtitle {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+    margin-top: 5px;
+    color: #fff !important;
+    margin-left: 70px;
+    padding-right: 40px;
+    line-height: 1.2em;
+}
+
+.card-text {
+    line-height: 1.7em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+p {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+}
+
+a {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+}
+
+.tool-link {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+/* PILLS */
+
+.tags {
+    font-size: 20px;
+}
+
+.blooms-pills-main {
+    padding: 30px 25px 0px 5%;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.blooms-pills-sub {
+    padding: 0 5%;
+    font-family: 'Catamaran', sans-serif;
 }
 
 .activity {
@@ -164,79 +186,134 @@ p, h5, h6 {
 
 .sub {
     background-color: #90a4ae;
-    padding: 5px;
 }
 
+/* ATTRIBUTES */
+
+.framework {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; 
+    margin-bottom: -5px;
+    margin-top: -5px;
+}
+
+.thermometer {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.thermometer2,
+.thermometer3 {
+    margin-top: 5px;
+}
+
+.usestext {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.frameworkheading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #353B40;
+    color: #fff;
+    padding-top: 15px;
+}
+
+.frameworktext1 {
+    text-align: center;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    margin-left: 15px;
+}
+
+.frameworktext2 {
+    text-align: left;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    margin-left: 15px;
+}
+
+.thermometer1,
+.usestext1 {
+    margin-top: 5px;
+}
+
+.usestext1 {
+}
+
+.usestext2 {
+    padding-top: 5px;
+}
+
+.usestext3 {
+    padding-top: 5px;
+}
+
+.usestext2,
+.usestext3 {
+
+}
+/* SUBMITTER */
+
 .submitter {
-    display: grid;
-    margin: 20px 0 10px 0; 
-    padding: 0 25px 0 25px;
-    grid-template-columns: 40px 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .submitterinfo {
+    margin-top: 20px;
+    margin-left: 10px;
     color: #fff;
 }
 
 .submitterimg {
-    font-size: 24px;
-    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px; 
+    margin-left: 5%;
+    font-size: 1.75em;
 }
 
 .submitterschool {
     color: #999999;
 }
 
-/* EMBEDDED VIDEO */
+/* RATING */
 
-.mediabackground {
-    background-color: #222;
-}
-
-.videocontainer {
-    max-width: 560px !important; 
-    max-height: 315px !important;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* 3E FRAMEWORK */
-
-.frameworkheading {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    background-color: #353B40;
+.ratings {
+    display: block;
+    text-align: center;
+    background-color: #343A40;
     color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.frameworktext1,
-.frameworktext2 {
-    text-align: center;
-    padding-left: 20px;
-    margin-bottom: 0;
-    font-weight: 700;
+.ratings .btn {
+    background-color: transparent;
+    margin-bottom: 5px;
 }
 
-.frameworktext2 {
-    text-align: left;
-}
+/* FOOTER */
 
-.thermometer {
-    text-align: center;
-    padding-top: 5px;
-}
-
-.framework {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(3, auto);
-    grid-gap: 10px;
-}
-
-.usestext p {
-    margin-bottom: 10px;
+.card-footer {
+    /* EDITABLE */
+    background-color: #00a5bd;
+    color: #fff;
+    /* END EDITABLE */
 }
 
 /* FLIP */
@@ -247,17 +324,24 @@ p, h5, h6 {
     -o-perspective: 800px;
     perspective: 800px;
     margin: 15px 0;
+    height: 800px;
+}
+
+.noborder {
+    border: none;
+}
+
+.full-height {
+    height: 100%;
 }
 
 /* Flip the pane */
-
 .manual-flip .card {
     background: transparent;
 }
-
 .manual-flip.hover .card {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    -webkit-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
 }
 
 .app-card {
@@ -281,24 +365,57 @@ p, h5, h6 {
     top: 0;
     bottom: 0;
     left: 0;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(51, 51, 51, .5);
+            box-shadow: 0px 0px 5px 0px rgba(51, 51, 51, .5);
+    border-radius: 10px;
+    width: 100%;
 }
 
 .front {
     z-index: 2;
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
-
 .back {
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
 }
 
+/* Clearfix */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
+
 /* MEDIA QUERIES */
 
-/* @media (max-width: 300px) {
+@media (max-width: 300px) {
     .titlebarfront {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         height: 280px;
         padding-top: 75px;
         padding-left: 10px;
@@ -310,8 +427,13 @@ p, h5, h6 {
     }
     
     .framework {
-        flex-direction: column;
-        flex: 1;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
     }
     
     .details {
@@ -321,9 +443,9 @@ p, h5, h6 {
     .submitterimg {
         display: none;
     }
-} */
+}
 
-/* @media (max-width: 190px) {
+@media (max-width: 190px) {
     .titlebarfront {
         height: 320px;
     }
@@ -331,4 +453,4 @@ p, h5, h6 {
     .details {
         height: 320px;
     }
-} */
+}
