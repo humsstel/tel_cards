@@ -2,7 +2,7 @@
     <div class="col-md-12">
         <div class="bs-callout bs-callout-about clearfix">
             <div class="icon">
-                <i class="fa fa-info" aria-hidden="true"></i> 
+                <i class="fas fa-info" aria-hidden="true"></i> 
             </div>
 
             <h4>About</h4>
