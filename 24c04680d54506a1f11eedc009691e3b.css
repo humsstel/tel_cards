@@ -1,47 +1,36 @@
+/* GENERAL */
+
 body {
 	margin: 0;
 	font-size: 14px;
 	background-color: #ffffff;
 }
 
-/* NAVIGATION */
+iframe {
+    margin-top: 5px;
+    width: 100%;
+}
+
+h4 {
+    margin-bottom: 20px;
+}
+
+/* TAB NAVIGATION */
 
 .card-header {
-    background-color: #fff;
+    background-color: transparent;
+}
+
+.nav-item {
+    width: 60px;
+    text-align: center;
 }
 
 .card-header a {
     color: black;
-    font-size: 1.1em;
 }
 
-.nav-item {
-    /* width: 60px; */
-    text-align: center;
-}
-
-iframe {
-    margin-top: 5px;
-}
-
-/* Text Styles */
-
-h4 {
-    margin-left: 25px;
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-p {
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 500;
-}
-
-a {
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 700;
-}
+/* CATALOGUE TAB */
 
 select {
     -webkit-appearance: none;
@@ -50,20 +39,6 @@ select {
     background: url(b9a8e2330c0974ed9ae0c39a3ae46285.png) right 10px center / 30px no-repeat #fff;
     padding-right: 20px;
 }
-
-/* MAIN BODY */
-
-body {
-	font-size: 14px;
-	font-family: "Helvetica Nueue", Arial, Verdana, sans-serif;
-	background-color: #ffffff;
-}
-
-iframe {
-    width: 100%;
-}
-
-/* CATALOGUE TAB */
 
 .bs-callout {
     margin: 15px 0px 10px 0px;
@@ -119,8 +94,8 @@ iframe {
     margin-top: 15px;
 }
 
-.submitter {
-    margin-top: -10px;
+.submittercatalogue {
+    margin-top: -10px ;
 }
 
 .appinfo {
@@ -130,11 +105,11 @@ iframe {
 /* Pills */
 
 .create {
-    background-color: #a168c8;
+    background-color: #ba68c8;
 }
 
 .connect {
-    background-color: #4db6ac;
+    background-color: #4dd0e1;
 }
 
 .collaborate {
@@ -142,7 +117,7 @@ iframe {
 }
 
 .curate {
-    background-color: #fccc30;
+    background-color: #ffb74d;
 }
 
 .capture {
@@ -150,16 +125,14 @@ iframe {
 }
 
 .captivate {
-    background-color: #4b768d;
+    background-color: #4db6ac;
 }
 
 .check {
-    background-color: #dadfe1;
+    background-color: #90a4ae;
 }
 
-
 /* CONTRIBUTE */
-
 
 /* Main Body */
 
@@ -217,9 +190,7 @@ form {
   display: none; 
 }
 
-
 /* ABOUT */
-
 
 .bs-callout-about {
     background-color: #fafafa;
