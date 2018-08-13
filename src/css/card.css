@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: auto;
     padding: 0 10px 0 10px;
+    height: 850px;
 }
 
 .front {

@@ -399,11 +399,11 @@ export default [
         assets: {
             logo: {
                 styles: "background-color: #343A40; background-size: 20px; background-position: 50% 50%;",
-                image: require('./img/zeetings.svg')
+                image: require('./img/zeetings.png')
             },
             cover: {
                 styles: "",
-                image: require('./img/zeetings_logo.svg')
+                image: require('./img/zeetings_logo.png')
             }
         },
         activities: [

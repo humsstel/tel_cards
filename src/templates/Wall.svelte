@@ -30,13 +30,13 @@
             <div class="east-nav">
                 <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="contribute-tab" data-toggle="pill" href="#contribute" role="tab" aria-controls="Contribute" aria-selected="true"><i class="fa fa-plus-square-o" aria-hidden="true"></i>&nbsp;&nbsp;Contribute</a>
+                        <a class="nav-link active" id="contribute-tab" data-toggle="pill" href="#contribute" role="tab" aria-controls="Contribute" aria-selected="true"><i class="far fa-plus-square" aria-hidden="true"></i>&nbsp;&nbsp;Contribute</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="support-tab" data-toggle="pill" href="#support" role="tab" aria-controls="Support" aria-selected="false"><i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp;&nbsp;Support</a>
+                        <a class="nav-link" id="support-tab" data-toggle="pill" href="#support" role="tab" aria-controls="Support" aria-selected="false"><i class="far fa-comments" aria-hidden="true"></i>&nbsp;&nbsp;Support</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="About" aria-selected="false"><i class="fa fa-info" aria-hidden="true"></i>&nbsp;&nbsp;About</a>
+                        <a class="nav-link" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="About" aria-selected="false"><i class="fas fa-info" aria-hidden="true"></i>&nbsp;&nbsp;About</a>
                     </li>
                 </ul>
             </div>
