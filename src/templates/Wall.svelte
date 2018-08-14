@@ -16,13 +16,13 @@
     </div>
 
     <div class="wall-cards">
-        <div class="row">    
+        <!-- <div class="row">     -->
             {{#each filteredCards as card}}
-                <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+                <div class="card-item">
                     <Card :card />
                 </div>
             {{/each}}
-        </div>
+        <!-- </div> -->
     </div>
 
     <div class="wall-misc">

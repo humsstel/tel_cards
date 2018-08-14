@@ -4,7 +4,6 @@
     display: grid;
     grid-template-columns: auto;
     padding: 0 10px 0 10px;
-    height: 850px;
 }
 
 .front {
@@ -285,64 +284,3 @@ p, h5, h6 {
 .back {
     transform: rotateY(180deg);
 }
-
-/* FLEXBOX */
-
-/* Clearfix */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.clearfix {
-    *zoom: 1;
-}
-
-/* MEDIA QUERIES */
-
-/* @media (max-width: 300px) {
-    .titlebarfront {
-        flex-direction: column;
-        height: 280px;
-        padding-top: 75px;
-        padding-left: 10px;
-    }
-    
-    .apptitle {
-        width: 85%;
-        margin-top: 10px;
-    }
-    
-    .framework {
-        flex-direction: column;
-        flex: 1;
-    }
-    
-    .details {
-        height: 250px;
-    }
-    
-    .submitterimg {
-        display: none;
-    }
-} */
-
-/* @media (max-width: 190px) {
-    .titlebarfront {
-        height: 320px;
-    }
-    
-    .details {
-        height: 320px;
-    }
-} */

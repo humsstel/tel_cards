@@ -18,9 +18,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#naturalsciences" role="tab" data-toggle="pill">Faculty of Natural Sciences</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="#lpdc" role="tab" data-toggle="pill">LPDC</a>
-                </li>
+                </li> -->
             </ul>
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane fade show active" id="humss">             
@@ -44,12 +44,12 @@
                         <a href="mailto:d.a.kerr@keele.ac.uk?Subject=KLE%20Templates" class="list-group-item list-group-item-action"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Daryl Kerr</a>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab-pane fade" id="lpdc">
+                <!-- <div role="tabpanel" class="tab-pane fade" id="lpdc">
                     <br>    
                     <div class="list-group">
                         <a href="mailto:m.j.street@keele.ac.uk?Subject=KLE%20Templates" class="list-group-item list-group-item-action"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Matthew Street</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
