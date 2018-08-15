@@ -34,6 +34,7 @@
 
 #wall .card-item {
     margin: 0 8px 0 8px;
+    word-break: break-word;
 }
 
 #wall .nav-item {
