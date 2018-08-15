@@ -60,7 +60,9 @@
                 <div class="nextcard" role="button" on:click="store.loadRandomCard(card.id)">
                     <div><i class="fas fa-magic" aria-hidden="true"></i>&nbsp;&nbsp;Try another app</div>
                 </div>
-            </div><!-- End front panel -->
+            </div>
+            
+            <!-- End front panel -->
 
             <div class="back face">
                 <div class="cardflipper" role="button" on:click="rotateCard()">
