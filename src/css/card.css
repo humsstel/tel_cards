@@ -1,9 +1,5 @@
 /* GRID LAYOUTS */
 
-html {
-    overflow-x: hidden;
-}
-
 .card-holder {
     display: grid;
     grid-template-columns: auto;
@@ -32,12 +28,8 @@ html {
     border-right: 0.5px solid #90A4AE;
 }
 
-.card {
+.mainCard {
     border: none;
-}
-
-.card-header-tabs {
-    width: 110%;
 }
 
 /* FONT STYLES */

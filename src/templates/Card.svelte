@@ -19,7 +19,7 @@
         <div class="app-card card noborder {{ card.id }}">
             <div class="front face">
                 <div class="cardflipper" role="button" on:click="rotateCard()">
-                    <div><i class="fas fa-redo-alt faa-spin animated-hover" aria-hidden="true"></i> Flip card</div>
+                    <div><i class="fas fa-redo-alt" aria-hidden="true"></i> Flip card</div>
                 </div>
                 <div class="titlebarfront">
                     <a class="smalllogo faa-tada animated-hover" href="{{ card.url }}" target="_blank">
@@ -66,7 +66,7 @@
 
             <div class="back face">
                 <div class="cardflipper" role="button" on:click="rotateCard()">
-                    <div><i class="fa faa-spin fa-repeat" aria-hidden="true"></i> Flip back</div>
+                    <div><i class="fas fa-redo-alt" aria-hidden="true"></i> Flip back</div>
                 </div>
                 <div class="mediabackground">
                     <div class="videocontainer">
