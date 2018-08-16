@@ -105,12 +105,17 @@ p, h5, h6 {
     justify-self: center;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
+    transition: transform 0.25s linear;
     
     /* EDITABLE */
     background-size: 35px;
     background-position: 50% 35%;
     background-repeat: no-repeat;
     /* END EDITABLE */
+}
+
+.smalllogo:hover {
+    transform: scale(1.2);
 }
 
 .apptitle {

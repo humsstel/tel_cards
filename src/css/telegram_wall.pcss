@@ -7,6 +7,15 @@
         "cards misc";
 }
 
+@media only screen and (max-width: 800px) {
+    #wall {
+    grid-template-columns: 100%;
+    grid-template-areas: 
+        "nav"
+        "cards";
+    }
+}
+
 #wall {
 
     & .wall-filter {
@@ -18,20 +27,16 @@
     & .wall-misc {
         background-color: #343A40 !important;
         width: 360px;
-        /* height: calc(100vh - 100px); */
-        /* float: right; */
         grid-area: misc;
     }
 
     & .wall-cards {
-        /* width: calc(100vw - 360px); */
-        /* height: calc(100vh - 100px); */
         overflow-y: auto;
-        /* overflow-x: auto; */
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-template-rows: repeat(4, 850px);
-        padding: 0 5px;    
+        grid-template-rows: repeat(6, 900px);
+        padding: 0 5px; 
+        grid-area: cards;   
     }
 
     & .card-item {
