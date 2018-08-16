@@ -1,1 +1,323 @@
-.card-holder{padding:0 10px}.card-holder,.front{display:grid;grid-template-columns:auto}.front{grid-template-rows:50px auto auto auto 50px}.back{display:grid;grid-template-columns:auto;grid-template-rows:50px auto 50px auto 50px}.noborder{border:none}.front .card-body{background-color:#fff;border-left:.5px solid #90a4ae;border-right:.5px solid #90a4ae}.mainCard{border:none}a,h4{font-weight:700}a,h4,h5,h6,p{font-family:Catamaran,sans-serif}h5,h6,p{font-weight:500}.card-text{line-height:25.6px;line-height:1.6rem;margin-left:5px;margin-right:5px}.tool-link{font-size:17.6px;font-size:1.1rem;margin-left:5px}.cardflipper,.nextcard{display:grid;grid-template-columns:auto;grid-template-rows:50px;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-color:#343a40;color:#fff;border-top-left-radius:10px;border-top-right-radius:10px;font-family:Catamaran,sans-serif;font-size:1.1em;cursor:pointer}.nextcard{background-color:#343a40;border-radius:0 0 10px 10px;border-top:1px solid #fff;margin-top:-5px;padding-top:2px}.titlebarfront{display:grid;grid-template-columns:80px 1fr;grid-template-rows:auto;padding:110px 0 20px;background-size:contain!important;background-repeat:no-repeat!important;background-position:50%!important}.smalllogo{width:40px;height:40px;justify-self:center;-moz-border-radius:50%;-webkit-border-radius:50%;background-size:35px;background-position:50% 35%;background-repeat:no-repeat}.apptitle{color:#fff;padding-top:5px;width:80%}.details{background-color:#343a40;color:#fff}.pills-main{padding:25px 25px 0}.pills-main,.pills-sub{font-family:Catamaran,sans-serif}.pills-sub{padding:0 25px}.activity{text-transform:capitalize}.create{background-color:#ba68c8}.connect{background-color:#4dd0e1}.collaborate{background-color:#f06292}.curate{background-color:#ffb74d}.capture{background-color:#4fc3f7}.captivate{background-color:#4db6ac}.check,.sub{background-color:#90a4ae}.sub{padding:5px}.submitter{display:grid;margin:20px 0 10px;padding:0 25px;grid-template-columns:40px 1fr}.submitterinfo{color:#fff}.submitterimg{font-size:24px;font-size:1.5rem}.submitterschool{color:#999}.mediabackground{background-color:#222}.videocontainer{max-width:560px!important;max-height:315px!important;margin-left:auto;margin-right:auto}.back .card-body{background-color:#fff;border:.5px solid #90a4ae;border-bottom-left-radius:5px;border-bottom-right-radius:5px}.frameworkheading{display:grid;grid-template-columns:1fr 3fr;-ms-flex-line-pack:center;align-content:center;background-color:#353b40;color:#fff}.frameworktext1,.frameworktext2{text-align:center;padding-left:20px;margin-bottom:0;font-weight:700}.frameworktext2{text-align:left}.thermometer{text-align:center;padding-top:5px}.framework{display:grid;grid-template-columns:1fr 3fr;grid-template-rows:repeat(3,auto);grid-gap:10px}.usestext p{margin-bottom:10px}.card-container{-webkit-perspective:800px;-o-perspective:800px;perspective:800px;margin:15px 0}.manual-flip .card{background:transparent}.manual-flip.hover .card{-webkit-transform:rotateY(180deg);transform:rotateY(180deg)}.app-card{-webkit-transition:-webkit-transform .5s;transition:-webkit-transform .5s;transition:transform .5s;transition:transform .5s,-webkit-transform .5s;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;right:0}.app-card,.face{position:absolute;top:0;bottom:0;left:0}.face{-webkit-backface-visibility:hidden;backface-visibility:hidden}.front{z-index:2;-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}.back{-webkit-transform:rotateY(180deg);transform:rotateY(180deg)}
+/* GRID LAYOUTS */
+
+.card-holder {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0 10px 0 10px;
+}
+
+.front {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto auto 50px;
+}
+
+.back {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto 50px auto 50px;  
+}
+
+.noborder {
+    border: none;
+}
+
+.front .card-body {
+    background-color: #fff;
+    border-left: 0.5px solid #90A4AE;
+    border-right: 0.5px solid #90A4AE;
+}
+
+.mainCard {
+    border: none;
+}
+
+/* FONT STYLES */
+
+h4, 
+a {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+}
+
+p, h5, h6 {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+}
+
+.card-text {
+    line-height: 25.6px;
+    line-height: 1.6rem;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tool-link {
+    font-size: 17.6px;
+    font-size: 1.1rem;
+    margin-left: 5px;
+}
+
+/* CARD FLIPPERS */
+
+.cardflipper,
+.nextcard {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    /* EDITABLE */
+    background-color: #343A40;
+    color: #fff;
+    /* END EDITABLE */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.nextcard {
+    background-color: #343A40;
+    border-radius: 0 0 10px 10px;
+    border-top: 1px solid #fff;
+    margin-top: -5px;
+    padding-top: 2px;
+}
+
+/* CARD NAME & DESCRIPTION */
+
+.titlebarfront {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: auto;
+    padding: 110px 0 20px 0;
+
+    /* EDITABLE */
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    /* END EDITABLE */
+}
+
+.smalllogo {
+    width: 40px;
+    height: 40px;
+    justify-self: center;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -webkit-transition: -webkit-transform 0.25s linear;
+    transition: -webkit-transform 0.25s linear;
+    transition: transform 0.25s linear;
+    transition: transform 0.25s linear, -webkit-transform 0.25s linear;
+    
+    /* EDITABLE */
+    background-size: 35px;
+    background-position: 50% 35%;
+    background-repeat: no-repeat;
+    /* END EDITABLE */
+}
+
+.smalllogo:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+.apptitle {
+    color: #fff;
+    padding-top: 5px;
+    width: 80%;
+}
+
+/* TAGS SECTION */
+
+.details {
+    background-color: #343A40;
+    color: #fff;
+}
+
+.pills-main {
+    font-family: 'Catamaran', sans-serif;
+    padding: 25px 25px 0 25px;
+}
+
+.pills-sub {
+    font-family: 'Catamaran', sans-serif;
+    padding: 0 25px 0 25px;
+}
+
+.activity {
+    text-transform: capitalize;
+}
+
+.create {
+    background-color: #ba68c8;
+}
+
+.connect {
+    background-color: #4dd0e1;
+}
+
+.collaborate {
+    background-color: #f06292;
+}
+
+.curate {
+    background-color: #ffb74d;
+}
+
+.capture {
+    background-color: #4fc3f7;
+}
+
+.captivate {
+    background-color: #4db6ac;
+}
+
+.check {
+    background-color: #90a4ae;
+}
+
+.sub {
+    background-color: #90a4ae;
+    padding: 5px;
+}
+
+.submitter {
+    display: grid;
+    margin: 20px 0 10px 0; 
+    padding: 0 25px 0 25px;
+    grid-template-columns: 40px 1fr;
+}
+
+.submitterinfo {
+    color: #fff;
+}
+
+.submitterimg {
+    font-size: 24px;
+    font-size: 1.5rem;
+}
+
+.submitterschool {
+    color: #999999;
+}
+
+/* EMBEDDED VIDEO */
+
+.mediabackground {
+    background-color: #222;
+}
+
+.videocontainer {
+    max-width: 560px !important; 
+    max-height: 315px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 3E FRAMEWORK */
+
+.back .card-body {
+    background-color: #fff;
+    border: 0.5px solid #90A4AE;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.frameworkheading {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    background-color: #353B40;
+    color: #fff;
+}
+
+.frameworktext1,
+.frameworktext2 {
+    text-align: center;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.frameworktext2 {
+    text-align: left;
+}
+
+.thermometer {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.framework {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 10px;
+}
+
+.usestext p {
+    margin-bottom: 10px;
+}
+
+/* FLIP */
+
+/* Entire container, keeps perspective */
+.card-container {
+    -webkit-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+    margin: 15px 0;
+}
+
+/* Flip the pane */
+
+.manual-flip .card {
+    background: transparent;
+}
+
+.manual-flip.hover .card {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+}
+
+.app-card {
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.face {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+}
