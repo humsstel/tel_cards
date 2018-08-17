@@ -190,9 +190,9 @@ p, h5, h6 {
 
 .submitter {
     display: grid;
+    grid-template-columns: 40px 1fr;
     margin: 20px 0 10px 0; 
     padding: 0 25px 0 25px;
-    grid-template-columns: 40px 1fr;
 }
 
 .submitterinfo {
@@ -274,7 +274,7 @@ p, h5, h6 {
     -webkit-perspective: 800px;
     -o-perspective: 800px;
     perspective: 800px;
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 /* Flip the pane */
