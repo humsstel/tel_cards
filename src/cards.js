@@ -43,7 +43,7 @@ export default [
     {
         id: "gdocs",
         name: "Google Docs",
-        url: "https://www.google.com/docs/about",
+        url: "https://google.com/docs/about",
         tagline: "An online word processor that allows you to write, edit and collaborate wherever you are.",
         description: "As part of GSuite (formerly Google Apps for Education), Google Docs is a simple but powerful word processing application that helps to create documents from any device. As well as familiar features for formatting and styling, Docs makes it possible to work together in real-time. Sharing files is easy too, with adjustable security settings that make emailing multiple copies of the same document a thing of the past.",
         colour: "#5793EF",
@@ -83,7 +83,7 @@ export default [
         name: "Medium",
         url: "https://medium.com/",
         tagline: "A blogging platform that makes writing and sharing posts simple.",
-        description: "Medium simplifies the writing process, producing great looking articles that can easily be shared online. Author your own or show your appreciation for other posts by using the applaud feature, or bookmark articles to read later. Medium allows anybody to read, write and respond to stories, with licensing options to allow others to remix and reuse your posts. Found an article that needs more discussion? Write a reponse underneath or highlight specific text and add comments inline.",
+        description: "Medium simplifies the writing process, producing great looking articles that are easily shared online. Become an author or show your appreciation for posts by using the applaud feature. Medium allows anybody to read, write and respond to stories, with licensing options that allow others to remix and reuse your posts. Found an article that needs more discussion? Write a reponse or highlight specific text and add comments inline.",
         colour: "#000",
         assets: {
             logo: {
@@ -240,7 +240,7 @@ export default [
         name: "Pinterest",
         url: "https://www.pinterest.com",
         tagline: "Upload, save and manage visual content (e.g. images and video) via collections known as pinboards.",
-        description: "Pinterest is a visual bookmarking tool that helps to discover and save creative ideas. Known as pins, images and videos can be uploaded, saved and categorised into collections  (pinboards) that can be kept private or shared online. Pinboards can be split into sections and made collaborative, allowing others to add content. Pinterest's bookmarking tool can also be used to quickly save content from around the web.",
+        description: "Pinterest is a visual bookmarking tool that helps discover and save creative ideas. Known as pins, images and videos can be saved and categorised into collections (pinboards) that can be kept private or shared online. Pinboards can be split into sections and made collaborative, allowing others to add content. Pinterest's bookmarking tool can also quickly save content from the web.",
         colour: "#BD081C",
         assets: {
             logo: {
@@ -393,8 +393,8 @@ export default [
         id: "zeetings",
         name: "Zeetings",
         url: "https://www.zeetings.com",
-        tagline: "Seamlessly combine slides, multimedia content, polls and Q&A features into interactive presentations.",
-        description: "Zeetings helps to create engaging presentations by combining a range of interactive tools into one, easy to use interface. Add slides from existing decks or use Zeetings to create brand new presentations, quickly embedding videos, polls and surveys. A Zeeting is interactive, so share with students to receive real time feedback and live questions. With in-built analytics, responses are saved automatically to repurpose outside of the classroom.",
+        tagline: "Combine slides, multimedia content, polls and Q&A features into interactive presentations.",
+        description: "Zeetings helps to create engaging presentations by combining a range of interactive tools into an easy to use interface. Add existing slides or use Zeetings to create brand new presentations, quickly embedding videos, polls and surveys. A Zeeting is interactive, so share with students to receive real time feedback and questions. With in-built analytics, responses are saved automatically to repurpose outside of the classroom.",
         colour: "#2BA0D8",
         assets: {
             logo: {

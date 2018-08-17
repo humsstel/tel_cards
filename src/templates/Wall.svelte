@@ -15,6 +15,9 @@
         </div>
     </div>
 
+    <div class="instructions">
+        <i class="fas fa-map-signs" aria-hidden="true"></i>&nbsp;<p>Browse the wall to find out what technologies are available for learning and teaching. <strong>Found something you're interested in?</strong> Use the Support tab for details on who to speak to for ideas and support.</p>
+    </div>
     <div class="wall-cards">
         <!-- <div class="row">     -->
             {{#each filteredCards as card}}
@@ -64,6 +67,7 @@
 	import About from './About.svelte'
 
     export default {
+        
         // Set the initial filter state to show all cards
         data() {
             return {

@@ -2,7 +2,7 @@
     <div class="col-md-12">
         <div class="bs-callout bs-callout-support clearfix">
             <div class="icon">
-                <i class="fa fa-comments-o" aria-hidden="true"></i> 
+                <i class="far fa-comments" aria-hidden="true"></i> 
             </div>
             <h4>Support</h4>
             <p>If you have any questions or issues relating to the apps featured here, please speak to your local learning technology support person.</p> <p>A list of University contacts can be found below.</p>
