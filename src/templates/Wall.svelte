@@ -2,7 +2,7 @@
 
     <div class="wall-filter">
         <div class="selector">
-            <select id="filterText" class="btn btn-secondary dropdown-toggle btn-lg btn-block" on:change="set({ filter: event.target.value })">
+            <select id="filterText" class="btn btn-secondary dropdown-toggle btn-lg btn-block transformer" on:change="set({ filter: event.target.value })">
                 <option selected value="all">Find an app to...</option>
                 <option value="create">...create learning resources</option>
                 <option value="connect">...communicate with students electronically</option>
@@ -14,7 +14,7 @@
                 <option value="all">All apps</option>
             </select>
         </div>
-        <button class="btn btn-lg btn-outline-secondary" onclick="document.getElementsByClassName('wall-misc')[0].classList.toggle('collapsed')"><i class="fas fa-chevron-right"></i></button>
+        <button class="btn btn-lg btn-outline-secondary" id="collapser" type="button" onclick="document.getElementsByClassName('wall-misc')[0].classList.toggle('collapsed'); document.getElementsByClassName('fa-chevron-right')[0].classList.toggle('fa-rotate-180');"><i class="fas fa-chevron-right" id="collapser-icon"></i></button>
     </div>
 
     <div class="instructions">
@@ -99,4 +99,7 @@
             }
         }
     }
+
+
+
 </script>
