@@ -1,53 +1,71 @@
-#wall {
+.mainwall {
+    height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 350px;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 110px auto auto;
     grid-template-areas: 
-        "nav menu"
+        "filter menu"
         "instructions menu"
-        "cards menu";
-}
-
-@media only screen and (max-width: 1224px) {
-    #wall {
-    /* grid-template-columns: 100%; */
-    grid-template-columns: 100vw;
-    grid-template-areas: 
-        "nav"
-        "instructions"
-        "cards"
-    }
-
-    .wall-misc {
-        display: none;
-    }
+        "cards menu"
 }
 
 #wall {
+
+    & .collapser .btn {
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.25rem;
+        padding: 1.2em;
+    }
+
+    & .collapser .btn:hover {
+        background-color: #000;
+    }
 
     & .wall-filter {
+        display: grid;
+        grid-template-columns: 1fr 50px;
+        grid-column-gap: 20px;
         background-color: #343A40 !important;
         padding: 1.2em;
-        grid-area: nav;
+        grid-area: filter;
+    }
+
+    & .wall-filter #filterText {
+        text-align: left;
+    }
+
+    & .wall-filter .btn {
+        color: #fff;
+        cursor: pointer;
+        margin: 10px 0 12px 0;
     }
 
     & .wall-misc {
         background-color: #343A40 !important;
         grid-area: menu;
+        width: 340px;
+    }
+
+    & .wall-misc.collapsed {
+        width: 0px;
+        overflow-x: hidden;
     }
 
     & .wall-cards {
         overflow-y: auto;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-        grid-auto-rows: 800px;
+        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        grid-auto-rows: 820px;
         padding: 0 5px; 
-        grid-area: cards;   
+        grid-area: cards;
+        height: 100vh;
     }
 
     & .instructions {
         grid-area: instructions;
         background-color: #BA68C8;
-        padding: 20px 10px;
+        padding: 20px 20px;
         display: grid;
         grid-template-columns: 40px 1fr 30px;
         grid-template-rows: 1fr;
@@ -68,7 +86,7 @@
     }
 
     & .card-item {
-        margin: 0 8px 0 8px;
+        margin: 5px 8px 0 8px;
         word-break: break-word;
     }
 
@@ -118,6 +136,7 @@
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
+
     & .nextcard {
         display: none;
     }
@@ -135,11 +154,6 @@
         color: #fff;
         font-family: 'system-ui', sans-serif;
         line-height: 0.8em;
-    }
-
-    & .dropdown-toggle {
-        margin-left: auto;
-        margin-right: auto;
     }
 
     & .bs-callout-contribute {

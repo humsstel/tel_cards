@@ -1,4 +1,5 @@
-<div id="wall">
+<div id="wall" class="mainwall">
+
     <div class="wall-filter">
         <div class="selector">
             <select id="filterText" class="btn btn-secondary dropdown-toggle btn-lg btn-block" on:change="set({ filter: event.target.value })">
@@ -13,11 +14,13 @@
                 <option value="all">All apps</option>
             </select>
         </div>
+        <button class="btn btn-lg btn-outline-secondary" onclick="document.getElementsByClassName('wall-misc')[0].classList.toggle('collapsed')"><i class="fas fa-chevron-right"></i></button>
     </div>
 
     <div class="instructions">
-        <i class="fas fa-map-signs" aria-hidden="true"></i>&nbsp;<p>Browse the wall to find out what technologies are available for learning and teaching. <strong>Found something you're interested in?</strong> Use the Support tab for details on who to speak to for ideas and support.</p>
+        <i class="fas fa-map-signs" aria-hidden="true"></i>&nbsp;<p>Browse the wall to find out what technologies are available for learning and teaching. <strong>Found something you're interested in?</strong> Use the <strong>Support</strong> tab for details on who to speak to for ideas and support.</p>
     </div>
+
     <div class="wall-cards">
         <!-- <div class="row">     -->
             {{#each filteredCards as card}}
@@ -33,13 +36,13 @@
             <div class="east-nav">
                 <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="contribute-tab" data-toggle="pill" href="#contribute" role="tab" aria-controls="Contribute" aria-selected="true"><i class="far fa-plus-square" aria-hidden="true"></i>&nbsp;&nbsp;Contribute</a>
+                        <a class="nav-link active" id="contribute-tab" data-toggle="pill" href="#contribute" role="tab" aria-controls="Contribute" aria-selected="true"><i class="far fa-plus-square" aria-hidden="true"></i><br>Contribute</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="support-tab" data-toggle="pill" href="#support" role="tab" aria-controls="Support" aria-selected="false"><i class="far fa-comments" aria-hidden="true"></i>&nbsp;&nbsp;Support</a>
+                        <a class="nav-link" id="support-tab" data-toggle="pill" href="#support" role="tab" aria-controls="Support" aria-selected="false"><i class="far fa-comments" aria-hidden="true"></i><br>Support</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="About" aria-selected="false"><i class="fas fa-info" aria-hidden="true"></i>&nbsp;&nbsp;About</a>
+                        <a class="nav-link" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="About" aria-selected="false"><i class="fas fa-info" aria-hidden="true"></i><br>About</a>
                     </li>
                 </ul>
             </div>
