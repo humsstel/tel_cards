@@ -138,7 +138,7 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./../img/icons/down-arrow-white.png":7,"_css_loader":6}],42:[function(require,module,exports) {
+},{"./../img/icons/down-arrow-white.png":7,"_css_loader":6}],41:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -160,7 +160,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '54893' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50830' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -261,7 +261,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}],44:[function(require,module,exports) {
+},{}],43:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -341,6 +341,6 @@ LazyPromise.prototype.catch = function (onError) {
   return this.promise || (this.promise = new Promise(this.executor).catch(onError));
 };
 },{"./bundle-url":8}],0:[function(require,module,exports) {
-var b=require(44);b.load([["b9a8e2330c0974ed9ae0c39a3ae46285.png",7]]);
-},{}]},{},[42,0])
+var b=require(43);b.load([["b9a8e2330c0974ed9ae0c39a3ae46285.png",7]]);
+},{}]},{},[41,0])
 //# sourceMappingURL=/dist/24c04680d54506a1f11eedc009691e3b.map
