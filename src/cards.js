@@ -325,7 +325,7 @@ export default [
             },
             cover: {
                 styles: "",
-                image: require('./img/quizlet_logo.png')
+                image: require('./img/quizlet_logo.jpg')
             }
         },
         activities: [
