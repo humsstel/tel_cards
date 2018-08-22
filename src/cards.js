@@ -312,6 +312,46 @@ export default [
     },
 
     {
+        id: "quizlet",
+        name: "Quizlet",
+        url: "https://www.quizlet.com",
+        tagline: "Find or create sets of flashcards that can easily be converted into a range of interactive activities.",
+        description: "Quizlet is a flexible tool that quickly adapts flashcards into engaging, fun activities. Search existing materials or create and share new study sets to give students more choice in how they engage with their learning.",
+        colour: "#4257B2",
+        assets: {
+            logo: {
+                styles: "background-color: #4257B2",
+                image: require('./img/quizlet.png')
+            },
+            cover: {
+                styles: "",
+                image: require('./img/quizlet_logo.png')
+            }
+        },
+        activities: [
+            "create",
+            "collaborate",
+            "captivate",
+            "check"
+        ],
+        uses: [
+            "Flashcards",
+            "Quizzes",
+            "Researching"
+        ],
+        submitter: {
+            name: "Dan Harding",
+            title: "Learning Technology Officer"
+        },
+        videoURL: "https://biteable.com/watch/embed/video-placeholder-1602227/9a0c58e895f0d2a844c91c1718fb40c2786b47d1?autoplay=1",
+        framework: {
+            enhance: "Find a relevant study set and offer it to students as an additional resource to test their knowledge inbetween classes.",
+            empower: "Create an original study set based on concepts covered in class and export it as a worksheet for re-capping later on.",
+            extend: "Make and share a study set with deliberate mistakes for students to copy and self-correct. Follow up with a discussion to check answers."
+        }
+    },
+
+    {
         id: "snagit",
         name: "Snagit",
         url: "http://www.snagit.com",
