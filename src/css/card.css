@@ -105,6 +105,7 @@ p, h5, h6 {
     justify-self: center;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
+    border-radius: 50%;
     transition: transform 0.25s linear;
     
     /* EDITABLE */

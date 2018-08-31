@@ -39,7 +39,7 @@
                             {{#each card.activities as activity}}
                             <span class="badge activity {{ activity.name }}" data-toggle="tooltip" data-placement="top" title="{{ activity.description }}" aria-hidden="true">{{ activity.name }}</span>&nbsp;
                             {{/each}}
-                            <i class="far fa-question-circle" data-toggle="tooltip" data-placement="top" title="Activities this app can support" aria-hidden="true"></i>
+                            <i class="far fa-question-circle" data-toggle="tooltip" data-placement="top" title="Activities this app supports" aria-hidden="true"></i>
                         </h5>
                     </div>
                     <div class="pills-sub">
