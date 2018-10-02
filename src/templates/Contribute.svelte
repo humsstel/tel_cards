@@ -2,7 +2,7 @@
     <div class="col-md-12">
         <div class="bs-callout bs-callout-contribute clearfix">
             <div class="icon">
-                <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                <i class="far fa-plus-square" aria-hidden="true"></i>
             </div>
             <h4>Contribute</h4>
             <p>Help others discover new technologies by telling us about the apps you use.</p>

@@ -2,7 +2,7 @@
     <div class="col-md-12">
         <div class="bs-callout bs-callout-catalogue clearfix">
             <div class="icon">
-                <i class="fa fa-bookmark-o" aria-hidden="true"></i> 
+                <i class="far fa-bookmark" aria-hidden="true"></i> 
             </div>
             <h4>Catalogue</h4>
             <p>Browse the list or use the dropdown filter to find an application that supports a specific activity.</p>
@@ -32,7 +32,7 @@
                                 <span class="badge activity {{ activity.name }}">{{ activity.name }}</span>&nbsp;
                                 {{/each}}
                             </p>
-                            <p class="submitter"><small>Submitted by {{ card.submitter.name }} | {{ card.submitter.title }}</small></p>
+                            <p class="submittercatalogue"><small>Submitted by {{ card.submitter.name }} | {{ card.submitter.title }}</small></p>
                             <p class="appinfo">{{ card.tagline }}</p>
                         </div>
                     </a>

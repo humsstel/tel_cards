@@ -1,7 +1,8 @@
-<div id="wall">
+<div id="wall" class="mainwall">
+
     <div class="wall-filter">
         <div class="selector">
-            <select id="filterText" class="btn btn-secondary dropdown-toggle btn-lg btn-block" on:change="set({ filter: event.target.value })">
+            <select id="filterText" class="btn btn-secondary dropdown-toggle btn-lg btn-block transformer" on:change="set({ filter: event.target.value })">
                 <option selected value="all">Find an app to...</option>
                 <option value="create">...create learning resources</option>
                 <option value="connect">...communicate with students electronically</option>
@@ -13,16 +14,21 @@
                 <option value="all">All apps</option>
             </select>
         </div>
+        <button class="btn btn-lg btn-outline-secondary" id="collapser" type="button" onclick="document.getElementsByClassName('wall-misc')[0].classList.toggle('collapsed'); document.getElementsByClassName('fa-chevron-right')[0].classList.toggle('fa-rotate-180');"><i class="fas fa-chevron-right" id="collapser-icon"></i></button>
+    </div>
+
+    <div class="instructions">
+        <i class="fas fa-map-signs" aria-hidden="true"></i>&nbsp;<p>Browse the wall to find out what technologies are available for learning and teaching. <strong>Found something you're interested in?</strong> Use the <strong>Support</strong> tab for details on who to speak to for ideas and support.</p>
     </div>
 
     <div class="wall-cards">
-        <div class="row">    
+        <!-- <div class="row">     -->
             {{#each filteredCards as card}}
-                <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+                <div class="card-item">
                     <Card :card />
                 </div>
             {{/each}}
-        </div>
+        <!-- </div> -->
     </div>
 
     <div class="wall-misc">
@@ -30,13 +36,13 @@
             <div class="east-nav">
                 <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="contribute-tab" data-toggle="pill" href="#contribute" role="tab" aria-controls="Contribute" aria-selected="true"><i class="fa fa-plus-square-o" aria-hidden="true"></i>&nbsp;&nbsp;Contribute</a>
+                        <a class="nav-link active" id="contribute-tab" data-toggle="pill" href="#contribute" role="tab" aria-controls="Contribute" aria-selected="true"><i class="far fa-plus-square" aria-hidden="true"></i><br>Contribute</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="support-tab" data-toggle="pill" href="#support" role="tab" aria-controls="Support" aria-selected="false"><i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp;&nbsp;Support</a>
+                        <a class="nav-link" id="support-tab" data-toggle="pill" href="#support" role="tab" aria-controls="Support" aria-selected="false"><i class="far fa-comments" aria-hidden="true"></i><br>Support</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="About" aria-selected="false"><i class="fa fa-info" aria-hidden="true"></i>&nbsp;&nbsp;About</a>
+                        <a class="nav-link" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="About" aria-selected="false"><i class="fas fa-info" aria-hidden="true"></i><br>About</a>
                     </li>
                 </ul>
             </div>
@@ -64,6 +70,7 @@
 	import About from './About.svelte'
 
     export default {
+        
         // Set the initial filter state to show all cards
         data() {
             return {
@@ -92,4 +99,7 @@
             }
         }
     }
+
+
+
 </script>

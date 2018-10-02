@@ -18,8 +18,8 @@
     <div class="card-container">
         <div class="app-card card noborder {{ card.id }}">
             <div class="front face">
-                <div class="cardflipper faa-parent animated-hover" role="button" on:click="rotateCard()">
-                    <i class="fa faa-spin fa-repeat" aria-hidden="true"></i> Flip card
+                <div class="cardflipper" role="button" on:click="rotateCard()">
+                    <div><i class="fas fa-redo-alt" aria-hidden="true"></i> Flip card</div>
                 </div>
                 <div class="titlebarfront">
                     <a class="smalllogo faa-tada animated-hover" href="{{ card.url }}" target="_blank">
@@ -34,37 +34,39 @@
                     <a class="tool-link" href="{{ card.url }}" target="_blank">{{ card.url }}</a>
                 </div>
                 <div class="details">
-                    <div class="blooms-pills-main">
+                    <div class="pills-main">
                         <h5>
                             {{#each card.activities as activity}}
                             <span class="badge activity {{ activity.name }}" data-toggle="tooltip" data-placement="top" title="{{ activity.description }}" aria-hidden="true">{{ activity.name }}</span>&nbsp;
                             {{/each}}
-                            <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Activities this app can support" aria-hidden="true"></i>
+                            <i class="far fa-question-circle" data-toggle="tooltip" data-placement="top" title="Activities this app supports" aria-hidden="true"></i>
                         </h5>
                     </div>
-                    <div class="blooms-pills-sub">
+                    <div class="pills-sub">
                         {{#each card.uses as use}}
                         <span class="badge sub">{{ use }} </span>&nbsp;
                         {{/each}} 
-                        <i class="fa fa-question-circle-o" data-toggle="tooltip" data-placement="top" title="Examples of how this app can be used" aria-hidden="true"></i>
+                        <i class="far fa-question-circle" data-toggle="tooltip" data-placement="top" title="Examples of how this app can be used" aria-hidden="true"></i>
                     </div>
                     <div class="submitter">
                         <div class="submitterimg">
-                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            <i class="far fa-user" aria-hidden="true"></i>
                         </div>
                         <div class="submitterinfo">
                             <p class="small"><b>Submitted by</b><br>{{ card.submitter.name }}<span class="submitterschool">&nbsp;| {{ card.submitter.title }}</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="nextcard faa-parent animated-hover" role="button" on:click="store.loadRandomCard(card.id)">
-                    <i class="fa fa-magic faa-shake" aria-hidden="true"></i>&nbsp;&nbsp;Try another app
+                <div class="nextcard" role="button" on:click="store.loadRandomCard(card.id)">
+                    <div><i class="fas fa-magic" aria-hidden="true"></i>&nbsp;&nbsp;Try another app</div>
                 </div>
-            </div><!-- End front panel -->
+            </div>
+            
+            <!-- End front panel -->
 
             <div class="back face">
-                <div class="cardflipper faa-parent animated-hover" role="button" on:click="rotateCard()">
-                    <i class="fa faa-spin fa-repeat" aria-hidden="true"></i> Flip back
+                <div class="cardflipper" role="button" on:click="rotateCard()">
+                    <div><i class="fas fa-redo-alt" aria-hidden="true"></i> Flip back</div>
                 </div>
                 <div class="mediabackground">
                     <div class="videocontainer">
@@ -74,38 +76,34 @@
                     </div>
                 </div>
                 <div class="frameworkheading">
-                    <div class="frameworktext1">
-                        <p><strong>Level</strong></p>
-                    </div>
-                    <div class="frameworktext2">
-                        <p><strong>Example Activities</strong></p>
-                    </div>
+                    <p class="frameworktext1">Level</p>
+                    <p class="frameworktext2">Example Activities</p>
                 </div>
                 <div class='card-body framework'>
                     <div class="thermometer thermometer1">
-                        <h2><i class="fa fa-thermometer-0 usesimage" aria-hidden="true"></i></h2>
+                        <h2><i class="fas fa-thermometer-quarter usesimage" aria-hidden="true"></i></h2>
                         <p><strong>Enhance</strong></p>
                     </div>
                     <div class="usestext usestext1">
                         <p>{{ card.framework.enhance }}</p>
                     </div>
                     <div class="thermometer thermometer2">
-                        <h2><i class="fa fa-thermometer-2" aria-hidden="true"></i></h2>
+                        <h2><i class="fas fa-thermometer-half" aria-hidden="true"></i></h2>
                         <p><strong>Empower</strong></p>
                     </div>
                     <div class="usestext usestext2">
                         <p>{{ card.framework.empower }}</p>
                     </div>
                     <div class="thermometer thermometer3">
-                        <h2><i class="fa fa-thermometer-4 usesimage" aria-hidden="true"></i></h2>
+                        <h2><i class="fas fa-thermometer-full usesimage" aria-hidden="true"></i></h2>
                         <p><strong>Extend</strong></p>
                     </div>
                     <div class="usestext usestext3">
                         <p>{{ card.framework.extend }}</p>
                     </div>
                 </div>
-                <div class="nextcard faa-parent animated-hover" role="button" on:click="store.loadRandomCard(card.id)">
-                    <i class="fa fa-magic faa-shake" aria-hidden="true"></i>&nbsp;&nbsp;Try another app
+                <div class="nextcard" role="button" on:click="store.loadRandomCard(card.id)">
+                    <div><i class="fas fa-magic" aria-hidden="true"></i>&nbsp;&nbsp;Try another app</div>
                 </div>
             </div> <!-- End back panel -->
         </div> <!-- End of card -->
