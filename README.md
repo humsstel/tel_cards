@@ -1,6 +1,18 @@
 # Solutions App
 
-The Solutions app is an open education resource (OER) that has been built to capture and develop digital practice at Keele University by demonstrating how technologies are being used to engage students. Inspired by microlearning resources such as [#1minuteCPD](https://1minutecpd.wordpress.com/) (Manchester Metropolitan University),  and incorporating the [3e Framework](https://staff.napier.ac.uk/services/vice-principal-academic/academic/TEL/TechBenchmark/Pages/Introduction.aspx) (Edinburgh Napier University), the project addresses the overwhelming availability of technologies for learning and teaching, curating them in collaboration with educators who have adopted such tools. The app also categorises each technology, providing users with suggestions (or just-in-time solutions) based on pedagogic themes. 
+The Solutions app is an open education resource (OER) that has been built to capture and develop digital practice amongst educators and students.
+
+At [Keele University](https://www.keele.ac.uk), Solutions is being used to demonstrate how digital tools are helping tutors to create engaging learning experiences. Inspired by microlearning resources such as [#1minuteCPD](https://1minutecpd.wordpress.com/) (Manchester Metropolitan University), and incorporating the [3e Framework](https://staff.napier.ac.uk/services/vice-principal-academic/academic/TEL/TechBenchmark/Pages/Introduction.aspx) (Edinburgh Napier University), the Solutions app addresses the overwhelming availability of technologies available for learning and teaching, and curates them in collaboration with educators who have adopted such tools. The app also categorises each technology, providing users with suggestions (or just-in-time solutions) along pedagogic themes. 
+
+Solutions comes in 2 formats; a single card view and a card wall. Both have been designed responsively, so work across most screen sizes (Google Chrome and Mozilla Firefox recommended).  
+
+## Single Card View
+
+The single card view displays 1 digital tool and was designed to be embedded within smaller online spaces, such as a shared section of a virtual learning environment (VLE). 
+
+## Card Wall
+
+The card wall presents all available digital tools in a grid-like layout and can exist as a webpage on its own, or embedded as part of a larger online space.  
 
 All code and content is released under a Creative Commons licence and openly published via GitHub to encourage reuse, adoption and collaboration. 
 
