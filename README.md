@@ -1,4 +1,4 @@
-# Solutions App
+# The Solutions App
 
 The Solutions app is an open education resource (OER) that has been built to capture and develop digital practice amongst educators and students.
 
@@ -13,10 +13,6 @@ The single card view displays 1 digital tool and was designed to be embedded wit
 ## Card Wall
 
 The card wall presents all available digital tools in a grid-like layout and can exist as a webpage on its own, or embedded as part of a larger online space.  
-
-All code and content is released under a Creative Commons licence and openly published via GitHub to encourage reuse, adoption and collaboration. 
-
-For more information about the development of this project, please see our presentation from the OER18 conference at https://goo.gl/1W1GgE. 
 
 ## Embedding the tool within a VLE
 
@@ -36,3 +32,11 @@ The development server will now be running at http://localhost:1234. To see wall
 
 ## Deploy the built bundle and assets to github pages
 `yarn deploy` or if you don't have yarn, `npm run deploy`
+
+## Further Information
+
+For more information about the development of this project, please see our presentation from the OER18 conference at https://goo.gl/1W1GgE. 
+
+## License
+
+All code and content is released under a Creative Commons licence and openly published via GitHub to encourage reuse, adoption and collaboration. 
