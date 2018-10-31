@@ -8,17 +8,19 @@ Solutions comes in 2 formats; a single card view and a card wall. Both have been
 
 ## Single Card View
 
-The single card view displays 1 digital tool and was designed to be embedded within smaller online spaces, such as a shared section of a virtual learning environment (VLE). 
+The single card view displays 1 digital tool at a time and was designed for embedding within smaller online spaces, such as a shared section of a virtual learning environment (VLE). 
 
 ## Card Wall
 
-The card wall presents all available digital tools in a grid-like layout and can exist as a webpage on its own, or embedded as part of a larger online space.  
+The card wall presents all available digital tools in a grid-like layout and can exist as its own webpage, or embedded as part of a larger online space (e.g. VLE tab).  
 
-## Embedding Solutions within a VLE
+## Embedding the Solutions App within Blackboard Using GitHub Pages
 
-To embed the single card view, you should reference the iframe_index.html file.
+Both the single card view and card wall can be linked to directly (e.g. https://humsstel.github.io/tel_cards/index.html), however, if you intend the embed the Solutions app within Blackboard, you may need to reference the included iframe version for it to appear.
 
-To embed the card wall, you should reference the iframe_wall.html file.
+To embed the single card view using an iframe, you should reference the iframe_index.html file (e.g. https://humsstel.github.io/tel_cards/iframe_index.html).
+
+To embed the card wall using an iframe, you should reference the iframe_wall.html file (e.g. https://humsstel.github.io/tel_cards/iframe_wall.html).
 
 This application uses the [Svelte](https://svelte.technology/) framework to compile templates to vanilla JS. 
 
