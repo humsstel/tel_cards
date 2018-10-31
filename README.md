@@ -14,11 +14,11 @@ The single card view displays 1 digital tool and was designed to be embedded wit
 
 The card wall presents all available digital tools in a grid-like layout and can exist as a webpage on its own, or embedded as part of a larger online space.  
 
-## Embedding the tool within a VLE
+## Embedding Solutions within a VLE
 
-To load the standard single card view, you should reference the iframe_index.html file.
+To embed the single card view, you should reference the iframe_index.html file.
 
-To load the wall display view, you should reference the iframe_wall.html file.
+To embed the card wall, you should reference the iframe_wall.html file.
 
 This application uses the [Svelte](https://svelte.technology/) framework to compile templates to vanilla JS. 
 
