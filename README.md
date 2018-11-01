@@ -18,19 +18,20 @@ The card wall presents all available tools in a grid-like layout and can exist a
 
 ## Setting up your own Solutions app
 
-### Run the application with hot-reloading (launches dev server)
-`yarn start` or if you don't have yarn, `npm run start`
+The steps below detail how to set up and maintain an instance of the Solutions app, ready to populate with your own content.
 
-The development server will now be running at http://localhost:1234. To see wall display view, navigate to http://localhost:1234?display=wall
+### Run the application with hot-reloading (launches dev server)
+Use `yarn start` or if you don't have yarn, `npm run start`
+
+A local development server will now be running at http://localhost:1234. To see the wall display view, navigate to http://localhost:1234?display=wall.
 
 ### Compile production app to dist
-`yarn build` or if you don't have yarn, `npm run build`
+Use `yarn build` or if you don't have yarn, `npm run build`.
 
-### Deploy the built bundle and assets to github pages
-`yarn deploy` or if you don't have yarn, `npm run deploy`
+### Deploy the built bundle and assets to GitHub Pages
+Use `yarn deploy` or if you don't have yarn, `npm run deploy`.
 
 ### Embedding the Solutions App within Blackboard using GitHub Pages
-
 Both the single card view and card wall can be linked to directly (e.g. https://humsstel.github.io/tel_cards/index.html), however, if you intend the embed the Solutions app within Blackboard, you may need to reference the included iframe version for it to appear.
 
 To embed the single card view using an iframe, you should reference the iframe_index.html file (e.g. https://humsstel.github.io/tel_cards/iframe_index.html).
