@@ -6,17 +6,30 @@ At [Keele University](https://www.keele.ac.uk), Solutions is being used to demon
 
 Solutions comes in 2 formats; a single card view and a card wall. Both have been designed responsively, so work across most screen sizes and devices (Google Chrome and Mozilla Firefox browsers recommended).  
 
-## Single Card View
+### Single Card View
 
 The single card view displays 1 digital tool at a time and has been for smaller online spaces, for example, a shared section of a virtual learning environment (VLE). 
 
-## Card Wall
+### Card Wall
 
 The card wall presents all available tools in a grid-like layout and can exist as a webpage in its own right, or as part of a larger online space (e.g. a VLE tab).  
 
 ![Screenshot of Solutions card wall](https://github.com/humsstel/tel_cards/blob/master/screenshots/solutions_app_wall.jpg)
 
-## Embedding the Solutions App within Blackboard using GitHub Pages
+## Setting up your own Solutions app
+
+### Run the application with hot-reloading (launches dev server)
+`yarn start` or if you don't have yarn, `npm run start`
+
+The development server will now be running at http://localhost:1234. To see wall display view, navigate to http://localhost:1234?display=wall
+
+### Compile production app to dist
+`yarn build` or if you don't have yarn, `npm run build`
+
+### Deploy the built bundle and assets to github pages
+`yarn deploy` or if you don't have yarn, `npm run deploy`
+
+### Embedding the Solutions App within Blackboard using GitHub Pages
 
 Both the single card view and card wall can be linked to directly (e.g. https://humsstel.github.io/tel_cards/index.html), however, if you intend the embed the Solutions app within Blackboard, you may need to reference the included iframe version for it to appear.
 
@@ -25,17 +38,6 @@ To embed the single card view using an iframe, you should reference the iframe_i
 To embed the card wall using an iframe, you should reference the iframe_wall.html file (e.g. https://humsstel.github.io/tel_cards/iframe_wall.html).
 
 This application uses the [Svelte](https://svelte.technology/) framework to compile templates to vanilla JS. 
-
-## Run the application with hot-reloading (launches dev server)
-`yarn start` or if you don't have yarn, `npm run start`
-
-The development server will now be running at http://localhost:1234. To see wall display view, navigate to http://localhost:1234?display=wall
-
-## Compile production app to dist
-`yarn build` or if you don't have yarn, `npm run build`
-
-## Deploy the built bundle and assets to github pages
-`yarn deploy` or if you don't have yarn, `npm run deploy`
 
 ## Further Information
 
