@@ -20,11 +20,11 @@ The card wall presents all available tools in a grid-like layout and can exist a
 
 ## Setting up your own Solutions app
 
-The steps below detail how to set up and maintain your own instance of the Solutions app, ready to populate with content.
+The steps below demonstrate how to set up and maintain your own instance of the Solutions app, ready to populate with content.
 
 First, fork the tel_cards repository using your own GitHub account. A fork is a copy of a repository and will allow you to experiment without affecting the original project. 
 
-You'll then need to create a local clone to begin working with the files on your computer. Guidance on how to do this can be found at https://help.github.com/articles/fork-a-repo/.
+You'll then need to create a local clone to begin working with the files on your computer. Guidance on how to set up Git, fork and clone can be found at https://help.github.com/articles/fork-a-repo/.
 
 ### Run the application with hot-reloading (launches dev server)
 Use `yarn start` or if you don't have yarn, `npm run start`.
