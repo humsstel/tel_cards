@@ -10,7 +10,7 @@ Solutions comes in 2 formats; a single card view and a card wall. Both have been
 
 The single card view displays 1 digital tool at a time and has been for smaller online spaces, for example, a shared section of a virtual learning environment (VLE).
 
-![Screenshot of Solutions card view](https://github.com/humsstel/tel_cards/blob/master/screenshots/solutions_card_view.jpg)
+![Screenshot of Solutions single card view](https://github.com/humsstel/tel_cards/blob/master/screenshots/solutions_card_view.png)
 
 
 ### Card Wall
