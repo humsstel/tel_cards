@@ -8,15 +8,15 @@ Solutions comes in 2 formats; a single card view and a card wall. Both have been
 
 ## Single Card View
 
-The single card view displays 1 digital tool at a time and was designed for embedding within smaller online spaces, such as a shared section of a virtual learning environment (VLE). 
+The single card view displays 1 digital tool at a time and has been for smaller online spaces, for example, a shared section of a virtual learning environment (VLE). 
 
 ## Card Wall
 
-The card wall presents all available digital tools in a grid-like layout and can exist as its own webpage, or embedded as part of a larger online space (e.g. VLE tab).  
+The card wall presents all available tools in a grid-like layout and can exist as a webpage in its own right, or as part of a larger online space (e.g. a VLE tab).  
 
 ![Screenshot of Solutions card wall](https://github.com/humsstel/tel_cards/blob/master/screenshots/solutions_app_wall.jpg)
 
-## Embedding the Solutions App within Blackboard Using GitHub Pages
+## Embedding the Solutions App within Blackboard using GitHub Pages
 
 Both the single card view and card wall can be linked to directly (e.g. https://humsstel.github.io/tel_cards/index.html), however, if you intend the embed the Solutions app within Blackboard, you may need to reference the included iframe version for it to appear.
 
