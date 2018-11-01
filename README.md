@@ -14,7 +14,7 @@ The single card view displays 1 digital tool at a time and was designed for embe
 
 The card wall presents all available digital tools in a grid-like layout and can exist as its own webpage, or embedded as part of a larger online space (e.g. VLE tab).  
 
-![Screenshot of Solutions card wall](tel_cards/screenshots/solutions_app_wall.jpg "Screenshot of Solutions card wall")
+![Screenshot of Solutions card wall](https://github.com/humsstel/tel_cards/blob/master/screenshots/solutions_app_wall.jpg)
 
 ## Embedding the Solutions App within Blackboard Using GitHub Pages
 
