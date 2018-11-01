@@ -18,10 +18,10 @@ The card wall presents all available tools in a grid-like layout and can exist a
 
 ## Setting up your own Solutions app
 
-The steps below detail how to set up and maintain an instance of the Solutions app, ready to populate with your own content.
+The steps below detail how to set up and maintain your own instance of the Solutions app, ready to populate with content.
 
 ### Run the application with hot-reloading (launches dev server)
-Use `yarn start` or if you don't have yarn, `npm run start`
+Use `yarn start` or if you don't have yarn, `npm run start`.
 
 A local development server will now be running at http://localhost:1234. To see the wall display view, navigate to http://localhost:1234?display=wall.
 
@@ -31,12 +31,12 @@ Use `yarn build` or if you don't have yarn, `npm run build`.
 ### Deploy the built bundle and assets to GitHub Pages
 Use `yarn deploy` or if you don't have yarn, `npm run deploy`.
 
-### Embedding the Solutions App within Blackboard using GitHub Pages
-Both the single card view and card wall can be linked to directly (e.g. https://humsstel.github.io/tel_cards/index.html), however, if you intend the embed the Solutions app within Blackboard, you may need to reference the included iframe version for it to appear.
+### Embedding the Solutions App using GitHub Pages
+Both the single card view and card wall can be embedded directly, however, if you intend to embed the Solutions app within the Blackboard VLE, you may need to reference the included iframe pages for it to appear. For example:
 
-To embed the single card view using an iframe, you should reference the iframe_index.html file (e.g. https://humsstel.github.io/tel_cards/iframe_index.html).
+* To embed the single card view using an iframe within Blackboard, you should reference the iframe_index.html file.
 
-To embed the card wall using an iframe, you should reference the iframe_wall.html file (e.g. https://humsstel.github.io/tel_cards/iframe_wall.html).
+* To embed the card wall using an iframe, you should reference the iframe_wall.html file .
 
 This application uses the [Svelte](https://svelte.technology/) framework to compile templates to vanilla JS. 
 
@@ -46,4 +46,4 @@ For more information about the development of this project, please see our prese
 
 ## License
 
-All code and content is released under a Creative Commons licence and openly published via GitHub to encourage reuse, adoption and collaboration. 
+All code and content is released under a Creative Commons licence and openly published via GitHub to encourage reuse, adoption and collaboration.
