@@ -2,7 +2,7 @@
 
 The Solutions app is an open education resource (OER) that has been built to capture, showcase and develop digital practice amongst educators and students.
 
-**N.B. This documentation is currently being developed and will be completed in November 2018.**
+**:warning: N.B. This documentation is under development and will be completed in November 2018.**
 
 At [Keele University](https://www.keele.ac.uk), Solutions is being used to demonstrate how digital tools are helping tutors to create engaging learning experiences. Inspired by microlearning resources such as [#1minuteCPD](https://1minutecpd.wordpress.com/) (Manchester Metropolitan University), and incorporating the [3e Framework](https://staff.napier.ac.uk/services/vice-principal-academic/academic/TEL/TechBenchmark/Pages/Introduction.aspx) (Edinburgh Napier University), the Solutions app addresses the overwhelming availability of technologies available for learning and teaching, and curates them in collaboration with educators who have adopted such tools. The app categorises each technology, providing users with suggestions (or just-in-time solutions) along pedagogic themes. 
 
@@ -42,11 +42,17 @@ Use `yarn deploy` or if you don't have yarn, `npm run deploy`.
 ### Embedding the Solutions App using GitHub Pages
 Both the single card view and card wall can be embedded directly, however, if you intend to embed the Solutions app within the Blackboard VLE, you may need to reference the included iframe pages for it to appear. For example:
 
-* To embed the single card view using an iframe within Blackboard, you should reference the iframe_index.html file.
+* To embed the single card view using an iframe within Blackboard, you should reference the `iframe_index.html` file.
 
-* To embed the card wall using an iframe, you should reference the iframe_wall.html file .
+* To embed the card wall using an iframe, you should reference the `iframe_wall.html` file .
 
 This application uses the [Svelte](https://svelte.technology/) framework to compile templates to vanilla JS. 
+
+## Creating and Editing Cards
+
+Creating new cards and editing existing information can be done from the `cards.js` file and is in JSON format. The screenshot below shows what a typical card looks like. 
+
+![Screenshot of card JSON structure](https://github.com/humsstel/tel_cards/blob/master/screenshots/card_json.png)
 
 ## Further Information
 
