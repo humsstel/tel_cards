@@ -1,4 +1,4 @@
-# The Solutions App
+# :iphone: The Solutions App
 
 The Solutions app is an open education resource (OER) that has been built to capture, showcase and develop digital practice amongst educators and students.
 
@@ -20,7 +20,7 @@ The card wall presents all available tools in a grid-like layout and can exist a
 
 ![Screenshot of Solutions card wall](https://github.com/humsstel/tel_cards/blob/master/screenshots/solutions_app_wall.jpg)
 
-## Setting up your own Solutions app
+## :wrench: Setting up your own Solutions app
 
 The steps below demonstrate how to set up and maintain your own instance of the Solutions app, ready to populate with content.
 
@@ -50,7 +50,7 @@ Both the single card view and card wall can be embedded directly, however, if yo
 
 This application uses the [Svelte](https://svelte.technology/) framework to compile templates to vanilla JS. 
 
-## Creating and Editing Cards
+## :pencil: Creating and Editing Cards
 
 Creating new cards and editing existing information can be done from the `cards.js` file and is in JSON format. The screenshot below shows what a typical card looks like. 
 
@@ -64,10 +64,10 @@ The JSON property that applies these themes is `activities`. The 7 values are `"
 
 ![Seven C's for Classifying Learning and Teaching Apps](https://github.com/humsstel/tel_cards/blob/master/screenshots/seven_c_framework.png)
 
-## Further Information
+## :information_source: Further Information
 
 For more information about the development of this project, please see our presentation from the OER18 conference at https://goo.gl/1W1GgE. 
 
-## License
+## :arrows_counterclockwise: License
 
 All code and content is released under a Creative Commons licence and openly published via GitHub to encourage reuse, adoption and collaboration.
