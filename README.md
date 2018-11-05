@@ -56,6 +56,14 @@ Creating new cards and editing existing information can be done from the `cards.
 
 ![Screenshot of card JSON structure](https://github.com/humsstel/tel_cards/blob/master/screenshots/card_json.png)
 
+### Categorising Apps - The Seven C's Framework
+
+The Solutions app includes a filter that helps to find apps based on learning and teaching themes. For example, a user seeking a tool to help make teaching more interactive might apply the ‘Captivate’ filter, automatically highlighting tools with audience participation features (e.g. polling, quizzes etc). There are 7 filters in total. For the single card view, the filter can be found within the Catalogue tab. In the card wall, it appears at the top of the page. 
+
+The JSON property that applies these themes is `activities`. The 7 values are `"create"`, `"connect"`, `"collaborate"`, `"curate"`, `"capture"`, `"captivate"` and `"check"`. If you are repurposing Solutions and wish to change these values, the `main.js` file and svelte template files will need to be amended.
+
+![Seven C's for Classifying Learning and Teaching Apps](https://github.com/humsstel/tel_cards/blob/master/screenshots/seven_c_framework.png)
+
 ## Further Information
 
 For more information about the development of this project, please see our presentation from the OER18 conference at https://goo.gl/1W1GgE. 
