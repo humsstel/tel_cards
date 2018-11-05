@@ -2,7 +2,7 @@
 
 The Solutions app is an open education resource (OER) that has been built to capture, showcase and develop digital practice amongst educators and students.
 
-**N.B. This documentation is currently being developed and will be completed in November 2018.**
+**:warning: N.B. This documentation is under development and will be completed in November 2018.**
 
 At [Keele University](https://www.keele.ac.uk), Solutions is being used to demonstrate how digital tools are helping tutors to create engaging learning experiences. Inspired by microlearning resources such as [#1minuteCPD](https://1minutecpd.wordpress.com/) (Manchester Metropolitan University), and incorporating the [3e Framework](https://staff.napier.ac.uk/services/vice-principal-academic/academic/TEL/TechBenchmark/Pages/Introduction.aspx) (Edinburgh Napier University), the Solutions app addresses the overwhelming availability of technologies available for learning and teaching, and curates them in collaboration with educators who have adopted such tools. The app categorises each technology, providing users with suggestions (or just-in-time solutions) along pedagogic themes. 
 
@@ -24,9 +24,11 @@ The card wall presents all available tools in a grid-like layout and can exist a
 
 The steps below demonstrate how to set up and maintain your own instance of the Solutions app, ready to populate with content.
 
-First, fork the tel_cards repository using your own GitHub account. A fork is a copy of a repository and will allow you to experiment without affecting the original project. 
+### Fork and clone
 
-You'll then need to create a local clone to begin working with the files on your computer. Guidance on how to set up Git, fork and clone can be found at https://help.github.com/articles/fork-a-repo/.
+First, fork the tel_cards repository using your own GitHub account. A fork is a copy of a repository that will allow you to experiment without affecting the original project. 
+
+You'll then need to create a local clone to begin working with the files on your computer. If you're not familiar with GitHub, guidance on how to set up Git, fork and clone can be found at https://help.github.com/articles/fork-a-repo/.
 
 ### Run the application with hot-reloading (launches dev server)
 Use `yarn start` or if you don't have yarn, `npm run start`.
@@ -42,11 +44,17 @@ Use `yarn deploy` or if you don't have yarn, `npm run deploy`.
 ### Embedding the Solutions App using GitHub Pages
 Both the single card view and card wall can be embedded directly, however, if you intend to embed the Solutions app within the Blackboard VLE, you may need to reference the included iframe pages for it to appear. For example:
 
-* To embed the single card view using an iframe within Blackboard, you should reference the iframe_index.html file.
+* To embed the single card view using an iframe within Blackboard, you should reference the `iframe_index.html` file.
 
-* To embed the card wall using an iframe, you should reference the iframe_wall.html file .
+* To embed the card wall using an iframe, you should reference the `iframe_wall.html` file .
 
 This application uses the [Svelte](https://svelte.technology/) framework to compile templates to vanilla JS. 
+
+## Creating and Editing Cards
+
+Creating new cards and editing existing information can be done from the `cards.js` file and is in JSON format. The screenshot below shows what a typical card looks like. 
+
+![Screenshot of card JSON structure](https://github.com/humsstel/tel_cards/blob/master/screenshots/card_json.png)
 
 ## Further Information
 
