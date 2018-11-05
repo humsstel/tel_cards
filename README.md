@@ -8,13 +8,13 @@ At [Keele University](https://www.keele.ac.uk), Solutions is being used to demon
 
 Solutions comes in 2 formats; a single card view and a card wall. Both have been designed responsively, so work across most screen sizes and devices (Google Chrome and Mozilla Firefox browsers recommended).  
 
-### Single Card View
+### Single card view
 
 The single card view displays 1 digital tool at a time and has been designed for smaller online spaces, for example, a shared section of a virtual learning environment (VLE).
 
 ![Screenshot of Solutions single card view](https://github.com/humsstel/tel_cards/blob/master/screenshots/solutions_card_view.png)
 
-### Card Wall
+### Card wall
 
 The card wall presents all available tools in a grid-like layout and can exist as a webpage in its own right, or as part of a larger online space (e.g. a VLE tab).  
 
@@ -24,7 +24,7 @@ The card wall presents all available tools in a grid-like layout and can exist a
 
 The steps below demonstrate how to set up and maintain your own instance of the Solutions app, ready to populate with content.
 
-### Fork and clone
+### Fork and clone the repository
 
 First, fork the tel_cards repository using your own GitHub account. A fork is a copy of a repository that will allow you to experiment without affecting the original project. 
 
@@ -41,7 +41,7 @@ Use `yarn build` or if you don't have yarn, `npm run build`.
 ### Deploy the built bundle and assets to GitHub Pages
 Use `yarn deploy` or if you don't have yarn, `npm run deploy`.
 
-### Embedding the Solutions App using GitHub Pages
+### Embed the Solutions app using GitHub Pages
 Both the single card view and card wall can be embedded directly, however, if you intend to embed the Solutions app within the Blackboard VLE, you may need to reference the included iframe pages for it to appear. For example:
 
 * To embed the single card view using an iframe within Blackboard, you should reference the `iframe_index.html` file.
@@ -50,7 +50,7 @@ Both the single card view and card wall can be embedded directly, however, if yo
 
 This application uses the [Svelte](https://svelte.technology/) framework to compile templates to vanilla JS. 
 
-## :pencil: Creating and Editing Cards
+## :pencil: Create and Edit Cards
 
 Creating new cards and editing existing information can be done from the `cards.js` file and is in JSON format. The screenshot below shows what a typical card looks like. 
 
