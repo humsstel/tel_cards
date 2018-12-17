@@ -2,7 +2,7 @@
 
 The Solutions app is an open education resource (OER) that has been built to capture, showcase and develop digital practice amongst educators and students.
 
-**:warning: N.B. This documentation is under development and will be completed in early 2019.**
+**:warning: N.B. This documentation is under development is due to be completed in early 2019.**
 
 At [Keele University](https://www.keele.ac.uk), Solutions is being used to demonstrate how digital tools are helping tutors to create engaging learning experiences. Inspired by microlearning resources such as [#1minuteCPD](https://1minutecpd.wordpress.com/) (Manchester Metropolitan University), and incorporating the [3e Framework](https://staff.napier.ac.uk/services/vice-principal-academic/academic/TEL/TechBenchmark/Pages/Introduction.aspx) (Edinburgh Napier University), the Solutions app addresses the overwhelming availability of technologies with potential for learning and teaching, and curates them in collaboration with educators who have succesfully adopted such tools. The app categorises each technology, providing users with suggestions (or just-in-time solutions) along pedagogic themes. 
 
